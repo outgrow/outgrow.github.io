@@ -366,31 +366,12 @@ var Head = function Head(props) {
       lineNumber: 36
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "stylesheet",
-    type: "text/css",
-    charSet: "UTF-8",
-    href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "stylesheet",
-    type: "text/css",
-    href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     name: "apple-mobile-web-app-title",
     content: "out:grow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 37
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -398,7 +379,7 @@ var Head = function Head(props) {
     content: "out:grow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 38
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -406,7 +387,7 @@ var Head = function Head(props) {
     content: "#1d1d1d",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 39
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -414,7 +395,7 @@ var Head = function Head(props) {
     content: "/static/mstile-144x144.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 40
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -422,7 +403,7 @@ var Head = function Head(props) {
     content: "/static/browserconfig.xml",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 41
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -430,13 +411,13 @@ var Head = function Head(props) {
     content: "#1d1d1d",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 42
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("style", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 44
     },
     __self: this
   }, "\n      * {\n        margin: 0;\n        padding: 0;\n        box-sizing: border-box;\n      }\n\n      body {\n        font-family: \"Axiforma\", Helvetica, Arial, sans-serif;\n      }\n    "));
@@ -15640,6 +15621,16 @@ var Slider = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
     modules: ["react-slick"]
   }
 });
+next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
+  return __webpack_require__.e(/*! import() */ "styles").then(__webpack_require__.t.bind(null, /*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css", 7));
+}, {
+  loadableGenerated: {
+    webpack: function webpack() {
+      return [/*require.resolve*/(/*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css")];
+    },
+    modules: ["slick-carousel/slick/slick.css"]
+  }
+});
 var PageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "ecommerce-consulting__PageWrapper",
   componentId: "sc-2cwmn2-0"
@@ -15669,20 +15660,20 @@ var Consulting = function Consulting() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Head"], {
     title: "Technical E-Commerce Consulting | Reaction Commerce, Workarea, Salesforce Commerce Cloud, BigCommerce | out:grow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 61
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Nav"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 62
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["ServicePageHeader"], {
@@ -15693,27 +15684,27 @@ var Consulting = function Consulting() {
     title: "Your team. Supercharged.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 64
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Wire"], {
     color: _styles_colors__WEBPACK_IMPORTED_MODULE_5__["blue"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 75
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PageWrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 77
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Title"], {
     color: _styles_colors__WEBPACK_IMPORTED_MODULE_5__["blue"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 78
     },
     __self: this
   }, "We know your stack."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledSlider, _extends({
@@ -15729,95 +15720,95 @@ var Consulting = function Consulting() {
   }, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 79
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SliderItem, {
     src: "/static/reaction-logo.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 90
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SliderItem, {
     src: "/static/workarea-logo.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 91
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SliderItem, {
     src: "/static/salesforce-cc-logo.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 92
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SliderItem, {
     src: "/static/bigcommerce-logo.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 93
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 96
     },
     __self: this
   }, "Our engineers have accumulated ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 96
     },
     __self: this
   }, "over 80 years of experience"), " on modern technologies like ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 96
     },
     __self: this
   }, "Reaction Commerce"), ", ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 96
     },
     __self: this
   }, "Workarea"), ", ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 96
     },
     __self: this
   }, "BigCommerce"), " and ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 96
     },
     __self: this
   }, "Salesforce Commerce Cloud"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 97
     },
     __self: this
   }, "Unlike many consultancy companies, we ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 97
     },
     __self: this
   }, "focus exclusively"), " on these technologies to provide our clients with a ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 97
     },
     __self: this
   }, "truly unique expertise"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["ButtonWrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 99
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -15826,50 +15817,50 @@ var Consulting = function Consulting() {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 100
     },
     __self: this
   }, "Talk to an expert")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Title"], {
     color: _styles_colors__WEBPACK_IMPORTED_MODULE_5__["blue"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 103
     },
     __self: this
   }, "Mid-project technical advice."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 105
     },
     __self: this
   }, "The biggest issues arise either mid-project, or at a critical pre-delivery stage. Too often, ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 105
     },
     __self: this
   }, "these roadblocks cause sensible delays"), " and force teams to ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 105
     },
     __self: this
   }, "postpone deliveries"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 107
     },
     __self: this
   }, "Here\u2019s how ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 107
     },
     __self: this
   }, "out:grow ensures that your developers never get stuck"), " so that your project stays on track:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BulletPointWrapper, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 109
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["BulletPoint"], {
@@ -15877,7 +15868,7 @@ var Consulting = function Consulting() {
     body: "Benefit from one-on-one or group video calls with our best engineers.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 110
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["BulletPoint"], {
@@ -15885,7 +15876,7 @@ var Consulting = function Consulting() {
     body: "Our experts will provide comprehensive code reviews right in your team's pull requests, on GitHub or any other VCS.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 111
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["BulletPoint"], {
@@ -15893,13 +15884,13 @@ var Consulting = function Consulting() {
     body: "Give your technical team the assurance of always getting answers to their technical questions via e-mail or Slack.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 112
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["ButtonWrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 115
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -15908,68 +15899,68 @@ var Consulting = function Consulting() {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 116
     },
     __self: this
   }, "Supercharge your team")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Title"], {
     color: _styles_colors__WEBPACK_IMPORTED_MODULE_5__["blue"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 119
     },
     __self: this
   }, "Feasability reports."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 121
     },
     __self: this
   }, "Are you ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 121
     },
     __self: this
   }, "still exploring your options"), " for an e-commerce project? A ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 121
     },
     __self: this
   }, "custom-tailored feasability report"), " will help you make an ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 121
     },
     __self: this
   }, "informed business decision"), "."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 122
     },
     __self: this
   }, "Taking into account your project's unique characteristics, ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 122
     },
     __self: this
   }, "our experts will help you decide"), " which e-commerce technology is right for you by ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 122
     },
     __self: this
   }, "estimating development time"), ", warning you of ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 122
     },
     __self: this
   }, "technical pitfals"), ", and more."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["ButtonWrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 124
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -15978,32 +15969,32 @@ var Consulting = function Consulting() {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 125
     },
     __self: this
   }, "Order a report")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Title"], {
     color: _styles_colors__WEBPACK_IMPORTED_MODULE_5__["blue"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 128
     },
     __self: this
   }, "Let's talk."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Paragraph"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 130
     },
     __self: this
   }, "Because every project is different, let us provide ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Blue, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 130
     },
     __self: this
   }, "tailored answers to your questions"), ". Speak with one of our consultants today to assess how can out:grow help your business reach new heights."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["ButtonWrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 132
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -16012,7 +16003,7 @@ var Consulting = function Consulting() {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 133
     },
     __self: this
   }, "Get called back"))));
