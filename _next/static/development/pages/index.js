@@ -93,7 +93,7 @@ var _jsxFileName = "/Users/loan/Documents/Development/outgrow-website/components
 
 
 
-var defaultDescription = "";
+var defaultDescription = "out:grow provides consulting services to internet retailers and web agencies, offering pre-project feasibility studies, architectural engineering, technical mid-project consulting, code reviews and performance audits.";
 var defaultOGURL = "";
 var defaultOGImage = "";
 
@@ -634,6 +634,7 @@ function (_Component) {
           "hamburger--spring": true,
           "is-active": this.state.isMenuOpen
         }),
+        name: "menu",
         type: "button",
         onClick: this.handleToggleMenu,
         __source: {
@@ -645,46 +646,47 @@ function (_Component) {
         className: "hamburger-box",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 260
+          lineNumber: 261
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuButtonInner, {
         className: "hamburger-inner",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 261
+          lineNumber: 262
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 265
+          lineNumber: 266
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 266
+          lineNumber: 267
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
+        alt: "Outgrow logo",
         src: "/static/logo-white.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 267
+          lineNumber: 268
         },
         __self: this
       })))), this.state.isMenuOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MobileNavWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 271
+          lineNumber: 272
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(List, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 272
+          lineNumber: 273
         },
         __self: this
       }, links.map(function (_ref, index) {
@@ -696,20 +698,20 @@ function (_Component) {
           iterationCount: index,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 274
+            lineNumber: 275
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
           href: href,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 275
+            lineNumber: 276
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 276
+            lineNumber: 277
           },
           __self: this
         }, label)));
@@ -717,19 +719,19 @@ function (_Component) {
         iterationCount: 5,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 281
+          lineNumber: 282
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 282
+          lineNumber: 283
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DividerText, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 283
+          lineNumber: 284
         },
         __self: this
       }, "or")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -739,21 +741,21 @@ function (_Component) {
         iterationCount: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 286
+          lineNumber: 287
         },
         __self: this
       }, "E-Commerce Site Down?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
         iterationCount: 7,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 287
+          lineNumber: 288
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonLink, {
         href: "tel:+12816884769",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 288
+          lineNumber: 289
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonIcon, {
@@ -761,25 +763,25 @@ function (_Component) {
         alt: "Call",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 289
+          lineNumber: 290
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonText, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 290
+          lineNumber: 291
         },
         __self: this
       }, "+1 (281) OUT-GROW", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 291
+          lineNumber: 292
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonCaption, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 292
+          lineNumber: 293
         },
         __self: this
       }, "24/7 Emergency Hotline")))))));
