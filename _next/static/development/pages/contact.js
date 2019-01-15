@@ -38480,7 +38480,7 @@ var DatePicker = function DatePicker() {
 
 if (typeof window !== "undefined") {
   DatePicker = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! react-datepicker */ "./node_modules/react-datepicker/es/index.js"));
+    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! react-datepicker */ "./node_modules/react-datepicker/es/index.js"));
   }, {
     loadableGenerated: {
       webpack: function webpack() {
@@ -39140,7 +39140,7 @@ var media = Object.keys(sizes).reduce(function (accumulator, sizeLabel) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/
@@ -39165,5 +39165,5 @@ module.exports = dll_b2d9fd95b535cd8bf589;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]));;
+},[[6,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=contact.js.map
