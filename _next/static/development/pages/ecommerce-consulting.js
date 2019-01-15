@@ -90,7 +90,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/mediaQueries */ "./styles/mediaQueries.js");
+/* harmony import */ var _styles_colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/colors */ "./styles/colors.js");
 var _jsxFileName = "/Users/loan/Documents/Development/outgrow-website/components/button.js";
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["font-size: 1.3rem;"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
 
 function _templateObject() {
   var data = _taggedTemplateLiteral(["font-size: 1.3rem;"]);
@@ -108,38 +119,66 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var StyledLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.withConfig({
   displayName: "button__StyledLink",
   componentId: "sc-9g475i-0"
 })(["display:flex;align-items:center;justify-content:center;background:rgb(", ");padding:.5rem 1rem;border-radius:35px;text-decoration:none;color:rgb(", ");font-weight:800;font-size:1.2rem;", " margin-top:1rem;"], function (props) {
-  return props.backgroundColor || "255, 255, 255";
+  return props.backgroundColor || _styles_colors__WEBPACK_IMPORTED_MODULE_4__["white"];
 }, function (props) {
   return props.color;
 }, _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_3__["default"].smallTablet(_templateObject()));
+var StyledButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].button.withConfig({
+  displayName: "button__StyledButton",
+  componentId: "sc-9g475i-1"
+})(["display:flex;align-items:center;justify-content:center;background:rgb(", ");", " padding:.5rem 2rem;border:none;border-radius:35px;text-decoration:none;color:rgb(", ");font-weight:800;font-size:1.2rem;", " margin-top:1rem;"], function (props) {
+  return props.backgroundColor || _styles_colors__WEBPACK_IMPORTED_MODULE_4__["white"];
+}, function (props) {
+  return props.disabled && "background: rgb(".concat(_styles_colors__WEBPACK_IMPORTED_MODULE_4__["grey"], ");");
+}, function (props) {
+  return props.color;
+}, _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_3__["default"].smallTablet(_templateObject2()));
 
 var Button = function Button(_ref) {
   var backgroundColor = _ref.backgroundColor,
       children = _ref.children,
       color = _ref.color,
-      href = _ref.href;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: href,
-    passHref: true,
-    prefetch: true,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
+      href = _ref.href,
+      type = _ref.type,
+      disabled = _ref.disabled;
+
+  if (typeof href !== "undefined") {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: href,
+      passHref: true,
+      prefetch: true,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledLink, {
+      backgroundColor: backgroundColor,
+      color: color,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53
+      },
+      __self: this
+    }, children));
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledButton, {
     backgroundColor: backgroundColor,
     color: color,
+    type: type,
+    disabled: disabled,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 59
     },
     __self: this
-  }, children));
+  }, children);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Button);
@@ -15617,7 +15656,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var Slider = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! react-slick */ "./node_modules/react-slick/lib/index.js", 7));
+  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.t.bind(null, /*! react-slick */ "./node_modules/react-slick/lib/index.js", 7));
 }, {
   loadableGenerated: {
     webpack: function webpack() {
@@ -16042,7 +16081,7 @@ var Consulting = function Consulting() {
 /*!**************************!*\
   !*** ./styles/colors.js ***!
   \**************************/
-/*! exports provided: white, black, blue, lightBlue, red, green */
+/*! exports provided: white, black, blue, lightBlue, red, green, grey */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16053,12 +16092,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lightBlue", function() { return lightBlue; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "red", function() { return red; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "green", function() { return green; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "grey", function() { return grey; });
 var white = "250, 250, 250";
 var black = "11, 11, 11";
 var blue = "1, 111, 185";
 var lightBlue = "51, 151, 246";
 var red = "221, 28, 26";
 var green = "12, 164, 165";
+var grey = "169, 169, 169";
 
 /***/ }),
 
@@ -16090,7 +16131,7 @@ var media = Object.keys(sizes).reduce(function (accumulator, sizeLabel) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 10:
 /*!*********************************************!*\
   !*** multi ./pages/ecommerce-consulting.js ***!
   \*********************************************/
@@ -16115,5 +16156,5 @@ module.exports = dll_b2d9fd95b535cd8bf589;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]));;
+},[[10,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=ecommerce-consulting.js.map

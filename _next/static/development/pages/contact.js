@@ -38627,8 +38627,7 @@ function (_Component) {
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleSubmit", function (event) {
       event.preventDefault();
-
-      _this.stitchClient.callFunction("sendContactRequest", [_this.state]).then(function (result) {
+      mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["Stitch"].defaultAppClient.callFunction("sendContactRequest", [_this.state]).then(function (result) {
         if (typeof result !== "undefined" && typeof result.MessageId === "string") {
           _this.setState(_objectSpread({}, defaultState, {
             sent: result
@@ -38638,6 +38637,10 @@ function (_Component) {
             error: true
           });
         }
+      }).catch(function (err) {
+        _this.setState({
+          error: true
+        });
       });
     });
 
@@ -38650,8 +38653,13 @@ function (_Component) {
   _createClass(Contact, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.stitchClient = mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["Stitch"].initializeDefaultAppClient("outgrow-hunql");
-      this.stitchClient.auth.loginWithCredential(new mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["AnonymousCredential"]());
+      try {
+        var client = mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["Stitch"].defaultAppClient; // Stitch client is already initiated if this didn't crash
+      } catch (err) {
+        // Threw error because client is not initiated
+        var stitchClient = mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["Stitch"].initializeDefaultAppClient("outgrow-hunql");
+        stitchClient.auth.loginWithCredential(new mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["AnonymousCredential"]());
+      }
     }
   }, {
     key: "render",
@@ -38662,20 +38670,20 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 191
+          lineNumber: 204
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Head"], {
         title: "E-Commerce Consultancy | Get a Quote \u2014 Contact Our Team Now | out:grow",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 192
+          lineNumber: 205
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Nav"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 193
+          lineNumber: 206
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["ServicePageHeader"], {
@@ -38687,40 +38695,40 @@ function (_Component) {
         title: "Get in touch.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 195
+          lineNumber: 208
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Wire"], {
         color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["blue"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 207
+          lineNumber: 220
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PageWrapper, {
         id: "section-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 209
+          lineNumber: 222
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Title"], {
         color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["blue"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 210
+          lineNumber: 223
         },
         __self: this
       }, "Our locations."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 212
+          lineNumber: 225
         },
         __self: this
       }, "As a global company helping global clients, we at out:grow provide 24/7 services to retailers and agencies around the world thanks to our offices in Los Angeles and Dubai."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Locations, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 214
+          lineNumber: 227
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Location, {
@@ -38729,13 +38737,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 215
+          lineNumber: 228
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationTitle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 216
+          lineNumber: 229
         },
         __self: this
       }, "Los Angeles"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationIcon, {
@@ -38743,31 +38751,31 @@ function (_Component) {
         src: "/static/california.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 217
+          lineNumber: 230
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationAddress, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 218
+          lineNumber: 231
         },
         __self: this
       }, "601 S. Figueroa Street", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 219
+          lineNumber: 232
         },
         __self: this
       }), "Suite 4050", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 220
+          lineNumber: 233
         },
         __self: this
       }), "Los Angeles, CA 90071", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 221
+          lineNumber: 234
         },
         __self: this
       }), "United States of America")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Location, {
@@ -38776,13 +38784,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 226
+          lineNumber: 239
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationTitle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 227
+          lineNumber: 240
         },
         __self: this
       }, "Dubai"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationIcon, {
@@ -38790,64 +38798,64 @@ function (_Component) {
         src: "/static/uae.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 228
+          lineNumber: 241
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationAddress, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 229
+          lineNumber: 242
         },
         __self: this
       }, "The Offices 3", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 230
+          lineNumber: 243
         },
         __self: this
       }), "One Central, World Trade Center", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 231
+          lineNumber: 244
         },
         __self: this
       }), "Sheikh Zayed Road", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 232
+          lineNumber: 245
         },
         __self: this
       }), "Dubai", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 233
+          lineNumber: 246
         },
         __self: this
       }), "United Arab Emirates"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Title"], {
         color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["blue"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 239
+          lineNumber: 252
         },
         __self: this
       }, "Let us help."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Form, {
         onSubmit: this.handleSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 240
+          lineNumber: 253
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DividedFieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 241
+          lineNumber: 254
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         marginRight: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 242
+          lineNumber: 255
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -38860,14 +38868,14 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 243
+          lineNumber: 256
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         marginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 254
+          lineNumber: 267
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -38880,27 +38888,27 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 255
+          lineNumber: 268
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DividedFieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 267
+          lineNumber: 280
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         marginRight: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 268
+          lineNumber: 281
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Label, {
         htmlFor: "callbackPreferred",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 269
+          lineNumber: 282
         },
         __self: this
       }, "Should we call?")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
@@ -38908,7 +38916,7 @@ function (_Component) {
         marginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 272
+          lineNumber: 285
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_3__["SegmentedControl"], {
@@ -38932,34 +38940,34 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 273
+          lineNumber: 286
         },
         __self: this
       }))), this.state.callbackPreferred && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DividedFieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 292
+          lineNumber: 305
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         marginRight: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 293
+          lineNumber: 306
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Label, {
         htmlFor: "preferredTimeForCallback",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 294
+          lineNumber: 307
         },
         __self: this
       }, "Preferred time")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         marginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 296
+          lineNumber: 309
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DatePicker, {
@@ -38971,13 +38979,13 @@ function (_Component) {
         showTimeSelect: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 297
+          lineNumber: 310
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 309
+          lineNumber: 322
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_3__["SegmentedControl"], {
@@ -39002,7 +39010,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 310
+          lineNumber: 323
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
@@ -39011,7 +39019,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 327
+          lineNumber: 340
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Textarea, {
@@ -39023,13 +39031,13 @@ function (_Component) {
         placeholder: "Message",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 328
+          lineNumber: 341
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 338
+          lineNumber: 351
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Button"], {
@@ -39039,13 +39047,13 @@ function (_Component) {
         disabled: this.state.sent || this.state.error,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 339
+          lineNumber: 352
         },
         __self: this
       }, this.state.sent ? "Thank you!" : "Send")), this.state.error && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Error, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 349
+          lineNumber: 362
         },
         __self: this
       }, "We're sorry, something wrong happened. Please send your inquiry manually to contact@outgrow.io while our engineers are fixing this."))));
