@@ -39042,10 +39042,10 @@ function (_Component) {
           lineNumber: 339
         },
         __self: this
-      }, "Send")), this.state.error && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Error, {
+      }, this.state.sent ? "Thank you!" : "Send")), this.state.error && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Error, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 342
+          lineNumber: 349
         },
         __self: this
       }, "We're sorry, something wrong happened. Please send your inquiry manually to contact@outgrow.io while our engineers are fixing this."))));
