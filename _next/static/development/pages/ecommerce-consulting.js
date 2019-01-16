@@ -724,7 +724,7 @@ var listItemAnimation = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["k
 var TopBar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "nav__TopBar",
   componentId: "sc-1m1ztfj-0"
-})(["position:", ";top:0;width:100%;z-index:999;align-items:end;display:flex;justify-content:space-between;"], function (props) {
+})(["position:", ";top:0;width:100%;z-index:999;align-items:start;display:flex;justify-content:space-between;"], function (props) {
   return props.isMenuOpen ? "fixed" : "absolute";
 });
 var MenuButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].button.withConfig({
@@ -15656,7 +15656,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var Slider = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.t.bind(null, /*! react-slick */ "./node_modules/react-slick/lib/index.js", 7));
+  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! react-slick */ "./node_modules/react-slick/lib/index.js", 7));
 }, {
   loadableGenerated: {
     webpack: function webpack() {
@@ -16131,7 +16131,7 @@ var media = Object.keys(sizes).reduce(function (accumulator, sizeLabel) {
 
 /***/ }),
 
-/***/ 10:
+/***/ 5:
 /*!*********************************************!*\
   !*** multi ./pages/ecommerce-consulting.js ***!
   \*********************************************/
@@ -16156,5 +16156,5 @@ module.exports = dll_b2d9fd95b535cd8bf589;
 
 /***/ })
 
-},[[10,"static/runtime/webpack.js","styles"]]]));;
+},[[5,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=ecommerce-consulting.js.map
