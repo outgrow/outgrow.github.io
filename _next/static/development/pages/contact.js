@@ -724,7 +724,7 @@ var listItemAnimation = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["k
 var TopBar = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "nav__TopBar",
   componentId: "sc-1m1ztfj-0"
-})(["position:", ";top:0;width:100%;z-index:999;align-items:end;display:flex;justify-content:space-between;"], function (props) {
+})(["position:", ";top:0;width:100%;z-index:999;align-items:start;display:flex;justify-content:space-between;"], function (props) {
   return props.isMenuOpen ? "fixed" : "absolute";
 });
 var MenuButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].button.withConfig({
