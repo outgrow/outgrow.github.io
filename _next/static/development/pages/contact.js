@@ -217,6 +217,194 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 /***/ }),
 
+/***/ "./components/footer.js":
+/*!******************************!*\
+  !*** ./components/footer.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_colors__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/colors */ "./styles/colors.js");
+var _jsxFileName = "/Users/loan/Documents/Development/outgrow-website/components/footer.js";
+
+
+
+
+var Footer = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].footer.withConfig({
+  displayName: "footer__Footer",
+  componentId: "sc-1lwjkyr-0"
+})(["background:rgb(", ");color:rgb(", ");width:100vw;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;"], function (props) {
+  return props.color || _styles_colors__WEBPACK_IMPORTED_MODULE_3__["blue"];
+}, _styles_colors__WEBPACK_IMPORTED_MODULE_3__["white"]);
+var List = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].ul.withConfig({
+  displayName: "footer__List",
+  componentId: "sc-1lwjkyr-1"
+})(["list-style:none;", ""], function (props) {
+  return props.right && "text-align: right;";
+});
+var ListItem = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].li.withConfig({
+  displayName: "footer__ListItem",
+  componentId: "sc-1lwjkyr-2"
+})(["margin:.25rem 0;"]);
+var ListItemLink = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].a.withConfig({
+  displayName: "footer__ListItemLink",
+  componentId: "sc-1lwjkyr-3"
+})(["cursor:pointer;text-decoration:none;color:rgb(", ");"], _styles_colors__WEBPACK_IMPORTED_MODULE_3__["white"]);
+var Copyright = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].p.withConfig({
+  displayName: "footer__Copyright",
+  componentId: "sc-1lwjkyr-4"
+})(["font-size:.9rem;"]);
+
+var AppFooter = function AppFooter(_ref) {
+  var color = _ref.color;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Footer, {
+    color: color,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(List, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/ecommerce-consulting",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, "E-Commerce Consulting"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/developer-training",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, "Developer Training"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/emergency-response",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, "Emergency Response"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/contact",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, "Contact Us"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Copyright, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }, "Copyright \xA9 2019 Outgrow LLC"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(List, {
+    right: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
+    href: "tel:+12816884769",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69
+    },
+    __self: this
+  }, "+1 (281) 688-4769")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
+    href: "mailto:contact@outgrow.io",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, "contact@outgrow.io"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (AppFooter);
+
+/***/ }),
+
 /***/ "./components/head.js":
 /*!****************************!*\
   !*** ./components/head.js ***!
@@ -592,7 +780,7 @@ var HomeSection = function HomeSection(_ref) {
 /*!*****************************!*\
   !*** ./components/index.js ***!
   \*****************************/
-/*! exports provided: BulletPoint, Button, ButtonWrapper, Head, HomeSection, Nav, Paragraph, ServicePageHeader, Title, Wire */
+/*! exports provided: BulletPoint, Button, ButtonWrapper, Footer, Head, HomeSection, Nav, Paragraph, ServicePageHeader, Title, Wire */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -606,26 +794,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _buttonWrapper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./buttonWrapper */ "./components/buttonWrapper.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ButtonWrapper", function() { return _buttonWrapper__WEBPACK_IMPORTED_MODULE_2__["default"]; });
 
-/* harmony import */ var _head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./head */ "./components/head.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Head", function() { return _head__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ "./components/footer.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return _footer__WEBPACK_IMPORTED_MODULE_3__["default"]; });
 
-/* harmony import */ var _homeSection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./homeSection */ "./components/homeSection.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "HomeSection", function() { return _homeSection__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+/* harmony import */ var _head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./head */ "./components/head.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Head", function() { return _head__WEBPACK_IMPORTED_MODULE_4__["default"]; });
 
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./nav */ "./components/nav.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Nav", function() { return _nav__WEBPACK_IMPORTED_MODULE_5__["default"]; });
+/* harmony import */ var _homeSection__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./homeSection */ "./components/homeSection.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "HomeSection", function() { return _homeSection__WEBPACK_IMPORTED_MODULE_5__["default"]; });
 
-/* harmony import */ var _paragraph__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./paragraph */ "./components/paragraph.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Paragraph", function() { return _paragraph__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./nav */ "./components/nav.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Nav", function() { return _nav__WEBPACK_IMPORTED_MODULE_6__["default"]; });
 
-/* harmony import */ var _servicePageHeader__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./servicePageHeader */ "./components/servicePageHeader.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ServicePageHeader", function() { return _servicePageHeader__WEBPACK_IMPORTED_MODULE_7__["default"]; });
+/* harmony import */ var _paragraph__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./paragraph */ "./components/paragraph.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Paragraph", function() { return _paragraph__WEBPACK_IMPORTED_MODULE_7__["default"]; });
 
-/* harmony import */ var _title__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./title */ "./components/title.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Title", function() { return _title__WEBPACK_IMPORTED_MODULE_8__["default"]; });
+/* harmony import */ var _servicePageHeader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./servicePageHeader */ "./components/servicePageHeader.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ServicePageHeader", function() { return _servicePageHeader__WEBPACK_IMPORTED_MODULE_8__["default"]; });
 
-/* harmony import */ var _wire__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./wire */ "./components/wire.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Wire", function() { return _wire__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+/* harmony import */ var _title__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./title */ "./components/title.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Title", function() { return _title__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+
+/* harmony import */ var _wire__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./wire */ "./components/wire.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Wire", function() { return _wire__WEBPACK_IMPORTED_MODULE_10__["default"]; });
+
 
 
 
@@ -2671,7 +2863,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EJSON", function() { return bson_54; });
 /* harmony import */ var long__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! long */ "./node_modules/long/src/long.js");
 /* harmony import */ var long__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(long__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var buffer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! buffer */ "./node_modules/buffer/index.js");
+/* harmony import */ var buffer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! buffer */ "./node_modules/node-libs-browser/node_modules/buffer/index.js");
 /* harmony import */ var buffer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(buffer__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -7554,1809 +7746,7 @@ var bson_54 = bson.EJSON;
 /* harmony default export */ __webpack_exports__["default"] = (bson);
 
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../../buffer/index.js */ "./node_modules/buffer/index.js").Buffer))
-
-/***/ }),
-
-/***/ "./node_modules/buffer/index.js":
-/*!**************************************!*\
-  !*** ./node_modules/buffer/index.js ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
- * @license  MIT
- */
-/* eslint-disable no-proto */
-
-
-
-var base64 = __webpack_require__(/*! base64-js */ "./node_modules/base64-js/index.js")
-var ieee754 = __webpack_require__(/*! ieee754 */ "./node_modules/ieee754/index.js")
-var isArray = __webpack_require__(/*! isarray */ "./node_modules/isarray/index.js")
-
-exports.Buffer = Buffer
-exports.SlowBuffer = SlowBuffer
-exports.INSPECT_MAX_BYTES = 50
-
-/**
- * If `Buffer.TYPED_ARRAY_SUPPORT`:
- *   === true    Use Uint8Array implementation (fastest)
- *   === false   Use Object implementation (most compatible, even IE6)
- *
- * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
- * Opera 11.6+, iOS 4.2+.
- *
- * Due to various browser bugs, sometimes the Object implementation will be used even
- * when the browser supports typed arrays.
- *
- * Note:
- *
- *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
- *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
- *
- *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
- *
- *   - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
- *     incorrect length in some situations.
-
- * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they
- * get the Object implementation, which is slower but behaves correctly.
- */
-Buffer.TYPED_ARRAY_SUPPORT = global.TYPED_ARRAY_SUPPORT !== undefined
-  ? global.TYPED_ARRAY_SUPPORT
-  : typedArraySupport()
-
-/*
- * Export kMaxLength after typed array support is determined.
- */
-exports.kMaxLength = kMaxLength()
-
-function typedArraySupport () {
-  try {
-    var arr = new Uint8Array(1)
-    arr.__proto__ = {__proto__: Uint8Array.prototype, foo: function () { return 42 }}
-    return arr.foo() === 42 && // typed array instances can be augmented
-        typeof arr.subarray === 'function' && // chrome 9-10 lack `subarray`
-        arr.subarray(1, 1).byteLength === 0 // ie10 has broken `subarray`
-  } catch (e) {
-    return false
-  }
-}
-
-function kMaxLength () {
-  return Buffer.TYPED_ARRAY_SUPPORT
-    ? 0x7fffffff
-    : 0x3fffffff
-}
-
-function createBuffer (that, length) {
-  if (kMaxLength() < length) {
-    throw new RangeError('Invalid typed array length')
-  }
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    // Return an augmented `Uint8Array` instance, for best performance
-    that = new Uint8Array(length)
-    that.__proto__ = Buffer.prototype
-  } else {
-    // Fallback: Return an object instance of the Buffer class
-    if (that === null) {
-      that = new Buffer(length)
-    }
-    that.length = length
-  }
-
-  return that
-}
-
-/**
- * The Buffer constructor returns instances of `Uint8Array` that have their
- * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
- * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
- * and the `Uint8Array` methods. Square bracket notation works as expected -- it
- * returns a single octet.
- *
- * The `Uint8Array` prototype remains unmodified.
- */
-
-function Buffer (arg, encodingOrOffset, length) {
-  if (!Buffer.TYPED_ARRAY_SUPPORT && !(this instanceof Buffer)) {
-    return new Buffer(arg, encodingOrOffset, length)
-  }
-
-  // Common case.
-  if (typeof arg === 'number') {
-    if (typeof encodingOrOffset === 'string') {
-      throw new Error(
-        'If encoding is specified then the first argument must be a string'
-      )
-    }
-    return allocUnsafe(this, arg)
-  }
-  return from(this, arg, encodingOrOffset, length)
-}
-
-Buffer.poolSize = 8192 // not used by this implementation
-
-// TODO: Legacy, not needed anymore. Remove in next major version.
-Buffer._augment = function (arr) {
-  arr.__proto__ = Buffer.prototype
-  return arr
-}
-
-function from (that, value, encodingOrOffset, length) {
-  if (typeof value === 'number') {
-    throw new TypeError('"value" argument must not be a number')
-  }
-
-  if (typeof ArrayBuffer !== 'undefined' && value instanceof ArrayBuffer) {
-    return fromArrayBuffer(that, value, encodingOrOffset, length)
-  }
-
-  if (typeof value === 'string') {
-    return fromString(that, value, encodingOrOffset)
-  }
-
-  return fromObject(that, value)
-}
-
-/**
- * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
- * if value is a number.
- * Buffer.from(str[, encoding])
- * Buffer.from(array)
- * Buffer.from(buffer)
- * Buffer.from(arrayBuffer[, byteOffset[, length]])
- **/
-Buffer.from = function (value, encodingOrOffset, length) {
-  return from(null, value, encodingOrOffset, length)
-}
-
-if (Buffer.TYPED_ARRAY_SUPPORT) {
-  Buffer.prototype.__proto__ = Uint8Array.prototype
-  Buffer.__proto__ = Uint8Array
-  if (typeof Symbol !== 'undefined' && Symbol.species &&
-      Buffer[Symbol.species] === Buffer) {
-    // Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
-    Object.defineProperty(Buffer, Symbol.species, {
-      value: null,
-      configurable: true
-    })
-  }
-}
-
-function assertSize (size) {
-  if (typeof size !== 'number') {
-    throw new TypeError('"size" argument must be a number')
-  } else if (size < 0) {
-    throw new RangeError('"size" argument must not be negative')
-  }
-}
-
-function alloc (that, size, fill, encoding) {
-  assertSize(size)
-  if (size <= 0) {
-    return createBuffer(that, size)
-  }
-  if (fill !== undefined) {
-    // Only pay attention to encoding if it's a string. This
-    // prevents accidentally sending in a number that would
-    // be interpretted as a start offset.
-    return typeof encoding === 'string'
-      ? createBuffer(that, size).fill(fill, encoding)
-      : createBuffer(that, size).fill(fill)
-  }
-  return createBuffer(that, size)
-}
-
-/**
- * Creates a new filled Buffer instance.
- * alloc(size[, fill[, encoding]])
- **/
-Buffer.alloc = function (size, fill, encoding) {
-  return alloc(null, size, fill, encoding)
-}
-
-function allocUnsafe (that, size) {
-  assertSize(size)
-  that = createBuffer(that, size < 0 ? 0 : checked(size) | 0)
-  if (!Buffer.TYPED_ARRAY_SUPPORT) {
-    for (var i = 0; i < size; ++i) {
-      that[i] = 0
-    }
-  }
-  return that
-}
-
-/**
- * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
- * */
-Buffer.allocUnsafe = function (size) {
-  return allocUnsafe(null, size)
-}
-/**
- * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
- */
-Buffer.allocUnsafeSlow = function (size) {
-  return allocUnsafe(null, size)
-}
-
-function fromString (that, string, encoding) {
-  if (typeof encoding !== 'string' || encoding === '') {
-    encoding = 'utf8'
-  }
-
-  if (!Buffer.isEncoding(encoding)) {
-    throw new TypeError('"encoding" must be a valid string encoding')
-  }
-
-  var length = byteLength(string, encoding) | 0
-  that = createBuffer(that, length)
-
-  var actual = that.write(string, encoding)
-
-  if (actual !== length) {
-    // Writing a hex string, for example, that contains invalid characters will
-    // cause everything after the first invalid character to be ignored. (e.g.
-    // 'abxxcd' will be treated as 'ab')
-    that = that.slice(0, actual)
-  }
-
-  return that
-}
-
-function fromArrayLike (that, array) {
-  var length = array.length < 0 ? 0 : checked(array.length) | 0
-  that = createBuffer(that, length)
-  for (var i = 0; i < length; i += 1) {
-    that[i] = array[i] & 255
-  }
-  return that
-}
-
-function fromArrayBuffer (that, array, byteOffset, length) {
-  array.byteLength // this throws if `array` is not a valid ArrayBuffer
-
-  if (byteOffset < 0 || array.byteLength < byteOffset) {
-    throw new RangeError('\'offset\' is out of bounds')
-  }
-
-  if (array.byteLength < byteOffset + (length || 0)) {
-    throw new RangeError('\'length\' is out of bounds')
-  }
-
-  if (byteOffset === undefined && length === undefined) {
-    array = new Uint8Array(array)
-  } else if (length === undefined) {
-    array = new Uint8Array(array, byteOffset)
-  } else {
-    array = new Uint8Array(array, byteOffset, length)
-  }
-
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    // Return an augmented `Uint8Array` instance, for best performance
-    that = array
-    that.__proto__ = Buffer.prototype
-  } else {
-    // Fallback: Return an object instance of the Buffer class
-    that = fromArrayLike(that, array)
-  }
-  return that
-}
-
-function fromObject (that, obj) {
-  if (Buffer.isBuffer(obj)) {
-    var len = checked(obj.length) | 0
-    that = createBuffer(that, len)
-
-    if (that.length === 0) {
-      return that
-    }
-
-    obj.copy(that, 0, 0, len)
-    return that
-  }
-
-  if (obj) {
-    if ((typeof ArrayBuffer !== 'undefined' &&
-        obj.buffer instanceof ArrayBuffer) || 'length' in obj) {
-      if (typeof obj.length !== 'number' || isnan(obj.length)) {
-        return createBuffer(that, 0)
-      }
-      return fromArrayLike(that, obj)
-    }
-
-    if (obj.type === 'Buffer' && isArray(obj.data)) {
-      return fromArrayLike(that, obj.data)
-    }
-  }
-
-  throw new TypeError('First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.')
-}
-
-function checked (length) {
-  // Note: cannot use `length < kMaxLength()` here because that fails when
-  // length is NaN (which is otherwise coerced to zero.)
-  if (length >= kMaxLength()) {
-    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
-                         'size: 0x' + kMaxLength().toString(16) + ' bytes')
-  }
-  return length | 0
-}
-
-function SlowBuffer (length) {
-  if (+length != length) { // eslint-disable-line eqeqeq
-    length = 0
-  }
-  return Buffer.alloc(+length)
-}
-
-Buffer.isBuffer = function isBuffer (b) {
-  return !!(b != null && b._isBuffer)
-}
-
-Buffer.compare = function compare (a, b) {
-  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
-    throw new TypeError('Arguments must be Buffers')
-  }
-
-  if (a === b) return 0
-
-  var x = a.length
-  var y = b.length
-
-  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
-    if (a[i] !== b[i]) {
-      x = a[i]
-      y = b[i]
-      break
-    }
-  }
-
-  if (x < y) return -1
-  if (y < x) return 1
-  return 0
-}
-
-Buffer.isEncoding = function isEncoding (encoding) {
-  switch (String(encoding).toLowerCase()) {
-    case 'hex':
-    case 'utf8':
-    case 'utf-8':
-    case 'ascii':
-    case 'latin1':
-    case 'binary':
-    case 'base64':
-    case 'ucs2':
-    case 'ucs-2':
-    case 'utf16le':
-    case 'utf-16le':
-      return true
-    default:
-      return false
-  }
-}
-
-Buffer.concat = function concat (list, length) {
-  if (!isArray(list)) {
-    throw new TypeError('"list" argument must be an Array of Buffers')
-  }
-
-  if (list.length === 0) {
-    return Buffer.alloc(0)
-  }
-
-  var i
-  if (length === undefined) {
-    length = 0
-    for (i = 0; i < list.length; ++i) {
-      length += list[i].length
-    }
-  }
-
-  var buffer = Buffer.allocUnsafe(length)
-  var pos = 0
-  for (i = 0; i < list.length; ++i) {
-    var buf = list[i]
-    if (!Buffer.isBuffer(buf)) {
-      throw new TypeError('"list" argument must be an Array of Buffers')
-    }
-    buf.copy(buffer, pos)
-    pos += buf.length
-  }
-  return buffer
-}
-
-function byteLength (string, encoding) {
-  if (Buffer.isBuffer(string)) {
-    return string.length
-  }
-  if (typeof ArrayBuffer !== 'undefined' && typeof ArrayBuffer.isView === 'function' &&
-      (ArrayBuffer.isView(string) || string instanceof ArrayBuffer)) {
-    return string.byteLength
-  }
-  if (typeof string !== 'string') {
-    string = '' + string
-  }
-
-  var len = string.length
-  if (len === 0) return 0
-
-  // Use a for loop to avoid recursion
-  var loweredCase = false
-  for (;;) {
-    switch (encoding) {
-      case 'ascii':
-      case 'latin1':
-      case 'binary':
-        return len
-      case 'utf8':
-      case 'utf-8':
-      case undefined:
-        return utf8ToBytes(string).length
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return len * 2
-      case 'hex':
-        return len >>> 1
-      case 'base64':
-        return base64ToBytes(string).length
-      default:
-        if (loweredCase) return utf8ToBytes(string).length // assume utf8
-        encoding = ('' + encoding).toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-Buffer.byteLength = byteLength
-
-function slowToString (encoding, start, end) {
-  var loweredCase = false
-
-  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
-  // property of a typed array.
-
-  // This behaves neither like String nor Uint8Array in that we set start/end
-  // to their upper/lower bounds if the value passed is out of range.
-  // undefined is handled specially as per ECMA-262 6th Edition,
-  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
-  if (start === undefined || start < 0) {
-    start = 0
-  }
-  // Return early if start > this.length. Done here to prevent potential uint32
-  // coercion fail below.
-  if (start > this.length) {
-    return ''
-  }
-
-  if (end === undefined || end > this.length) {
-    end = this.length
-  }
-
-  if (end <= 0) {
-    return ''
-  }
-
-  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
-  end >>>= 0
-  start >>>= 0
-
-  if (end <= start) {
-    return ''
-  }
-
-  if (!encoding) encoding = 'utf8'
-
-  while (true) {
-    switch (encoding) {
-      case 'hex':
-        return hexSlice(this, start, end)
-
-      case 'utf8':
-      case 'utf-8':
-        return utf8Slice(this, start, end)
-
-      case 'ascii':
-        return asciiSlice(this, start, end)
-
-      case 'latin1':
-      case 'binary':
-        return latin1Slice(this, start, end)
-
-      case 'base64':
-        return base64Slice(this, start, end)
-
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return utf16leSlice(this, start, end)
-
-      default:
-        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
-        encoding = (encoding + '').toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-
-// The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
-// Buffer instances.
-Buffer.prototype._isBuffer = true
-
-function swap (b, n, m) {
-  var i = b[n]
-  b[n] = b[m]
-  b[m] = i
-}
-
-Buffer.prototype.swap16 = function swap16 () {
-  var len = this.length
-  if (len % 2 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 16-bits')
-  }
-  for (var i = 0; i < len; i += 2) {
-    swap(this, i, i + 1)
-  }
-  return this
-}
-
-Buffer.prototype.swap32 = function swap32 () {
-  var len = this.length
-  if (len % 4 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 32-bits')
-  }
-  for (var i = 0; i < len; i += 4) {
-    swap(this, i, i + 3)
-    swap(this, i + 1, i + 2)
-  }
-  return this
-}
-
-Buffer.prototype.swap64 = function swap64 () {
-  var len = this.length
-  if (len % 8 !== 0) {
-    throw new RangeError('Buffer size must be a multiple of 64-bits')
-  }
-  for (var i = 0; i < len; i += 8) {
-    swap(this, i, i + 7)
-    swap(this, i + 1, i + 6)
-    swap(this, i + 2, i + 5)
-    swap(this, i + 3, i + 4)
-  }
-  return this
-}
-
-Buffer.prototype.toString = function toString () {
-  var length = this.length | 0
-  if (length === 0) return ''
-  if (arguments.length === 0) return utf8Slice(this, 0, length)
-  return slowToString.apply(this, arguments)
-}
-
-Buffer.prototype.equals = function equals (b) {
-  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
-  if (this === b) return true
-  return Buffer.compare(this, b) === 0
-}
-
-Buffer.prototype.inspect = function inspect () {
-  var str = ''
-  var max = exports.INSPECT_MAX_BYTES
-  if (this.length > 0) {
-    str = this.toString('hex', 0, max).match(/.{2}/g).join(' ')
-    if (this.length > max) str += ' ... '
-  }
-  return '<Buffer ' + str + '>'
-}
-
-Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
-  if (!Buffer.isBuffer(target)) {
-    throw new TypeError('Argument must be a Buffer')
-  }
-
-  if (start === undefined) {
-    start = 0
-  }
-  if (end === undefined) {
-    end = target ? target.length : 0
-  }
-  if (thisStart === undefined) {
-    thisStart = 0
-  }
-  if (thisEnd === undefined) {
-    thisEnd = this.length
-  }
-
-  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
-    throw new RangeError('out of range index')
-  }
-
-  if (thisStart >= thisEnd && start >= end) {
-    return 0
-  }
-  if (thisStart >= thisEnd) {
-    return -1
-  }
-  if (start >= end) {
-    return 1
-  }
-
-  start >>>= 0
-  end >>>= 0
-  thisStart >>>= 0
-  thisEnd >>>= 0
-
-  if (this === target) return 0
-
-  var x = thisEnd - thisStart
-  var y = end - start
-  var len = Math.min(x, y)
-
-  var thisCopy = this.slice(thisStart, thisEnd)
-  var targetCopy = target.slice(start, end)
-
-  for (var i = 0; i < len; ++i) {
-    if (thisCopy[i] !== targetCopy[i]) {
-      x = thisCopy[i]
-      y = targetCopy[i]
-      break
-    }
-  }
-
-  if (x < y) return -1
-  if (y < x) return 1
-  return 0
-}
-
-// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
-// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
-//
-// Arguments:
-// - buffer - a Buffer to search
-// - val - a string, Buffer, or number
-// - byteOffset - an index into `buffer`; will be clamped to an int32
-// - encoding - an optional encoding, relevant is val is a string
-// - dir - true for indexOf, false for lastIndexOf
-function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
-  // Empty buffer means no match
-  if (buffer.length === 0) return -1
-
-  // Normalize byteOffset
-  if (typeof byteOffset === 'string') {
-    encoding = byteOffset
-    byteOffset = 0
-  } else if (byteOffset > 0x7fffffff) {
-    byteOffset = 0x7fffffff
-  } else if (byteOffset < -0x80000000) {
-    byteOffset = -0x80000000
-  }
-  byteOffset = +byteOffset  // Coerce to Number.
-  if (isNaN(byteOffset)) {
-    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
-    byteOffset = dir ? 0 : (buffer.length - 1)
-  }
-
-  // Normalize byteOffset: negative offsets start from the end of the buffer
-  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
-  if (byteOffset >= buffer.length) {
-    if (dir) return -1
-    else byteOffset = buffer.length - 1
-  } else if (byteOffset < 0) {
-    if (dir) byteOffset = 0
-    else return -1
-  }
-
-  // Normalize val
-  if (typeof val === 'string') {
-    val = Buffer.from(val, encoding)
-  }
-
-  // Finally, search either indexOf (if dir is true) or lastIndexOf
-  if (Buffer.isBuffer(val)) {
-    // Special case: looking for empty string/buffer always fails
-    if (val.length === 0) {
-      return -1
-    }
-    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
-  } else if (typeof val === 'number') {
-    val = val & 0xFF // Search for a byte value [0-255]
-    if (Buffer.TYPED_ARRAY_SUPPORT &&
-        typeof Uint8Array.prototype.indexOf === 'function') {
-      if (dir) {
-        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
-      } else {
-        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
-      }
-    }
-    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
-  }
-
-  throw new TypeError('val must be string, number or Buffer')
-}
-
-function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
-  var indexSize = 1
-  var arrLength = arr.length
-  var valLength = val.length
-
-  if (encoding !== undefined) {
-    encoding = String(encoding).toLowerCase()
-    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
-        encoding === 'utf16le' || encoding === 'utf-16le') {
-      if (arr.length < 2 || val.length < 2) {
-        return -1
-      }
-      indexSize = 2
-      arrLength /= 2
-      valLength /= 2
-      byteOffset /= 2
-    }
-  }
-
-  function read (buf, i) {
-    if (indexSize === 1) {
-      return buf[i]
-    } else {
-      return buf.readUInt16BE(i * indexSize)
-    }
-  }
-
-  var i
-  if (dir) {
-    var foundIndex = -1
-    for (i = byteOffset; i < arrLength; i++) {
-      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
-        if (foundIndex === -1) foundIndex = i
-        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
-      } else {
-        if (foundIndex !== -1) i -= i - foundIndex
-        foundIndex = -1
-      }
-    }
-  } else {
-    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
-    for (i = byteOffset; i >= 0; i--) {
-      var found = true
-      for (var j = 0; j < valLength; j++) {
-        if (read(arr, i + j) !== read(val, j)) {
-          found = false
-          break
-        }
-      }
-      if (found) return i
-    }
-  }
-
-  return -1
-}
-
-Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
-  return this.indexOf(val, byteOffset, encoding) !== -1
-}
-
-Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
-  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
-}
-
-Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
-  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
-}
-
-function hexWrite (buf, string, offset, length) {
-  offset = Number(offset) || 0
-  var remaining = buf.length - offset
-  if (!length) {
-    length = remaining
-  } else {
-    length = Number(length)
-    if (length > remaining) {
-      length = remaining
-    }
-  }
-
-  // must be an even number of digits
-  var strLen = string.length
-  if (strLen % 2 !== 0) throw new TypeError('Invalid hex string')
-
-  if (length > strLen / 2) {
-    length = strLen / 2
-  }
-  for (var i = 0; i < length; ++i) {
-    var parsed = parseInt(string.substr(i * 2, 2), 16)
-    if (isNaN(parsed)) return i
-    buf[offset + i] = parsed
-  }
-  return i
-}
-
-function utf8Write (buf, string, offset, length) {
-  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
-}
-
-function asciiWrite (buf, string, offset, length) {
-  return blitBuffer(asciiToBytes(string), buf, offset, length)
-}
-
-function latin1Write (buf, string, offset, length) {
-  return asciiWrite(buf, string, offset, length)
-}
-
-function base64Write (buf, string, offset, length) {
-  return blitBuffer(base64ToBytes(string), buf, offset, length)
-}
-
-function ucs2Write (buf, string, offset, length) {
-  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
-}
-
-Buffer.prototype.write = function write (string, offset, length, encoding) {
-  // Buffer#write(string)
-  if (offset === undefined) {
-    encoding = 'utf8'
-    length = this.length
-    offset = 0
-  // Buffer#write(string, encoding)
-  } else if (length === undefined && typeof offset === 'string') {
-    encoding = offset
-    length = this.length
-    offset = 0
-  // Buffer#write(string, offset[, length][, encoding])
-  } else if (isFinite(offset)) {
-    offset = offset | 0
-    if (isFinite(length)) {
-      length = length | 0
-      if (encoding === undefined) encoding = 'utf8'
-    } else {
-      encoding = length
-      length = undefined
-    }
-  // legacy write(string, encoding, offset, length) - remove in v0.13
-  } else {
-    throw new Error(
-      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
-    )
-  }
-
-  var remaining = this.length - offset
-  if (length === undefined || length > remaining) length = remaining
-
-  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
-    throw new RangeError('Attempt to write outside buffer bounds')
-  }
-
-  if (!encoding) encoding = 'utf8'
-
-  var loweredCase = false
-  for (;;) {
-    switch (encoding) {
-      case 'hex':
-        return hexWrite(this, string, offset, length)
-
-      case 'utf8':
-      case 'utf-8':
-        return utf8Write(this, string, offset, length)
-
-      case 'ascii':
-        return asciiWrite(this, string, offset, length)
-
-      case 'latin1':
-      case 'binary':
-        return latin1Write(this, string, offset, length)
-
-      case 'base64':
-        // Warning: maxLength not taken into account in base64Write
-        return base64Write(this, string, offset, length)
-
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return ucs2Write(this, string, offset, length)
-
-      default:
-        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
-        encoding = ('' + encoding).toLowerCase()
-        loweredCase = true
-    }
-  }
-}
-
-Buffer.prototype.toJSON = function toJSON () {
-  return {
-    type: 'Buffer',
-    data: Array.prototype.slice.call(this._arr || this, 0)
-  }
-}
-
-function base64Slice (buf, start, end) {
-  if (start === 0 && end === buf.length) {
-    return base64.fromByteArray(buf)
-  } else {
-    return base64.fromByteArray(buf.slice(start, end))
-  }
-}
-
-function utf8Slice (buf, start, end) {
-  end = Math.min(buf.length, end)
-  var res = []
-
-  var i = start
-  while (i < end) {
-    var firstByte = buf[i]
-    var codePoint = null
-    var bytesPerSequence = (firstByte > 0xEF) ? 4
-      : (firstByte > 0xDF) ? 3
-      : (firstByte > 0xBF) ? 2
-      : 1
-
-    if (i + bytesPerSequence <= end) {
-      var secondByte, thirdByte, fourthByte, tempCodePoint
-
-      switch (bytesPerSequence) {
-        case 1:
-          if (firstByte < 0x80) {
-            codePoint = firstByte
-          }
-          break
-        case 2:
-          secondByte = buf[i + 1]
-          if ((secondByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
-            if (tempCodePoint > 0x7F) {
-              codePoint = tempCodePoint
-            }
-          }
-          break
-        case 3:
-          secondByte = buf[i + 1]
-          thirdByte = buf[i + 2]
-          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
-            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
-              codePoint = tempCodePoint
-            }
-          }
-          break
-        case 4:
-          secondByte = buf[i + 1]
-          thirdByte = buf[i + 2]
-          fourthByte = buf[i + 3]
-          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
-            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
-            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
-              codePoint = tempCodePoint
-            }
-          }
-      }
-    }
-
-    if (codePoint === null) {
-      // we did not generate a valid codePoint so insert a
-      // replacement char (U+FFFD) and advance only 1 byte
-      codePoint = 0xFFFD
-      bytesPerSequence = 1
-    } else if (codePoint > 0xFFFF) {
-      // encode to utf16 (surrogate pair dance)
-      codePoint -= 0x10000
-      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
-      codePoint = 0xDC00 | codePoint & 0x3FF
-    }
-
-    res.push(codePoint)
-    i += bytesPerSequence
-  }
-
-  return decodeCodePointsArray(res)
-}
-
-// Based on http://stackoverflow.com/a/22747272/680742, the browser with
-// the lowest limit is Chrome, with 0x10000 args.
-// We go 1 magnitude less, for safety
-var MAX_ARGUMENTS_LENGTH = 0x1000
-
-function decodeCodePointsArray (codePoints) {
-  var len = codePoints.length
-  if (len <= MAX_ARGUMENTS_LENGTH) {
-    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
-  }
-
-  // Decode in chunks to avoid "call stack size exceeded".
-  var res = ''
-  var i = 0
-  while (i < len) {
-    res += String.fromCharCode.apply(
-      String,
-      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
-    )
-  }
-  return res
-}
-
-function asciiSlice (buf, start, end) {
-  var ret = ''
-  end = Math.min(buf.length, end)
-
-  for (var i = start; i < end; ++i) {
-    ret += String.fromCharCode(buf[i] & 0x7F)
-  }
-  return ret
-}
-
-function latin1Slice (buf, start, end) {
-  var ret = ''
-  end = Math.min(buf.length, end)
-
-  for (var i = start; i < end; ++i) {
-    ret += String.fromCharCode(buf[i])
-  }
-  return ret
-}
-
-function hexSlice (buf, start, end) {
-  var len = buf.length
-
-  if (!start || start < 0) start = 0
-  if (!end || end < 0 || end > len) end = len
-
-  var out = ''
-  for (var i = start; i < end; ++i) {
-    out += toHex(buf[i])
-  }
-  return out
-}
-
-function utf16leSlice (buf, start, end) {
-  var bytes = buf.slice(start, end)
-  var res = ''
-  for (var i = 0; i < bytes.length; i += 2) {
-    res += String.fromCharCode(bytes[i] + bytes[i + 1] * 256)
-  }
-  return res
-}
-
-Buffer.prototype.slice = function slice (start, end) {
-  var len = this.length
-  start = ~~start
-  end = end === undefined ? len : ~~end
-
-  if (start < 0) {
-    start += len
-    if (start < 0) start = 0
-  } else if (start > len) {
-    start = len
-  }
-
-  if (end < 0) {
-    end += len
-    if (end < 0) end = 0
-  } else if (end > len) {
-    end = len
-  }
-
-  if (end < start) end = start
-
-  var newBuf
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    newBuf = this.subarray(start, end)
-    newBuf.__proto__ = Buffer.prototype
-  } else {
-    var sliceLen = end - start
-    newBuf = new Buffer(sliceLen, undefined)
-    for (var i = 0; i < sliceLen; ++i) {
-      newBuf[i] = this[i + start]
-    }
-  }
-
-  return newBuf
-}
-
-/*
- * Need to make sure that buffer isn't trying to write out of bounds.
- */
-function checkOffset (offset, ext, length) {
-  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
-  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
-}
-
-Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var val = this[offset]
-  var mul = 1
-  var i = 0
-  while (++i < byteLength && (mul *= 0x100)) {
-    val += this[offset + i] * mul
-  }
-
-  return val
-}
-
-Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) {
-    checkOffset(offset, byteLength, this.length)
-  }
-
-  var val = this[offset + --byteLength]
-  var mul = 1
-  while (byteLength > 0 && (mul *= 0x100)) {
-    val += this[offset + --byteLength] * mul
-  }
-
-  return val
-}
-
-Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 1, this.length)
-  return this[offset]
-}
-
-Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  return this[offset] | (this[offset + 1] << 8)
-}
-
-Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  return (this[offset] << 8) | this[offset + 1]
-}
-
-Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return ((this[offset]) |
-      (this[offset + 1] << 8) |
-      (this[offset + 2] << 16)) +
-      (this[offset + 3] * 0x1000000)
-}
-
-Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset] * 0x1000000) +
-    ((this[offset + 1] << 16) |
-    (this[offset + 2] << 8) |
-    this[offset + 3])
-}
-
-Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var val = this[offset]
-  var mul = 1
-  var i = 0
-  while (++i < byteLength && (mul *= 0x100)) {
-    val += this[offset + i] * mul
-  }
-  mul *= 0x80
-
-  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
-
-  return val
-}
-
-Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) checkOffset(offset, byteLength, this.length)
-
-  var i = byteLength
-  var mul = 1
-  var val = this[offset + --i]
-  while (i > 0 && (mul *= 0x100)) {
-    val += this[offset + --i] * mul
-  }
-  mul *= 0x80
-
-  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
-
-  return val
-}
-
-Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 1, this.length)
-  if (!(this[offset] & 0x80)) return (this[offset])
-  return ((0xff - this[offset] + 1) * -1)
-}
-
-Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  var val = this[offset] | (this[offset + 1] << 8)
-  return (val & 0x8000) ? val | 0xFFFF0000 : val
-}
-
-Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 2, this.length)
-  var val = this[offset + 1] | (this[offset] << 8)
-  return (val & 0x8000) ? val | 0xFFFF0000 : val
-}
-
-Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset]) |
-    (this[offset + 1] << 8) |
-    (this[offset + 2] << 16) |
-    (this[offset + 3] << 24)
-}
-
-Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-
-  return (this[offset] << 24) |
-    (this[offset + 1] << 16) |
-    (this[offset + 2] << 8) |
-    (this[offset + 3])
-}
-
-Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-  return ieee754.read(this, offset, true, 23, 4)
-}
-
-Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 4, this.length)
-  return ieee754.read(this, offset, false, 23, 4)
-}
-
-Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 8, this.length)
-  return ieee754.read(this, offset, true, 52, 8)
-}
-
-Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
-  if (!noAssert) checkOffset(offset, 8, this.length)
-  return ieee754.read(this, offset, false, 52, 8)
-}
-
-function checkInt (buf, value, offset, ext, max, min) {
-  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
-  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
-  if (offset + ext > buf.length) throw new RangeError('Index out of range')
-}
-
-Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) {
-    var maxBytes = Math.pow(2, 8 * byteLength) - 1
-    checkInt(this, value, offset, byteLength, maxBytes, 0)
-  }
-
-  var mul = 1
-  var i = 0
-  this[offset] = value & 0xFF
-  while (++i < byteLength && (mul *= 0x100)) {
-    this[offset + i] = (value / mul) & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset | 0
-  byteLength = byteLength | 0
-  if (!noAssert) {
-    var maxBytes = Math.pow(2, 8 * byteLength) - 1
-    checkInt(this, value, offset, byteLength, maxBytes, 0)
-  }
-
-  var i = byteLength - 1
-  var mul = 1
-  this[offset + i] = value & 0xFF
-  while (--i >= 0 && (mul *= 0x100)) {
-    this[offset + i] = (value / mul) & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
-  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
-  this[offset] = (value & 0xff)
-  return offset + 1
-}
-
-function objectWriteUInt16 (buf, value, offset, littleEndian) {
-  if (value < 0) value = 0xffff + value + 1
-  for (var i = 0, j = Math.min(buf.length - offset, 2); i < j; ++i) {
-    buf[offset + i] = (value & (0xff << (8 * (littleEndian ? i : 1 - i)))) >>>
-      (littleEndian ? i : 1 - i) * 8
-  }
-}
-
-Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value & 0xff)
-    this[offset + 1] = (value >>> 8)
-  } else {
-    objectWriteUInt16(this, value, offset, true)
-  }
-  return offset + 2
-}
-
-Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value >>> 8)
-    this[offset + 1] = (value & 0xff)
-  } else {
-    objectWriteUInt16(this, value, offset, false)
-  }
-  return offset + 2
-}
-
-function objectWriteUInt32 (buf, value, offset, littleEndian) {
-  if (value < 0) value = 0xffffffff + value + 1
-  for (var i = 0, j = Math.min(buf.length - offset, 4); i < j; ++i) {
-    buf[offset + i] = (value >>> (littleEndian ? i : 3 - i) * 8) & 0xff
-  }
-}
-
-Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset + 3] = (value >>> 24)
-    this[offset + 2] = (value >>> 16)
-    this[offset + 1] = (value >>> 8)
-    this[offset] = (value & 0xff)
-  } else {
-    objectWriteUInt32(this, value, offset, true)
-  }
-  return offset + 4
-}
-
-Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value >>> 24)
-    this[offset + 1] = (value >>> 16)
-    this[offset + 2] = (value >>> 8)
-    this[offset + 3] = (value & 0xff)
-  } else {
-    objectWriteUInt32(this, value, offset, false)
-  }
-  return offset + 4
-}
-
-Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) {
-    var limit = Math.pow(2, 8 * byteLength - 1)
-
-    checkInt(this, value, offset, byteLength, limit - 1, -limit)
-  }
-
-  var i = 0
-  var mul = 1
-  var sub = 0
-  this[offset] = value & 0xFF
-  while (++i < byteLength && (mul *= 0x100)) {
-    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
-      sub = 1
-    }
-    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) {
-    var limit = Math.pow(2, 8 * byteLength - 1)
-
-    checkInt(this, value, offset, byteLength, limit - 1, -limit)
-  }
-
-  var i = byteLength - 1
-  var mul = 1
-  var sub = 0
-  this[offset + i] = value & 0xFF
-  while (--i >= 0 && (mul *= 0x100)) {
-    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
-      sub = 1
-    }
-    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
-  }
-
-  return offset + byteLength
-}
-
-Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
-  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
-  if (value < 0) value = 0xff + value + 1
-  this[offset] = (value & 0xff)
-  return offset + 1
-}
-
-Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value & 0xff)
-    this[offset + 1] = (value >>> 8)
-  } else {
-    objectWriteUInt16(this, value, offset, true)
-  }
-  return offset + 2
-}
-
-Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value >>> 8)
-    this[offset + 1] = (value & 0xff)
-  } else {
-    objectWriteUInt16(this, value, offset, false)
-  }
-  return offset + 2
-}
-
-Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value & 0xff)
-    this[offset + 1] = (value >>> 8)
-    this[offset + 2] = (value >>> 16)
-    this[offset + 3] = (value >>> 24)
-  } else {
-    objectWriteUInt32(this, value, offset, true)
-  }
-  return offset + 4
-}
-
-Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
-  value = +value
-  offset = offset | 0
-  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
-  if (value < 0) value = 0xffffffff + value + 1
-  if (Buffer.TYPED_ARRAY_SUPPORT) {
-    this[offset] = (value >>> 24)
-    this[offset + 1] = (value >>> 16)
-    this[offset + 2] = (value >>> 8)
-    this[offset + 3] = (value & 0xff)
-  } else {
-    objectWriteUInt32(this, value, offset, false)
-  }
-  return offset + 4
-}
-
-function checkIEEE754 (buf, value, offset, ext, max, min) {
-  if (offset + ext > buf.length) throw new RangeError('Index out of range')
-  if (offset < 0) throw new RangeError('Index out of range')
-}
-
-function writeFloat (buf, value, offset, littleEndian, noAssert) {
-  if (!noAssert) {
-    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
-  }
-  ieee754.write(buf, value, offset, littleEndian, 23, 4)
-  return offset + 4
-}
-
-Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
-  return writeFloat(this, value, offset, true, noAssert)
-}
-
-Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
-  return writeFloat(this, value, offset, false, noAssert)
-}
-
-function writeDouble (buf, value, offset, littleEndian, noAssert) {
-  if (!noAssert) {
-    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
-  }
-  ieee754.write(buf, value, offset, littleEndian, 52, 8)
-  return offset + 8
-}
-
-Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
-  return writeDouble(this, value, offset, true, noAssert)
-}
-
-Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
-  return writeDouble(this, value, offset, false, noAssert)
-}
-
-// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
-Buffer.prototype.copy = function copy (target, targetStart, start, end) {
-  if (!start) start = 0
-  if (!end && end !== 0) end = this.length
-  if (targetStart >= target.length) targetStart = target.length
-  if (!targetStart) targetStart = 0
-  if (end > 0 && end < start) end = start
-
-  // Copy 0 bytes; we're done
-  if (end === start) return 0
-  if (target.length === 0 || this.length === 0) return 0
-
-  // Fatal error conditions
-  if (targetStart < 0) {
-    throw new RangeError('targetStart out of bounds')
-  }
-  if (start < 0 || start >= this.length) throw new RangeError('sourceStart out of bounds')
-  if (end < 0) throw new RangeError('sourceEnd out of bounds')
-
-  // Are we oob?
-  if (end > this.length) end = this.length
-  if (target.length - targetStart < end - start) {
-    end = target.length - targetStart + start
-  }
-
-  var len = end - start
-  var i
-
-  if (this === target && start < targetStart && targetStart < end) {
-    // descending copy from end
-    for (i = len - 1; i >= 0; --i) {
-      target[i + targetStart] = this[i + start]
-    }
-  } else if (len < 1000 || !Buffer.TYPED_ARRAY_SUPPORT) {
-    // ascending copy from start
-    for (i = 0; i < len; ++i) {
-      target[i + targetStart] = this[i + start]
-    }
-  } else {
-    Uint8Array.prototype.set.call(
-      target,
-      this.subarray(start, start + len),
-      targetStart
-    )
-  }
-
-  return len
-}
-
-// Usage:
-//    buffer.fill(number[, offset[, end]])
-//    buffer.fill(buffer[, offset[, end]])
-//    buffer.fill(string[, offset[, end]][, encoding])
-Buffer.prototype.fill = function fill (val, start, end, encoding) {
-  // Handle string cases:
-  if (typeof val === 'string') {
-    if (typeof start === 'string') {
-      encoding = start
-      start = 0
-      end = this.length
-    } else if (typeof end === 'string') {
-      encoding = end
-      end = this.length
-    }
-    if (val.length === 1) {
-      var code = val.charCodeAt(0)
-      if (code < 256) {
-        val = code
-      }
-    }
-    if (encoding !== undefined && typeof encoding !== 'string') {
-      throw new TypeError('encoding must be a string')
-    }
-    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
-      throw new TypeError('Unknown encoding: ' + encoding)
-    }
-  } else if (typeof val === 'number') {
-    val = val & 255
-  }
-
-  // Invalid ranges are not set to a default, so can range check early.
-  if (start < 0 || this.length < start || this.length < end) {
-    throw new RangeError('Out of range index')
-  }
-
-  if (end <= start) {
-    return this
-  }
-
-  start = start >>> 0
-  end = end === undefined ? this.length : end >>> 0
-
-  if (!val) val = 0
-
-  var i
-  if (typeof val === 'number') {
-    for (i = start; i < end; ++i) {
-      this[i] = val
-    }
-  } else {
-    var bytes = Buffer.isBuffer(val)
-      ? val
-      : utf8ToBytes(new Buffer(val, encoding).toString())
-    var len = bytes.length
-    for (i = 0; i < end - start; ++i) {
-      this[i + start] = bytes[i % len]
-    }
-  }
-
-  return this
-}
-
-// HELPER FUNCTIONS
-// ================
-
-var INVALID_BASE64_RE = /[^+\/0-9A-Za-z-_]/g
-
-function base64clean (str) {
-  // Node strips out invalid characters like \n and \t from the string, base64-js does not
-  str = stringtrim(str).replace(INVALID_BASE64_RE, '')
-  // Node converts strings with length < 2 to ''
-  if (str.length < 2) return ''
-  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
-  while (str.length % 4 !== 0) {
-    str = str + '='
-  }
-  return str
-}
-
-function stringtrim (str) {
-  if (str.trim) return str.trim()
-  return str.replace(/^\s+|\s+$/g, '')
-}
-
-function toHex (n) {
-  if (n < 16) return '0' + n.toString(16)
-  return n.toString(16)
-}
-
-function utf8ToBytes (string, units) {
-  units = units || Infinity
-  var codePoint
-  var length = string.length
-  var leadSurrogate = null
-  var bytes = []
-
-  for (var i = 0; i < length; ++i) {
-    codePoint = string.charCodeAt(i)
-
-    // is surrogate component
-    if (codePoint > 0xD7FF && codePoint < 0xE000) {
-      // last char was a lead
-      if (!leadSurrogate) {
-        // no lead yet
-        if (codePoint > 0xDBFF) {
-          // unexpected trail
-          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-          continue
-        } else if (i + 1 === length) {
-          // unpaired lead
-          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-          continue
-        }
-
-        // valid lead
-        leadSurrogate = codePoint
-
-        continue
-      }
-
-      // 2 leads in a row
-      if (codePoint < 0xDC00) {
-        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-        leadSurrogate = codePoint
-        continue
-      }
-
-      // valid surrogate pair
-      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
-    } else if (leadSurrogate) {
-      // valid bmp char, but last char was a lead
-      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
-    }
-
-    leadSurrogate = null
-
-    // encode utf8
-    if (codePoint < 0x80) {
-      if ((units -= 1) < 0) break
-      bytes.push(codePoint)
-    } else if (codePoint < 0x800) {
-      if ((units -= 2) < 0) break
-      bytes.push(
-        codePoint >> 0x6 | 0xC0,
-        codePoint & 0x3F | 0x80
-      )
-    } else if (codePoint < 0x10000) {
-      if ((units -= 3) < 0) break
-      bytes.push(
-        codePoint >> 0xC | 0xE0,
-        codePoint >> 0x6 & 0x3F | 0x80,
-        codePoint & 0x3F | 0x80
-      )
-    } else if (codePoint < 0x110000) {
-      if ((units -= 4) < 0) break
-      bytes.push(
-        codePoint >> 0x12 | 0xF0,
-        codePoint >> 0xC & 0x3F | 0x80,
-        codePoint >> 0x6 & 0x3F | 0x80,
-        codePoint & 0x3F | 0x80
-      )
-    } else {
-      throw new Error('Invalid code point')
-    }
-  }
-
-  return bytes
-}
-
-function asciiToBytes (str) {
-  var byteArray = []
-  for (var i = 0; i < str.length; ++i) {
-    // Node's code seems to be doing this and not & 0x7F..
-    byteArray.push(str.charCodeAt(i) & 0xFF)
-  }
-  return byteArray
-}
-
-function utf16leToBytes (str, units) {
-  var c, hi, lo
-  var byteArray = []
-  for (var i = 0; i < str.length; ++i) {
-    if ((units -= 2) < 0) break
-
-    c = str.charCodeAt(i)
-    hi = c >> 8
-    lo = c % 256
-    byteArray.push(lo)
-    byteArray.push(hi)
-  }
-
-  return byteArray
-}
-
-function base64ToBytes (str) {
-  return base64.toByteArray(base64clean(str))
-}
-
-function blitBuffer (src, dst, offset, length) {
-  for (var i = 0; i < length; ++i) {
-    if ((i + offset >= dst.length) || (i >= src.length)) break
-    dst[i + offset] = src[i]
-  }
-  return i
-}
-
-function isnan (val) {
-  return val !== val // eslint-disable-line no-self-compare
-}
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../../node-libs-browser/node_modules/buffer/index.js */ "./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer))
 
 /***/ }),
 
@@ -10256,7 +8646,7 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.1' };
+var core = module.exports = { version: '2.6.3' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -11681,7 +10071,7 @@ var store = global[SHARED] || (global[SHARED] = {});
 })('versions', []).push({
   version: core.version,
   mode: __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js") ? 'pure' : 'global',
-  copyright: '© 2018 Denis Pushkarev (zloirock.ru)'
+  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
 });
 
 
@@ -22510,7 +20900,7 @@ function index (resultFn, isEqual) {
   var calledOnce = false;
 
   var isNewArgEqualToLast = function isNewArgEqualToLast(newArg, index) {
-    return isEqual(newArg, lastArgs[index], index);
+    return isEqual(newArg, lastArgs[index]);
   };
 
   var result = function result() {
@@ -22698,6 +21088,41 @@ var __extends = (undefined && undefined.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 
 
 
@@ -22738,24 +21163,40 @@ var StitchAuthImpl = (function (_super) {
         return _super.prototype.loginWithCredentialInternal.call(this, credential);
     };
     StitchAuthImpl.prototype.loginWithRedirect = function (credential) {
+        var _this = this;
         var _a = this.prepareRedirect(credential), redirectUrl = _a.redirectUrl, state = _a.state;
-        this.jsdomWindow.location.replace(this.browserAuthRoutes.getAuthProviderRedirectRoute(credential, redirectUrl, state, this.deviceInfo));
+        this.requestClient.getBaseURL().then(function (baseUrl) {
+            _this.jsdomWindow.location.replace(baseUrl +
+                _this.browserAuthRoutes.getAuthProviderRedirectRoute(credential, redirectUrl, state, _this.deviceInfo));
+        });
     };
     StitchAuthImpl.prototype.linkWithRedirectInternal = function (user, credential) {
-        var _this = this;
-        if (this.user !== undefined && user.id !== this.user.id) {
-            return Promise.reject(new mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_2__["StitchClientError"](mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_2__["StitchClientErrorCode"].UserNoLongerValid));
-        }
-        var _a = this.prepareRedirect(credential), redirectUrl = _a.redirectUrl, state = _a.state;
-        var link = this.browserAuthRoutes.getAuthProviderLinkRedirectRoute(credential, redirectUrl, state, this.deviceInfo);
-        return (StitchAuthImpl.injectedFetch ? StitchAuthImpl.injectedFetch : fetch)(new Request(link, {
-            credentials: "include",
-            headers: {
-                Authorization: "Bearer " + this.authInfo.accessToken
-            },
-            mode: 'cors'
-        })).then(function (response) {
-            _this.jsdomWindow.location.replace(response.headers.get("X-Stitch-Location"));
+        return __awaiter(this, void 0, void 0, function () {
+            var _a, redirectUrl, state, baseUrl, link;
+            var _this = this;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        if (this.user !== undefined && user.id !== this.user.id) {
+                            return [2, Promise.reject(new mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_2__["StitchClientError"](mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_2__["StitchClientErrorCode"].UserNoLongerValid))];
+                        }
+                        _a = this.prepareRedirect(credential), redirectUrl = _a.redirectUrl, state = _a.state;
+                        return [4, this.requestClient.getBaseURL()];
+                    case 1:
+                        baseUrl = _b.sent();
+                        link = baseUrl +
+                            this.browserAuthRoutes.getAuthProviderLinkRedirectRoute(credential, redirectUrl, state, this.deviceInfo);
+                        return [2, (StitchAuthImpl.injectedFetch ? StitchAuthImpl.injectedFetch : fetch)(new Request(link, {
+                                credentials: "include",
+                                headers: {
+                                    Authorization: "Bearer " + this.authInfo.accessToken
+                                },
+                                mode: 'cors'
+                            })).then(function (response) {
+                                _this.jsdomWindow.location.replace(response.headers.get("X-Stitch-Location"));
+                            })];
+                }
+            });
         });
     };
     StitchAuthImpl.prototype.hasRedirectResult = function () {
@@ -23003,16 +21444,14 @@ var __extends = (undefined && undefined.__extends) || (function () {
 
 var StitchBrowserAppAuthRoutes = (function (_super) {
     __extends(StitchBrowserAppAuthRoutes, _super);
-    function StitchBrowserAppAuthRoutes(clientAppId, baseUrl) {
-        var _this = _super.call(this, clientAppId) || this;
-        _this.baseUrl = baseUrl;
-        return _this;
+    function StitchBrowserAppAuthRoutes(clientAppId) {
+        return _super.call(this, clientAppId) || this;
     }
     StitchBrowserAppAuthRoutes.prototype.getAuthProviderRedirectRoute = function (credential, redirectUrl, state, deviceInfo) {
-        return "" + this.baseUrl + this.getAuthProviderLoginRoute(credential.providerName) + "?redirect=" + encodeURI(redirectUrl) + "&state=" + state + "&device=" + this.uriEncodeObject(deviceInfo);
+        return this.getAuthProviderLoginRoute(credential.providerName) + "?redirect=" + encodeURI(redirectUrl) + "&state=" + state + "&device=" + this.uriEncodeObject(deviceInfo);
     };
     StitchBrowserAppAuthRoutes.prototype.getAuthProviderLinkRedirectRoute = function (credential, redirectUrl, state, deviceInfo) {
-        return "" + this.baseUrl + this.getAuthProviderLoginRoute(credential.providerName) + "?redirect=" + encodeURI(redirectUrl) + "&state=" + state + "&device=" + this.uriEncodeObject(deviceInfo) + "&link=true&providerRedirectHeader=true";
+        return this.getAuthProviderLoginRoute(credential.providerName) + "?redirect=" + encodeURI(redirectUrl) + "&state=" + state + "&device=" + this.uriEncodeObject(deviceInfo) + "&link=true&providerRedirectHeader=true";
     };
     StitchBrowserAppAuthRoutes.prototype.uriEncodeObject = function (obj) {
         return encodeURIComponent(Object(mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_0__["base64Encode"])(JSON.stringify(obj)));
@@ -23049,9 +21488,9 @@ var __extends = (undefined && undefined.__extends) || (function () {
 
 var StitchBrowserAppRoutes = (function (_super) {
     __extends(StitchBrowserAppRoutes, _super);
-    function StitchBrowserAppRoutes(clientAppId, baseUrl) {
+    function StitchBrowserAppRoutes(clientAppId) {
         var _this = _super.call(this, clientAppId) || this;
-        _this.authRoutes = new _StitchBrowserAppAuthRoutes__WEBPACK_IMPORTED_MODULE_1__["default"](clientAppId, baseUrl);
+        _this.authRoutes = new _StitchBrowserAppAuthRoutes__WEBPACK_IMPORTED_MODULE_1__["default"](clientAppId);
         return _this;
     }
     return StitchBrowserAppRoutes;
@@ -23385,7 +21824,7 @@ __webpack_require__.r(__webpack_exports__);
 var StitchAppClientImpl = (function () {
     function StitchAppClientImpl(clientAppId, config) {
         this.info = new mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_0__["StitchAppClientInfo"](clientAppId, config.dataDirectory, config.localAppName, config.localAppVersion);
-        this.routes = new _auth_internal_StitchBrowserAppRoutes__WEBPACK_IMPORTED_MODULE_2__["default"](this.info.clientAppId, config.baseUrl);
+        this.routes = new _auth_internal_StitchBrowserAppRoutes__WEBPACK_IMPORTED_MODULE_2__["default"](this.info.clientAppId);
         var requestClient = new mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_0__["StitchAppRequestClient"](clientAppId, config.baseUrl, config.transport);
         this.auth = new _auth_internal_StitchAuthImpl__WEBPACK_IMPORTED_MODULE_1__["default"](requestClient, this.routes.authRoutes, config.storage, this.info);
         this.coreClient = new mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_0__["CoreStitchAppClient"](this.auth, this.routes);
@@ -23457,7 +21896,7 @@ var LocalStorage = (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return version; });
-var version = "4.1.2";
+var version = "4.1.3";
 
 //# sourceMappingURL=Version.js.map
 
@@ -23823,12 +22262,14 @@ var ReaderEventStream = (function (_super) {
 /*!********************************************************************!*\
   !*** ./node_modules/mongodb-stitch-browser-core/dist/esm/index.js ***!
   \********************************************************************/
-/*! exports provided: AnonymousAuthProvider, AnonymousCredential, CustomAuthProvider, CustomCredential, FacebookAuthProvider, FacebookCredential, GoogleAuthProvider, GoogleCredential, ServerApiKeyAuthProvider, ServerApiKeyCredential, UserApiKeyAuthProvider, UserApiKey, UserApiKeyCredential, UserPasswordAuthProvider, UserPasswordCredential, StitchAppClientInfo, StitchAppClientConfiguration, StitchClientError, StitchClientErrorCode, StitchRequestError, StitchRequestErrorCode, StitchServiceError, StitchServiceErrorCode, StitchUserIdentity, MemoryStorage, UserType, Stitch, UserApiKeyAuthProviderClient, UserPasswordAuthProviderClient, FacebookRedirectCredential, GoogleRedirectCredential */
+/*! exports provided: BSON, AnonymousAuthProvider, AnonymousCredential, CustomAuthProvider, CustomCredential, FacebookAuthProvider, FacebookCredential, GoogleAuthProvider, GoogleCredential, ServerApiKeyAuthProvider, ServerApiKeyCredential, UserApiKeyAuthProvider, UserApiKey, UserApiKeyCredential, UserPasswordAuthProvider, UserPasswordCredential, StitchAppClientInfo, StitchAppClientConfiguration, StitchClientError, StitchClientErrorCode, StitchRequestError, StitchRequestErrorCode, StitchServiceError, StitchServiceErrorCode, StitchUserIdentity, MemoryStorage, UserType, Stitch, UserApiKeyAuthProviderClient, UserPasswordAuthProviderClient, FacebookRedirectCredential, GoogleRedirectCredential */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongodb-stitch-core-sdk */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BSON", function() { return mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_0__["BSON"]; });
+
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AnonymousAuthProvider", function() { return mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_0__["AnonymousAuthProvider"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AnonymousCredential", function() { return mongodb_stitch_core_sdk__WEBPACK_IMPORTED_MODULE_0__["AnonymousCredential"]; });
@@ -23937,12 +22378,14 @@ var StitchServiceClientImpl = (function () {
 /*!*******************************************************************!*\
   !*** ./node_modules/mongodb-stitch-browser-sdk/dist/esm/index.js ***!
   \*******************************************************************/
-/*! exports provided: AnonymousAuthProvider, AnonymousCredential, CustomAuthProvider, CustomCredential, FacebookAuthProvider, FacebookCredential, GoogleAuthProvider, GoogleCredential, ServerApiKeyAuthProvider, ServerApiKeyCredential, UserApiKeyAuthProvider, UserApiKey, UserApiKeyCredential, UserPasswordAuthProvider, UserPasswordCredential, StitchAppClientInfo, StitchAppClientConfiguration, StitchClientError, StitchClientErrorCode, StitchRequestError, StitchRequestErrorCode, StitchServiceError, StitchServiceErrorCode, StitchUserIdentity, MemoryStorage, UserType, Stitch, UserApiKeyAuthProviderClient, UserPasswordAuthProviderClient, FacebookRedirectCredential, GoogleRedirectCredential, RemoteInsertManyResult, RemoteMongoReadOperation, RemoteMongoClient */
+/*! exports provided: BSON, AnonymousAuthProvider, AnonymousCredential, CustomAuthProvider, CustomCredential, FacebookAuthProvider, FacebookCredential, GoogleAuthProvider, GoogleCredential, ServerApiKeyAuthProvider, ServerApiKeyCredential, UserApiKeyAuthProvider, UserApiKey, UserApiKeyCredential, UserPasswordAuthProvider, UserPasswordCredential, StitchAppClientInfo, StitchAppClientConfiguration, StitchClientError, StitchClientErrorCode, StitchRequestError, StitchRequestErrorCode, StitchServiceError, StitchServiceErrorCode, StitchUserIdentity, MemoryStorage, UserType, Stitch, UserApiKeyAuthProviderClient, UserPasswordAuthProviderClient, FacebookRedirectCredential, GoogleRedirectCredential, RemoteInsertManyResult, RemoteMongoReadOperation, RemoteMongoClient */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var mongodb_stitch_browser_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mongodb-stitch-browser-core */ "./node_modules/mongodb-stitch-browser-core/dist/esm/index.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BSON", function() { return mongodb_stitch_browser_core__WEBPACK_IMPORTED_MODULE_0__["BSON"]; });
+
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AnonymousAuthProvider", function() { return mongodb_stitch_browser_core__WEBPACK_IMPORTED_MODULE_0__["AnonymousAuthProvider"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AnonymousCredential", function() { return mongodb_stitch_browser_core__WEBPACK_IMPORTED_MODULE_0__["AnonymousCredential"]; });
@@ -26633,187 +25076,191 @@ var UserPasswordCredential = (function () {
 /*!****************************************************************!*\
   !*** ./node_modules/mongodb-stitch-core-sdk/dist/esm/index.js ***!
   \****************************************************************/
-/*! exports provided: AuthInfo, StitchAuthResponseCredential, AnonymousAuthProvider, AnonymousCredential, ApiStitchUserIdentity, CustomAuthProvider, CustomCredential, FacebookAuthProvider, FacebookCredential, GoogleAuthProvider, GoogleCredential, ServerApiKeyAuthProvider, ServerApiKeyCredential, UserApiKeyAuthProvider, UserApiKey, UserApiKeyCredential, StitchAuthCredential, StitchError, StitchClientError, StitchClientErrorCode, CoreUserApiKeyAuthProviderClient, UserPasswordAuthProvider, UserPasswordCredential, CoreUserPassAuthProviderClient, CoreStitchAppClient, CoreStitchAuth, CoreStitchUserImpl, DeviceFields, BasicRequest, ContentTypes, Event, BaseEventStream, StitchEvent, FetchTransport, Headers, Stream, StitchAppClientInfo, StitchAppClientConfiguration, StitchAppRequestClient, StitchAppRoutes, StitchAuthRequest, StitchRequestClient, StitchRequestError, StitchRequestErrorCode, StitchServiceRoutes, StitchServiceError, StitchServiceErrorCode, StitchUserProfileImpl, CoreStitchServiceClientImpl, StitchUserIdentity, StitchAppAuthRoutes, Method, Response, MemoryStorage, handleRequestError, UserType, Assertions, base64Decode, base64Encode, utf8Slice */
+/*! exports provided: BSON, AuthInfo, StitchAuthResponseCredential, AnonymousAuthProvider, AnonymousCredential, ApiStitchUserIdentity, CustomAuthProvider, CustomCredential, FacebookAuthProvider, FacebookCredential, GoogleAuthProvider, GoogleCredential, ServerApiKeyAuthProvider, ServerApiKeyCredential, UserApiKeyAuthProvider, UserApiKey, UserApiKeyCredential, StitchAuthCredential, StitchError, StitchClientError, StitchClientErrorCode, CoreUserApiKeyAuthProviderClient, UserPasswordAuthProvider, UserPasswordCredential, CoreUserPassAuthProviderClient, CoreStitchAppClient, CoreStitchAuth, CoreStitchUserImpl, DeviceFields, BasicRequest, ContentTypes, Event, BaseEventStream, StitchEvent, FetchTransport, Headers, Stream, StitchAppClientInfo, StitchAppClientConfiguration, StitchAppRequestClient, StitchAppRoutes, StitchAuthRequest, StitchRequestClient, StitchRequestError, StitchRequestErrorCode, StitchServiceRoutes, StitchServiceError, StitchServiceErrorCode, StitchUserProfileImpl, CoreStitchServiceClientImpl, StitchUserIdentity, StitchAppAuthRoutes, Method, Response, MemoryStorage, handleRequestError, UserType, Assertions, base64Decode, base64Encode, utf8Slice */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _auth_internal_AuthInfo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./auth/internal/AuthInfo */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/AuthInfo.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AuthInfo", function() { return _auth_internal_AuthInfo__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+/* harmony import */ var bson__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bson */ "./node_modules/bson/dist/bson.browser.esm.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BSON", function() { return bson__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
-/* harmony import */ var _auth_internal_CoreStitchAuth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./auth/internal/CoreStitchAuth */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/CoreStitchAuth.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreStitchAuth", function() { return _auth_internal_CoreStitchAuth__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+/* harmony import */ var _auth_internal_AuthInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./auth/internal/AuthInfo */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/AuthInfo.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AuthInfo", function() { return _auth_internal_AuthInfo__WEBPACK_IMPORTED_MODULE_1__["default"]; });
 
-/* harmony import */ var _auth_internal_CoreStitchUserImpl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth/internal/CoreStitchUserImpl */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/CoreStitchUserImpl.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreStitchUserImpl", function() { return _auth_internal_CoreStitchUserImpl__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+/* harmony import */ var _auth_internal_CoreStitchAuth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth/internal/CoreStitchAuth */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/CoreStitchAuth.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreStitchAuth", function() { return _auth_internal_CoreStitchAuth__WEBPACK_IMPORTED_MODULE_2__["default"]; });
 
-/* harmony import */ var _auth_internal_DeviceFields__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./auth/internal/DeviceFields */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/DeviceFields.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "DeviceFields", function() { return _auth_internal_DeviceFields__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+/* harmony import */ var _auth_internal_CoreStitchUserImpl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./auth/internal/CoreStitchUserImpl */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/CoreStitchUserImpl.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreStitchUserImpl", function() { return _auth_internal_CoreStitchUserImpl__WEBPACK_IMPORTED_MODULE_3__["default"]; });
 
-/* harmony import */ var _auth_internal_models_ApiStitchUserIdentity__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./auth/internal/models/ApiStitchUserIdentity */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/models/ApiStitchUserIdentity.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ApiStitchUserIdentity", function() { return _auth_internal_models_ApiStitchUserIdentity__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+/* harmony import */ var _auth_internal_DeviceFields__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./auth/internal/DeviceFields */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/DeviceFields.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "DeviceFields", function() { return _auth_internal_DeviceFields__WEBPACK_IMPORTED_MODULE_4__["default"]; });
 
-/* harmony import */ var _auth_internal_StitchUserProfileImpl__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./auth/internal/StitchUserProfileImpl */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/StitchUserProfileImpl.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchUserProfileImpl", function() { return _auth_internal_StitchUserProfileImpl__WEBPACK_IMPORTED_MODULE_5__["default"]; });
+/* harmony import */ var _auth_internal_models_ApiStitchUserIdentity__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./auth/internal/models/ApiStitchUserIdentity */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/models/ApiStitchUserIdentity.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ApiStitchUserIdentity", function() { return _auth_internal_models_ApiStitchUserIdentity__WEBPACK_IMPORTED_MODULE_5__["default"]; });
 
-/* harmony import */ var _auth_providers_anonymous_AnonymousAuthProvider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./auth/providers/anonymous/AnonymousAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/anonymous/AnonymousAuthProvider.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AnonymousAuthProvider", function() { return _auth_providers_anonymous_AnonymousAuthProvider__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+/* harmony import */ var _auth_internal_StitchUserProfileImpl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./auth/internal/StitchUserProfileImpl */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/internal/StitchUserProfileImpl.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchUserProfileImpl", function() { return _auth_internal_StitchUserProfileImpl__WEBPACK_IMPORTED_MODULE_6__["default"]; });
 
-/* harmony import */ var _auth_providers_anonymous_AnonymousCredential__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth/providers/anonymous/AnonymousCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/anonymous/AnonymousCredential.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AnonymousCredential", function() { return _auth_providers_anonymous_AnonymousCredential__WEBPACK_IMPORTED_MODULE_7__["default"]; });
+/* harmony import */ var _auth_providers_anonymous_AnonymousAuthProvider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./auth/providers/anonymous/AnonymousAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/anonymous/AnonymousAuthProvider.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AnonymousAuthProvider", function() { return _auth_providers_anonymous_AnonymousAuthProvider__WEBPACK_IMPORTED_MODULE_7__["default"]; });
 
-/* harmony import */ var _auth_providers_custom_CustomAuthProvider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./auth/providers/custom/CustomAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/custom/CustomAuthProvider.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CustomAuthProvider", function() { return _auth_providers_custom_CustomAuthProvider__WEBPACK_IMPORTED_MODULE_8__["default"]; });
+/* harmony import */ var _auth_providers_anonymous_AnonymousCredential__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./auth/providers/anonymous/AnonymousCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/anonymous/AnonymousCredential.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AnonymousCredential", function() { return _auth_providers_anonymous_AnonymousCredential__WEBPACK_IMPORTED_MODULE_8__["default"]; });
 
-/* harmony import */ var _auth_providers_custom_CustomCredential__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./auth/providers/custom/CustomCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/custom/CustomCredential.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CustomCredential", function() { return _auth_providers_custom_CustomCredential__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+/* harmony import */ var _auth_providers_custom_CustomAuthProvider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./auth/providers/custom/CustomAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/custom/CustomAuthProvider.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CustomAuthProvider", function() { return _auth_providers_custom_CustomAuthProvider__WEBPACK_IMPORTED_MODULE_9__["default"]; });
 
-/* harmony import */ var _auth_providers_facebook_FacebookAuthProvider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./auth/providers/facebook/FacebookAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/facebook/FacebookAuthProvider.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FacebookAuthProvider", function() { return _auth_providers_facebook_FacebookAuthProvider__WEBPACK_IMPORTED_MODULE_10__["default"]; });
+/* harmony import */ var _auth_providers_custom_CustomCredential__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./auth/providers/custom/CustomCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/custom/CustomCredential.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CustomCredential", function() { return _auth_providers_custom_CustomCredential__WEBPACK_IMPORTED_MODULE_10__["default"]; });
 
-/* harmony import */ var _auth_providers_facebook_FacebookCredential__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./auth/providers/facebook/FacebookCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/facebook/FacebookCredential.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FacebookCredential", function() { return _auth_providers_facebook_FacebookCredential__WEBPACK_IMPORTED_MODULE_11__["default"]; });
+/* harmony import */ var _auth_providers_facebook_FacebookAuthProvider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./auth/providers/facebook/FacebookAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/facebook/FacebookAuthProvider.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FacebookAuthProvider", function() { return _auth_providers_facebook_FacebookAuthProvider__WEBPACK_IMPORTED_MODULE_11__["default"]; });
 
-/* harmony import */ var _auth_providers_google_GoogleAuthProvider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./auth/providers/google/GoogleAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/google/GoogleAuthProvider.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GoogleAuthProvider", function() { return _auth_providers_google_GoogleAuthProvider__WEBPACK_IMPORTED_MODULE_12__["default"]; });
+/* harmony import */ var _auth_providers_facebook_FacebookCredential__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./auth/providers/facebook/FacebookCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/facebook/FacebookCredential.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FacebookCredential", function() { return _auth_providers_facebook_FacebookCredential__WEBPACK_IMPORTED_MODULE_12__["default"]; });
 
-/* harmony import */ var _auth_providers_google_GoogleCredential__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./auth/providers/google/GoogleCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/google/GoogleCredential.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GoogleCredential", function() { return _auth_providers_google_GoogleCredential__WEBPACK_IMPORTED_MODULE_13__["default"]; });
+/* harmony import */ var _auth_providers_google_GoogleAuthProvider__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./auth/providers/google/GoogleAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/google/GoogleAuthProvider.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GoogleAuthProvider", function() { return _auth_providers_google_GoogleAuthProvider__WEBPACK_IMPORTED_MODULE_13__["default"]; });
 
-/* harmony import */ var _auth_providers_internal_StitchAuthResponseCredential__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./auth/providers/internal/StitchAuthResponseCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/internal/StitchAuthResponseCredential.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAuthCredential", function() { return _auth_providers_internal_StitchAuthResponseCredential__WEBPACK_IMPORTED_MODULE_14__["default"]; });
+/* harmony import */ var _auth_providers_google_GoogleCredential__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./auth/providers/google/GoogleCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/google/GoogleCredential.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GoogleCredential", function() { return _auth_providers_google_GoogleCredential__WEBPACK_IMPORTED_MODULE_14__["default"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAuthResponseCredential", function() { return _auth_providers_internal_StitchAuthResponseCredential__WEBPACK_IMPORTED_MODULE_14__["default"]; });
+/* harmony import */ var _auth_providers_internal_StitchAuthResponseCredential__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./auth/providers/internal/StitchAuthResponseCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/internal/StitchAuthResponseCredential.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAuthCredential", function() { return _auth_providers_internal_StitchAuthResponseCredential__WEBPACK_IMPORTED_MODULE_15__["default"]; });
 
-/* harmony import */ var _auth_providers_serverapikey_ServerApiKeyAuthProvider__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./auth/providers/serverapikey/ServerApiKeyAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/serverapikey/ServerApiKeyAuthProvider.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ServerApiKeyAuthProvider", function() { return _auth_providers_serverapikey_ServerApiKeyAuthProvider__WEBPACK_IMPORTED_MODULE_15__["default"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAuthResponseCredential", function() { return _auth_providers_internal_StitchAuthResponseCredential__WEBPACK_IMPORTED_MODULE_15__["default"]; });
 
-/* harmony import */ var _auth_providers_serverapikey_ServerApiKeyCredential__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./auth/providers/serverapikey/ServerApiKeyCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/serverapikey/ServerApiKeyCredential.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ServerApiKeyCredential", function() { return _auth_providers_serverapikey_ServerApiKeyCredential__WEBPACK_IMPORTED_MODULE_16__["default"]; });
+/* harmony import */ var _auth_providers_serverapikey_ServerApiKeyAuthProvider__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./auth/providers/serverapikey/ServerApiKeyAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/serverapikey/ServerApiKeyAuthProvider.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ServerApiKeyAuthProvider", function() { return _auth_providers_serverapikey_ServerApiKeyAuthProvider__WEBPACK_IMPORTED_MODULE_16__["default"]; });
 
-/* harmony import */ var _auth_providers_userapikey_CoreUserApiKeyAuthProviderClient__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./auth/providers/userapikey/CoreUserApiKeyAuthProviderClient */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userapikey/CoreUserApiKeyAuthProviderClient.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreUserApiKeyAuthProviderClient", function() { return _auth_providers_userapikey_CoreUserApiKeyAuthProviderClient__WEBPACK_IMPORTED_MODULE_17__["default"]; });
+/* harmony import */ var _auth_providers_serverapikey_ServerApiKeyCredential__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./auth/providers/serverapikey/ServerApiKeyCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/serverapikey/ServerApiKeyCredential.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ServerApiKeyCredential", function() { return _auth_providers_serverapikey_ServerApiKeyCredential__WEBPACK_IMPORTED_MODULE_17__["default"]; });
 
-/* harmony import */ var _auth_providers_userapikey_models_UserApiKey__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./auth/providers/userapikey/models/UserApiKey */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userapikey/models/UserApiKey.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserApiKey", function() { return _auth_providers_userapikey_models_UserApiKey__WEBPACK_IMPORTED_MODULE_18__["default"]; });
+/* harmony import */ var _auth_providers_userapikey_CoreUserApiKeyAuthProviderClient__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./auth/providers/userapikey/CoreUserApiKeyAuthProviderClient */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userapikey/CoreUserApiKeyAuthProviderClient.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreUserApiKeyAuthProviderClient", function() { return _auth_providers_userapikey_CoreUserApiKeyAuthProviderClient__WEBPACK_IMPORTED_MODULE_18__["default"]; });
 
-/* harmony import */ var _auth_providers_userapikey_UserApiKeyAuthProvider__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./auth/providers/userapikey/UserApiKeyAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userapikey/UserApiKeyAuthProvider.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserApiKeyAuthProvider", function() { return _auth_providers_userapikey_UserApiKeyAuthProvider__WEBPACK_IMPORTED_MODULE_19__["default"]; });
+/* harmony import */ var _auth_providers_userapikey_models_UserApiKey__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./auth/providers/userapikey/models/UserApiKey */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userapikey/models/UserApiKey.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserApiKey", function() { return _auth_providers_userapikey_models_UserApiKey__WEBPACK_IMPORTED_MODULE_19__["default"]; });
 
-/* harmony import */ var _auth_providers_userapikey_UserApiKeyCredential__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./auth/providers/userapikey/UserApiKeyCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userapikey/UserApiKeyCredential.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserApiKeyCredential", function() { return _auth_providers_userapikey_UserApiKeyCredential__WEBPACK_IMPORTED_MODULE_20__["default"]; });
+/* harmony import */ var _auth_providers_userapikey_UserApiKeyAuthProvider__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./auth/providers/userapikey/UserApiKeyAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userapikey/UserApiKeyAuthProvider.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserApiKeyAuthProvider", function() { return _auth_providers_userapikey_UserApiKeyAuthProvider__WEBPACK_IMPORTED_MODULE_20__["default"]; });
 
-/* harmony import */ var _auth_providers_userpass_CoreUserPasswordAuthProviderClient__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./auth/providers/userpass/CoreUserPasswordAuthProviderClient */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userpass/CoreUserPasswordAuthProviderClient.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreUserPassAuthProviderClient", function() { return _auth_providers_userpass_CoreUserPasswordAuthProviderClient__WEBPACK_IMPORTED_MODULE_21__["default"]; });
+/* harmony import */ var _auth_providers_userapikey_UserApiKeyCredential__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./auth/providers/userapikey/UserApiKeyCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userapikey/UserApiKeyCredential.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserApiKeyCredential", function() { return _auth_providers_userapikey_UserApiKeyCredential__WEBPACK_IMPORTED_MODULE_21__["default"]; });
 
-/* harmony import */ var _auth_providers_userpass_UserPasswordAuthProvider__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./auth/providers/userpass/UserPasswordAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userpass/UserPasswordAuthProvider.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserPasswordAuthProvider", function() { return _auth_providers_userpass_UserPasswordAuthProvider__WEBPACK_IMPORTED_MODULE_22__["default"]; });
+/* harmony import */ var _auth_providers_userpass_CoreUserPasswordAuthProviderClient__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./auth/providers/userpass/CoreUserPasswordAuthProviderClient */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userpass/CoreUserPasswordAuthProviderClient.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreUserPassAuthProviderClient", function() { return _auth_providers_userpass_CoreUserPasswordAuthProviderClient__WEBPACK_IMPORTED_MODULE_22__["default"]; });
 
-/* harmony import */ var _auth_providers_userpass_UserPasswordCredential__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./auth/providers/userpass/UserPasswordCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userpass/UserPasswordCredential.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserPasswordCredential", function() { return _auth_providers_userpass_UserPasswordCredential__WEBPACK_IMPORTED_MODULE_23__["default"]; });
+/* harmony import */ var _auth_providers_userpass_UserPasswordAuthProvider__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./auth/providers/userpass/UserPasswordAuthProvider */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userpass/UserPasswordAuthProvider.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserPasswordAuthProvider", function() { return _auth_providers_userpass_UserPasswordAuthProvider__WEBPACK_IMPORTED_MODULE_23__["default"]; });
 
-/* harmony import */ var _auth_StitchUserIdentity__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./auth/StitchUserIdentity */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/StitchUserIdentity.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchUserIdentity", function() { return _auth_StitchUserIdentity__WEBPACK_IMPORTED_MODULE_24__["default"]; });
+/* harmony import */ var _auth_providers_userpass_UserPasswordCredential__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./auth/providers/userpass/UserPasswordCredential */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/providers/userpass/UserPasswordCredential.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserPasswordCredential", function() { return _auth_providers_userpass_UserPasswordCredential__WEBPACK_IMPORTED_MODULE_24__["default"]; });
 
-/* harmony import */ var _auth_UserType__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./auth/UserType */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/UserType.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserType", function() { return _auth_UserType__WEBPACK_IMPORTED_MODULE_25__["default"]; });
+/* harmony import */ var _auth_StitchUserIdentity__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./auth/StitchUserIdentity */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/StitchUserIdentity.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchUserIdentity", function() { return _auth_StitchUserIdentity__WEBPACK_IMPORTED_MODULE_25__["default"]; });
 
-/* harmony import */ var _internal_common_Assertions__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./internal/common/Assertions */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/common/Assertions.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Assertions", function() { return _internal_common_Assertions__WEBPACK_IMPORTED_MODULE_26__["default"]; });
+/* harmony import */ var _auth_UserType__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./auth/UserType */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/auth/UserType.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "UserType", function() { return _auth_UserType__WEBPACK_IMPORTED_MODULE_26__["default"]; });
 
-/* harmony import */ var _internal_common_Base64__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./internal/common/Base64 */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/common/Base64.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "base64Decode", function() { return _internal_common_Base64__WEBPACK_IMPORTED_MODULE_27__["base64Decode"]; });
+/* harmony import */ var _internal_common_Assertions__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./internal/common/Assertions */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/common/Assertions.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Assertions", function() { return _internal_common_Assertions__WEBPACK_IMPORTED_MODULE_27__["default"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "base64Encode", function() { return _internal_common_Base64__WEBPACK_IMPORTED_MODULE_27__["base64Encode"]; });
+/* harmony import */ var _internal_common_Base64__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./internal/common/Base64 */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/common/Base64.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "base64Decode", function() { return _internal_common_Base64__WEBPACK_IMPORTED_MODULE_28__["base64Decode"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "utf8Slice", function() { return _internal_common_Base64__WEBPACK_IMPORTED_MODULE_27__["utf8Slice"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "base64Encode", function() { return _internal_common_Base64__WEBPACK_IMPORTED_MODULE_28__["base64Encode"]; });
 
-/* harmony import */ var _internal_common_Storage__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./internal/common/Storage */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/common/Storage.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MemoryStorage", function() { return _internal_common_Storage__WEBPACK_IMPORTED_MODULE_28__["MemoryStorage"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "utf8Slice", function() { return _internal_common_Base64__WEBPACK_IMPORTED_MODULE_28__["utf8Slice"]; });
 
-/* harmony import */ var _internal_common_StitchErrorUtils__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./internal/common/StitchErrorUtils */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/common/StitchErrorUtils.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "handleRequestError", function() { return _internal_common_StitchErrorUtils__WEBPACK_IMPORTED_MODULE_29__["handleRequestError"]; });
+/* harmony import */ var _internal_common_Storage__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./internal/common/Storage */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/common/Storage.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MemoryStorage", function() { return _internal_common_Storage__WEBPACK_IMPORTED_MODULE_29__["MemoryStorage"]; });
 
-/* harmony import */ var _internal_CoreStitchAppClient__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./internal/CoreStitchAppClient */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/CoreStitchAppClient.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreStitchAppClient", function() { return _internal_CoreStitchAppClient__WEBPACK_IMPORTED_MODULE_30__["default"]; });
+/* harmony import */ var _internal_common_StitchErrorUtils__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./internal/common/StitchErrorUtils */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/common/StitchErrorUtils.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "handleRequestError", function() { return _internal_common_StitchErrorUtils__WEBPACK_IMPORTED_MODULE_30__["handleRequestError"]; });
 
-/* harmony import */ var _internal_net_BasicRequest__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./internal/net/BasicRequest */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/BasicRequest.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BasicRequest", function() { return _internal_net_BasicRequest__WEBPACK_IMPORTED_MODULE_31__["BasicRequest"]; });
+/* harmony import */ var _internal_CoreStitchAppClient__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./internal/CoreStitchAppClient */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/CoreStitchAppClient.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreStitchAppClient", function() { return _internal_CoreStitchAppClient__WEBPACK_IMPORTED_MODULE_31__["default"]; });
 
-/* harmony import */ var _internal_net_ContentTypes__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./internal/net/ContentTypes */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/ContentTypes.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ContentTypes", function() { return _internal_net_ContentTypes__WEBPACK_IMPORTED_MODULE_32__["default"]; });
+/* harmony import */ var _internal_net_BasicRequest__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./internal/net/BasicRequest */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/BasicRequest.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BasicRequest", function() { return _internal_net_BasicRequest__WEBPACK_IMPORTED_MODULE_32__["BasicRequest"]; });
 
-/* harmony import */ var _internal_net_Event__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./internal/net/Event */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/Event.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Event", function() { return _internal_net_Event__WEBPACK_IMPORTED_MODULE_33__["default"]; });
+/* harmony import */ var _internal_net_ContentTypes__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./internal/net/ContentTypes */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/ContentTypes.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ContentTypes", function() { return _internal_net_ContentTypes__WEBPACK_IMPORTED_MODULE_33__["default"]; });
 
-/* harmony import */ var _internal_net_BaseEventStream__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./internal/net/BaseEventStream */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/BaseEventStream.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BaseEventStream", function() { return _internal_net_BaseEventStream__WEBPACK_IMPORTED_MODULE_34__["default"]; });
+/* harmony import */ var _internal_net_Event__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./internal/net/Event */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/Event.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Event", function() { return _internal_net_Event__WEBPACK_IMPORTED_MODULE_34__["default"]; });
 
-/* harmony import */ var _internal_net_StitchEvent__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./internal/net/StitchEvent */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchEvent.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchEvent", function() { return _internal_net_StitchEvent__WEBPACK_IMPORTED_MODULE_35__["default"]; });
+/* harmony import */ var _internal_net_BaseEventStream__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./internal/net/BaseEventStream */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/BaseEventStream.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BaseEventStream", function() { return _internal_net_BaseEventStream__WEBPACK_IMPORTED_MODULE_35__["default"]; });
 
-/* harmony import */ var _internal_net_FetchTransport__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./internal/net/FetchTransport */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/FetchTransport.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FetchTransport", function() { return _internal_net_FetchTransport__WEBPACK_IMPORTED_MODULE_36__["default"]; });
+/* harmony import */ var _internal_net_StitchEvent__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./internal/net/StitchEvent */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchEvent.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchEvent", function() { return _internal_net_StitchEvent__WEBPACK_IMPORTED_MODULE_36__["default"]; });
 
-/* harmony import */ var _internal_net_Headers__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./internal/net/Headers */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/Headers.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Headers", function() { return _internal_net_Headers__WEBPACK_IMPORTED_MODULE_37__["default"]; });
+/* harmony import */ var _internal_net_FetchTransport__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./internal/net/FetchTransport */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/FetchTransport.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FetchTransport", function() { return _internal_net_FetchTransport__WEBPACK_IMPORTED_MODULE_37__["default"]; });
 
-/* harmony import */ var _internal_net_Method__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./internal/net/Method */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/Method.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Method", function() { return _internal_net_Method__WEBPACK_IMPORTED_MODULE_38__["default"]; });
+/* harmony import */ var _internal_net_Headers__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./internal/net/Headers */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/Headers.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Headers", function() { return _internal_net_Headers__WEBPACK_IMPORTED_MODULE_38__["default"]; });
 
-/* harmony import */ var _internal_net_Response__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./internal/net/Response */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/Response.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Response", function() { return _internal_net_Response__WEBPACK_IMPORTED_MODULE_39__["default"]; });
+/* harmony import */ var _internal_net_Method__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./internal/net/Method */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/Method.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Method", function() { return _internal_net_Method__WEBPACK_IMPORTED_MODULE_39__["default"]; });
 
-/* harmony import */ var _internal_net_Stream__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./internal/net/Stream */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/Stream.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Stream", function() { return _internal_net_Stream__WEBPACK_IMPORTED_MODULE_40__["default"]; });
+/* harmony import */ var _internal_net_Response__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./internal/net/Response */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/Response.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Response", function() { return _internal_net_Response__WEBPACK_IMPORTED_MODULE_40__["default"]; });
 
-/* harmony import */ var _internal_net_StitchAppAuthRoutes__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./internal/net/StitchAppAuthRoutes */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchAppAuthRoutes.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAppAuthRoutes", function() { return _internal_net_StitchAppAuthRoutes__WEBPACK_IMPORTED_MODULE_41__["default"]; });
+/* harmony import */ var _internal_net_Stream__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./internal/net/Stream */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/Stream.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Stream", function() { return _internal_net_Stream__WEBPACK_IMPORTED_MODULE_41__["default"]; });
 
-/* harmony import */ var _internal_net_StitchAppRequestClient__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./internal/net/StitchAppRequestClient */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchAppRequestClient.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAppRequestClient", function() { return _internal_net_StitchAppRequestClient__WEBPACK_IMPORTED_MODULE_42__["default"]; });
+/* harmony import */ var _internal_net_StitchAppAuthRoutes__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./internal/net/StitchAppAuthRoutes */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchAppAuthRoutes.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAppAuthRoutes", function() { return _internal_net_StitchAppAuthRoutes__WEBPACK_IMPORTED_MODULE_42__["default"]; });
 
-/* harmony import */ var _internal_net_StitchAppRoutes__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./internal/net/StitchAppRoutes */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchAppRoutes.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAppRoutes", function() { return _internal_net_StitchAppRoutes__WEBPACK_IMPORTED_MODULE_43__["default"]; });
+/* harmony import */ var _internal_net_StitchAppRequestClient__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./internal/net/StitchAppRequestClient */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchAppRequestClient.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAppRequestClient", function() { return _internal_net_StitchAppRequestClient__WEBPACK_IMPORTED_MODULE_43__["default"]; });
 
-/* harmony import */ var _internal_net_StitchAuthRequest__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./internal/net/StitchAuthRequest */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchAuthRequest.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAuthRequest", function() { return _internal_net_StitchAuthRequest__WEBPACK_IMPORTED_MODULE_44__["StitchAuthRequest"]; });
+/* harmony import */ var _internal_net_StitchAppRoutes__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./internal/net/StitchAppRoutes */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchAppRoutes.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAppRoutes", function() { return _internal_net_StitchAppRoutes__WEBPACK_IMPORTED_MODULE_44__["default"]; });
 
-/* harmony import */ var _internal_net_StitchRequestClient__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./internal/net/StitchRequestClient */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchRequestClient.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchRequestClient", function() { return _internal_net_StitchRequestClient__WEBPACK_IMPORTED_MODULE_45__["default"]; });
+/* harmony import */ var _internal_net_StitchAuthRequest__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./internal/net/StitchAuthRequest */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchAuthRequest.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAuthRequest", function() { return _internal_net_StitchAuthRequest__WEBPACK_IMPORTED_MODULE_45__["StitchAuthRequest"]; });
 
-/* harmony import */ var _services_internal_CoreStitchServiceClientImpl__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./services/internal/CoreStitchServiceClientImpl */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/services/internal/CoreStitchServiceClientImpl.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreStitchServiceClientImpl", function() { return _services_internal_CoreStitchServiceClientImpl__WEBPACK_IMPORTED_MODULE_46__["default"]; });
+/* harmony import */ var _internal_net_StitchRequestClient__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./internal/net/StitchRequestClient */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/internal/net/StitchRequestClient.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchRequestClient", function() { return _internal_net_StitchRequestClient__WEBPACK_IMPORTED_MODULE_46__["default"]; });
 
-/* harmony import */ var _services_internal_StitchServiceRoutes__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./services/internal/StitchServiceRoutes */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/services/internal/StitchServiceRoutes.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchServiceRoutes", function() { return _services_internal_StitchServiceRoutes__WEBPACK_IMPORTED_MODULE_47__["default"]; });
+/* harmony import */ var _services_internal_CoreStitchServiceClientImpl__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./services/internal/CoreStitchServiceClientImpl */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/services/internal/CoreStitchServiceClientImpl.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CoreStitchServiceClientImpl", function() { return _services_internal_CoreStitchServiceClientImpl__WEBPACK_IMPORTED_MODULE_47__["default"]; });
 
-/* harmony import */ var _StitchAppClientConfiguration__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./StitchAppClientConfiguration */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchAppClientConfiguration.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAppClientConfiguration", function() { return _StitchAppClientConfiguration__WEBPACK_IMPORTED_MODULE_48__["StitchAppClientConfiguration"]; });
+/* harmony import */ var _services_internal_StitchServiceRoutes__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./services/internal/StitchServiceRoutes */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/services/internal/StitchServiceRoutes.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchServiceRoutes", function() { return _services_internal_StitchServiceRoutes__WEBPACK_IMPORTED_MODULE_48__["default"]; });
 
-/* harmony import */ var _StitchAppClientInfo__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./StitchAppClientInfo */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchAppClientInfo.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAppClientInfo", function() { return _StitchAppClientInfo__WEBPACK_IMPORTED_MODULE_49__["default"]; });
+/* harmony import */ var _StitchAppClientConfiguration__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./StitchAppClientConfiguration */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchAppClientConfiguration.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAppClientConfiguration", function() { return _StitchAppClientConfiguration__WEBPACK_IMPORTED_MODULE_49__["StitchAppClientConfiguration"]; });
 
-/* harmony import */ var _StitchClientError__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./StitchClientError */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchClientError.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchClientError", function() { return _StitchClientError__WEBPACK_IMPORTED_MODULE_50__["default"]; });
+/* harmony import */ var _StitchAppClientInfo__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./StitchAppClientInfo */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchAppClientInfo.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchAppClientInfo", function() { return _StitchAppClientInfo__WEBPACK_IMPORTED_MODULE_50__["default"]; });
 
-/* harmony import */ var _StitchClientErrorCode__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./StitchClientErrorCode */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchClientErrorCode.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchClientErrorCode", function() { return _StitchClientErrorCode__WEBPACK_IMPORTED_MODULE_51__["StitchClientErrorCode"]; });
+/* harmony import */ var _StitchClientError__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./StitchClientError */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchClientError.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchClientError", function() { return _StitchClientError__WEBPACK_IMPORTED_MODULE_51__["default"]; });
 
-/* harmony import */ var _StitchError__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./StitchError */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchError.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchError", function() { return _StitchError__WEBPACK_IMPORTED_MODULE_52__["default"]; });
+/* harmony import */ var _StitchClientErrorCode__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./StitchClientErrorCode */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchClientErrorCode.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchClientErrorCode", function() { return _StitchClientErrorCode__WEBPACK_IMPORTED_MODULE_52__["StitchClientErrorCode"]; });
 
-/* harmony import */ var _StitchRequestError__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./StitchRequestError */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchRequestError.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchRequestError", function() { return _StitchRequestError__WEBPACK_IMPORTED_MODULE_53__["default"]; });
+/* harmony import */ var _StitchError__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./StitchError */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchError.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchError", function() { return _StitchError__WEBPACK_IMPORTED_MODULE_53__["default"]; });
 
-/* harmony import */ var _StitchRequestErrorCode__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./StitchRequestErrorCode */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchRequestErrorCode.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchRequestErrorCode", function() { return _StitchRequestErrorCode__WEBPACK_IMPORTED_MODULE_54__["StitchRequestErrorCode"]; });
+/* harmony import */ var _StitchRequestError__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./StitchRequestError */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchRequestError.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchRequestError", function() { return _StitchRequestError__WEBPACK_IMPORTED_MODULE_54__["default"]; });
 
-/* harmony import */ var _StitchServiceError__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./StitchServiceError */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchServiceError.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchServiceError", function() { return _StitchServiceError__WEBPACK_IMPORTED_MODULE_55__["default"]; });
+/* harmony import */ var _StitchRequestErrorCode__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./StitchRequestErrorCode */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchRequestErrorCode.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchRequestErrorCode", function() { return _StitchRequestErrorCode__WEBPACK_IMPORTED_MODULE_55__["StitchRequestErrorCode"]; });
 
-/* harmony import */ var _StitchServiceErrorCode__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./StitchServiceErrorCode */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchServiceErrorCode.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchServiceErrorCode", function() { return _StitchServiceErrorCode__WEBPACK_IMPORTED_MODULE_56__["StitchServiceErrorCode"]; });
+/* harmony import */ var _StitchServiceError__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./StitchServiceError */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchServiceError.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchServiceError", function() { return _StitchServiceError__WEBPACK_IMPORTED_MODULE_56__["default"]; });
+
+/* harmony import */ var _StitchServiceErrorCode__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./StitchServiceErrorCode */ "./node_modules/mongodb-stitch-core-sdk/dist/esm/StitchServiceErrorCode.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "StitchServiceErrorCode", function() { return _StitchServiceErrorCode__WEBPACK_IMPORTED_MODULE_57__["StitchServiceErrorCode"]; });
+
 
 
 
@@ -27725,6 +26172,41 @@ var __extends = (undefined && undefined.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 
 
 
@@ -27749,6 +26231,13 @@ var StitchAppRequestClient = (function (_super) {
         if (open === void 0) { open = true; }
         return this.initAppMetadata()
             .then(function (metadata) { return _super.prototype.doStreamRequestToURL.call(_this, stitchReq, metadata.hostname, open, retryRequest); });
+    };
+    StitchAppRequestClient.prototype.getBaseURL = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                return [2, this.initAppMetadata().then(function (metadata) { return metadata.hostname; })];
+            });
+        });
     };
     StitchAppRequestClient.prototype.initAppMetadata = function () {
         var _this = this;
@@ -28231,6 +26720,41 @@ var __extends = (undefined && undefined.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 
 var StitchRequestClient = (function (_super) {
     __extends(StitchRequestClient, _super);
@@ -28243,6 +26767,13 @@ var StitchRequestClient = (function (_super) {
     StitchRequestClient.prototype.doStreamRequest = function (stitchReq, open, retryRequest) {
         if (open === void 0) { open = true; }
         return _super.prototype.doStreamRequestToURL.call(this, stitchReq, this.baseUrl, open, retryRequest);
+    };
+    StitchRequestClient.prototype.getBaseURL = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                return [2, this.baseUrl];
+            });
+        });
     };
     return StitchRequestClient;
 }(_BaseStitchRequestClient__WEBPACK_IMPORTED_MODULE_0__["default"]));
@@ -31589,6 +30120,1808 @@ module.exports = __webpack_require__(/*! ./dist/lib/link */ "./node_modules/next
 
 /***/ }),
 
+/***/ "./node_modules/node-libs-browser/node_modules/buffer/index.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/node-libs-browser/node_modules/buffer/index.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+/* eslint-disable no-proto */
+
+
+
+var base64 = __webpack_require__(/*! base64-js */ "./node_modules/base64-js/index.js")
+var ieee754 = __webpack_require__(/*! ieee754 */ "./node_modules/ieee754/index.js")
+var isArray = __webpack_require__(/*! isarray */ "./node_modules/isarray/index.js")
+
+exports.Buffer = Buffer
+exports.SlowBuffer = SlowBuffer
+exports.INSPECT_MAX_BYTES = 50
+
+/**
+ * If `Buffer.TYPED_ARRAY_SUPPORT`:
+ *   === true    Use Uint8Array implementation (fastest)
+ *   === false   Use Object implementation (most compatible, even IE6)
+ *
+ * Browsers that support typed arrays are IE 10+, Firefox 4+, Chrome 7+, Safari 5.1+,
+ * Opera 11.6+, iOS 4.2+.
+ *
+ * Due to various browser bugs, sometimes the Object implementation will be used even
+ * when the browser supports typed arrays.
+ *
+ * Note:
+ *
+ *   - Firefox 4-29 lacks support for adding new properties to `Uint8Array` instances,
+ *     See: https://bugzilla.mozilla.org/show_bug.cgi?id=695438.
+ *
+ *   - Chrome 9-10 is missing the `TypedArray.prototype.subarray` function.
+ *
+ *   - IE10 has a broken `TypedArray.prototype.subarray` function which returns arrays of
+ *     incorrect length in some situations.
+
+ * We detect these buggy browsers and set `Buffer.TYPED_ARRAY_SUPPORT` to `false` so they
+ * get the Object implementation, which is slower but behaves correctly.
+ */
+Buffer.TYPED_ARRAY_SUPPORT = global.TYPED_ARRAY_SUPPORT !== undefined
+  ? global.TYPED_ARRAY_SUPPORT
+  : typedArraySupport()
+
+/*
+ * Export kMaxLength after typed array support is determined.
+ */
+exports.kMaxLength = kMaxLength()
+
+function typedArraySupport () {
+  try {
+    var arr = new Uint8Array(1)
+    arr.__proto__ = {__proto__: Uint8Array.prototype, foo: function () { return 42 }}
+    return arr.foo() === 42 && // typed array instances can be augmented
+        typeof arr.subarray === 'function' && // chrome 9-10 lack `subarray`
+        arr.subarray(1, 1).byteLength === 0 // ie10 has broken `subarray`
+  } catch (e) {
+    return false
+  }
+}
+
+function kMaxLength () {
+  return Buffer.TYPED_ARRAY_SUPPORT
+    ? 0x7fffffff
+    : 0x3fffffff
+}
+
+function createBuffer (that, length) {
+  if (kMaxLength() < length) {
+    throw new RangeError('Invalid typed array length')
+  }
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = new Uint8Array(length)
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    if (that === null) {
+      that = new Buffer(length)
+    }
+    that.length = length
+  }
+
+  return that
+}
+
+/**
+ * The Buffer constructor returns instances of `Uint8Array` that have their
+ * prototype changed to `Buffer.prototype`. Furthermore, `Buffer` is a subclass of
+ * `Uint8Array`, so the returned instances will have all the node `Buffer` methods
+ * and the `Uint8Array` methods. Square bracket notation works as expected -- it
+ * returns a single octet.
+ *
+ * The `Uint8Array` prototype remains unmodified.
+ */
+
+function Buffer (arg, encodingOrOffset, length) {
+  if (!Buffer.TYPED_ARRAY_SUPPORT && !(this instanceof Buffer)) {
+    return new Buffer(arg, encodingOrOffset, length)
+  }
+
+  // Common case.
+  if (typeof arg === 'number') {
+    if (typeof encodingOrOffset === 'string') {
+      throw new Error(
+        'If encoding is specified then the first argument must be a string'
+      )
+    }
+    return allocUnsafe(this, arg)
+  }
+  return from(this, arg, encodingOrOffset, length)
+}
+
+Buffer.poolSize = 8192 // not used by this implementation
+
+// TODO: Legacy, not needed anymore. Remove in next major version.
+Buffer._augment = function (arr) {
+  arr.__proto__ = Buffer.prototype
+  return arr
+}
+
+function from (that, value, encodingOrOffset, length) {
+  if (typeof value === 'number') {
+    throw new TypeError('"value" argument must not be a number')
+  }
+
+  if (typeof ArrayBuffer !== 'undefined' && value instanceof ArrayBuffer) {
+    return fromArrayBuffer(that, value, encodingOrOffset, length)
+  }
+
+  if (typeof value === 'string') {
+    return fromString(that, value, encodingOrOffset)
+  }
+
+  return fromObject(that, value)
+}
+
+/**
+ * Functionally equivalent to Buffer(arg, encoding) but throws a TypeError
+ * if value is a number.
+ * Buffer.from(str[, encoding])
+ * Buffer.from(array)
+ * Buffer.from(buffer)
+ * Buffer.from(arrayBuffer[, byteOffset[, length]])
+ **/
+Buffer.from = function (value, encodingOrOffset, length) {
+  return from(null, value, encodingOrOffset, length)
+}
+
+if (Buffer.TYPED_ARRAY_SUPPORT) {
+  Buffer.prototype.__proto__ = Uint8Array.prototype
+  Buffer.__proto__ = Uint8Array
+  if (typeof Symbol !== 'undefined' && Symbol.species &&
+      Buffer[Symbol.species] === Buffer) {
+    // Fix subarray() in ES2016. See: https://github.com/feross/buffer/pull/97
+    Object.defineProperty(Buffer, Symbol.species, {
+      value: null,
+      configurable: true
+    })
+  }
+}
+
+function assertSize (size) {
+  if (typeof size !== 'number') {
+    throw new TypeError('"size" argument must be a number')
+  } else if (size < 0) {
+    throw new RangeError('"size" argument must not be negative')
+  }
+}
+
+function alloc (that, size, fill, encoding) {
+  assertSize(size)
+  if (size <= 0) {
+    return createBuffer(that, size)
+  }
+  if (fill !== undefined) {
+    // Only pay attention to encoding if it's a string. This
+    // prevents accidentally sending in a number that would
+    // be interpretted as a start offset.
+    return typeof encoding === 'string'
+      ? createBuffer(that, size).fill(fill, encoding)
+      : createBuffer(that, size).fill(fill)
+  }
+  return createBuffer(that, size)
+}
+
+/**
+ * Creates a new filled Buffer instance.
+ * alloc(size[, fill[, encoding]])
+ **/
+Buffer.alloc = function (size, fill, encoding) {
+  return alloc(null, size, fill, encoding)
+}
+
+function allocUnsafe (that, size) {
+  assertSize(size)
+  that = createBuffer(that, size < 0 ? 0 : checked(size) | 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) {
+    for (var i = 0; i < size; ++i) {
+      that[i] = 0
+    }
+  }
+  return that
+}
+
+/**
+ * Equivalent to Buffer(num), by default creates a non-zero-filled Buffer instance.
+ * */
+Buffer.allocUnsafe = function (size) {
+  return allocUnsafe(null, size)
+}
+/**
+ * Equivalent to SlowBuffer(num), by default creates a non-zero-filled Buffer instance.
+ */
+Buffer.allocUnsafeSlow = function (size) {
+  return allocUnsafe(null, size)
+}
+
+function fromString (that, string, encoding) {
+  if (typeof encoding !== 'string' || encoding === '') {
+    encoding = 'utf8'
+  }
+
+  if (!Buffer.isEncoding(encoding)) {
+    throw new TypeError('"encoding" must be a valid string encoding')
+  }
+
+  var length = byteLength(string, encoding) | 0
+  that = createBuffer(that, length)
+
+  var actual = that.write(string, encoding)
+
+  if (actual !== length) {
+    // Writing a hex string, for example, that contains invalid characters will
+    // cause everything after the first invalid character to be ignored. (e.g.
+    // 'abxxcd' will be treated as 'ab')
+    that = that.slice(0, actual)
+  }
+
+  return that
+}
+
+function fromArrayLike (that, array) {
+  var length = array.length < 0 ? 0 : checked(array.length) | 0
+  that = createBuffer(that, length)
+  for (var i = 0; i < length; i += 1) {
+    that[i] = array[i] & 255
+  }
+  return that
+}
+
+function fromArrayBuffer (that, array, byteOffset, length) {
+  array.byteLength // this throws if `array` is not a valid ArrayBuffer
+
+  if (byteOffset < 0 || array.byteLength < byteOffset) {
+    throw new RangeError('\'offset\' is out of bounds')
+  }
+
+  if (array.byteLength < byteOffset + (length || 0)) {
+    throw new RangeError('\'length\' is out of bounds')
+  }
+
+  if (byteOffset === undefined && length === undefined) {
+    array = new Uint8Array(array)
+  } else if (length === undefined) {
+    array = new Uint8Array(array, byteOffset)
+  } else {
+    array = new Uint8Array(array, byteOffset, length)
+  }
+
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    // Return an augmented `Uint8Array` instance, for best performance
+    that = array
+    that.__proto__ = Buffer.prototype
+  } else {
+    // Fallback: Return an object instance of the Buffer class
+    that = fromArrayLike(that, array)
+  }
+  return that
+}
+
+function fromObject (that, obj) {
+  if (Buffer.isBuffer(obj)) {
+    var len = checked(obj.length) | 0
+    that = createBuffer(that, len)
+
+    if (that.length === 0) {
+      return that
+    }
+
+    obj.copy(that, 0, 0, len)
+    return that
+  }
+
+  if (obj) {
+    if ((typeof ArrayBuffer !== 'undefined' &&
+        obj.buffer instanceof ArrayBuffer) || 'length' in obj) {
+      if (typeof obj.length !== 'number' || isnan(obj.length)) {
+        return createBuffer(that, 0)
+      }
+      return fromArrayLike(that, obj)
+    }
+
+    if (obj.type === 'Buffer' && isArray(obj.data)) {
+      return fromArrayLike(that, obj.data)
+    }
+  }
+
+  throw new TypeError('First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.')
+}
+
+function checked (length) {
+  // Note: cannot use `length < kMaxLength()` here because that fails when
+  // length is NaN (which is otherwise coerced to zero.)
+  if (length >= kMaxLength()) {
+    throw new RangeError('Attempt to allocate Buffer larger than maximum ' +
+                         'size: 0x' + kMaxLength().toString(16) + ' bytes')
+  }
+  return length | 0
+}
+
+function SlowBuffer (length) {
+  if (+length != length) { // eslint-disable-line eqeqeq
+    length = 0
+  }
+  return Buffer.alloc(+length)
+}
+
+Buffer.isBuffer = function isBuffer (b) {
+  return !!(b != null && b._isBuffer)
+}
+
+Buffer.compare = function compare (a, b) {
+  if (!Buffer.isBuffer(a) || !Buffer.isBuffer(b)) {
+    throw new TypeError('Arguments must be Buffers')
+  }
+
+  if (a === b) return 0
+
+  var x = a.length
+  var y = b.length
+
+  for (var i = 0, len = Math.min(x, y); i < len; ++i) {
+    if (a[i] !== b[i]) {
+      x = a[i]
+      y = b[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+Buffer.isEncoding = function isEncoding (encoding) {
+  switch (String(encoding).toLowerCase()) {
+    case 'hex':
+    case 'utf8':
+    case 'utf-8':
+    case 'ascii':
+    case 'latin1':
+    case 'binary':
+    case 'base64':
+    case 'ucs2':
+    case 'ucs-2':
+    case 'utf16le':
+    case 'utf-16le':
+      return true
+    default:
+      return false
+  }
+}
+
+Buffer.concat = function concat (list, length) {
+  if (!isArray(list)) {
+    throw new TypeError('"list" argument must be an Array of Buffers')
+  }
+
+  if (list.length === 0) {
+    return Buffer.alloc(0)
+  }
+
+  var i
+  if (length === undefined) {
+    length = 0
+    for (i = 0; i < list.length; ++i) {
+      length += list[i].length
+    }
+  }
+
+  var buffer = Buffer.allocUnsafe(length)
+  var pos = 0
+  for (i = 0; i < list.length; ++i) {
+    var buf = list[i]
+    if (!Buffer.isBuffer(buf)) {
+      throw new TypeError('"list" argument must be an Array of Buffers')
+    }
+    buf.copy(buffer, pos)
+    pos += buf.length
+  }
+  return buffer
+}
+
+function byteLength (string, encoding) {
+  if (Buffer.isBuffer(string)) {
+    return string.length
+  }
+  if (typeof ArrayBuffer !== 'undefined' && typeof ArrayBuffer.isView === 'function' &&
+      (ArrayBuffer.isView(string) || string instanceof ArrayBuffer)) {
+    return string.byteLength
+  }
+  if (typeof string !== 'string') {
+    string = '' + string
+  }
+
+  var len = string.length
+  if (len === 0) return 0
+
+  // Use a for loop to avoid recursion
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'ascii':
+      case 'latin1':
+      case 'binary':
+        return len
+      case 'utf8':
+      case 'utf-8':
+      case undefined:
+        return utf8ToBytes(string).length
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return len * 2
+      case 'hex':
+        return len >>> 1
+      case 'base64':
+        return base64ToBytes(string).length
+      default:
+        if (loweredCase) return utf8ToBytes(string).length // assume utf8
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+Buffer.byteLength = byteLength
+
+function slowToString (encoding, start, end) {
+  var loweredCase = false
+
+  // No need to verify that "this.length <= MAX_UINT32" since it's a read-only
+  // property of a typed array.
+
+  // This behaves neither like String nor Uint8Array in that we set start/end
+  // to their upper/lower bounds if the value passed is out of range.
+  // undefined is handled specially as per ECMA-262 6th Edition,
+  // Section 13.3.3.7 Runtime Semantics: KeyedBindingInitialization.
+  if (start === undefined || start < 0) {
+    start = 0
+  }
+  // Return early if start > this.length. Done here to prevent potential uint32
+  // coercion fail below.
+  if (start > this.length) {
+    return ''
+  }
+
+  if (end === undefined || end > this.length) {
+    end = this.length
+  }
+
+  if (end <= 0) {
+    return ''
+  }
+
+  // Force coersion to uint32. This will also coerce falsey/NaN values to 0.
+  end >>>= 0
+  start >>>= 0
+
+  if (end <= start) {
+    return ''
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  while (true) {
+    switch (encoding) {
+      case 'hex':
+        return hexSlice(this, start, end)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Slice(this, start, end)
+
+      case 'ascii':
+        return asciiSlice(this, start, end)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Slice(this, start, end)
+
+      case 'base64':
+        return base64Slice(this, start, end)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return utf16leSlice(this, start, end)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = (encoding + '').toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+// The property is used by `Buffer.isBuffer` and `is-buffer` (in Safari 5-7) to detect
+// Buffer instances.
+Buffer.prototype._isBuffer = true
+
+function swap (b, n, m) {
+  var i = b[n]
+  b[n] = b[m]
+  b[m] = i
+}
+
+Buffer.prototype.swap16 = function swap16 () {
+  var len = this.length
+  if (len % 2 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 16-bits')
+  }
+  for (var i = 0; i < len; i += 2) {
+    swap(this, i, i + 1)
+  }
+  return this
+}
+
+Buffer.prototype.swap32 = function swap32 () {
+  var len = this.length
+  if (len % 4 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 32-bits')
+  }
+  for (var i = 0; i < len; i += 4) {
+    swap(this, i, i + 3)
+    swap(this, i + 1, i + 2)
+  }
+  return this
+}
+
+Buffer.prototype.swap64 = function swap64 () {
+  var len = this.length
+  if (len % 8 !== 0) {
+    throw new RangeError('Buffer size must be a multiple of 64-bits')
+  }
+  for (var i = 0; i < len; i += 8) {
+    swap(this, i, i + 7)
+    swap(this, i + 1, i + 6)
+    swap(this, i + 2, i + 5)
+    swap(this, i + 3, i + 4)
+  }
+  return this
+}
+
+Buffer.prototype.toString = function toString () {
+  var length = this.length | 0
+  if (length === 0) return ''
+  if (arguments.length === 0) return utf8Slice(this, 0, length)
+  return slowToString.apply(this, arguments)
+}
+
+Buffer.prototype.equals = function equals (b) {
+  if (!Buffer.isBuffer(b)) throw new TypeError('Argument must be a Buffer')
+  if (this === b) return true
+  return Buffer.compare(this, b) === 0
+}
+
+Buffer.prototype.inspect = function inspect () {
+  var str = ''
+  var max = exports.INSPECT_MAX_BYTES
+  if (this.length > 0) {
+    str = this.toString('hex', 0, max).match(/.{2}/g).join(' ')
+    if (this.length > max) str += ' ... '
+  }
+  return '<Buffer ' + str + '>'
+}
+
+Buffer.prototype.compare = function compare (target, start, end, thisStart, thisEnd) {
+  if (!Buffer.isBuffer(target)) {
+    throw new TypeError('Argument must be a Buffer')
+  }
+
+  if (start === undefined) {
+    start = 0
+  }
+  if (end === undefined) {
+    end = target ? target.length : 0
+  }
+  if (thisStart === undefined) {
+    thisStart = 0
+  }
+  if (thisEnd === undefined) {
+    thisEnd = this.length
+  }
+
+  if (start < 0 || end > target.length || thisStart < 0 || thisEnd > this.length) {
+    throw new RangeError('out of range index')
+  }
+
+  if (thisStart >= thisEnd && start >= end) {
+    return 0
+  }
+  if (thisStart >= thisEnd) {
+    return -1
+  }
+  if (start >= end) {
+    return 1
+  }
+
+  start >>>= 0
+  end >>>= 0
+  thisStart >>>= 0
+  thisEnd >>>= 0
+
+  if (this === target) return 0
+
+  var x = thisEnd - thisStart
+  var y = end - start
+  var len = Math.min(x, y)
+
+  var thisCopy = this.slice(thisStart, thisEnd)
+  var targetCopy = target.slice(start, end)
+
+  for (var i = 0; i < len; ++i) {
+    if (thisCopy[i] !== targetCopy[i]) {
+      x = thisCopy[i]
+      y = targetCopy[i]
+      break
+    }
+  }
+
+  if (x < y) return -1
+  if (y < x) return 1
+  return 0
+}
+
+// Finds either the first index of `val` in `buffer` at offset >= `byteOffset`,
+// OR the last index of `val` in `buffer` at offset <= `byteOffset`.
+//
+// Arguments:
+// - buffer - a Buffer to search
+// - val - a string, Buffer, or number
+// - byteOffset - an index into `buffer`; will be clamped to an int32
+// - encoding - an optional encoding, relevant is val is a string
+// - dir - true for indexOf, false for lastIndexOf
+function bidirectionalIndexOf (buffer, val, byteOffset, encoding, dir) {
+  // Empty buffer means no match
+  if (buffer.length === 0) return -1
+
+  // Normalize byteOffset
+  if (typeof byteOffset === 'string') {
+    encoding = byteOffset
+    byteOffset = 0
+  } else if (byteOffset > 0x7fffffff) {
+    byteOffset = 0x7fffffff
+  } else if (byteOffset < -0x80000000) {
+    byteOffset = -0x80000000
+  }
+  byteOffset = +byteOffset  // Coerce to Number.
+  if (isNaN(byteOffset)) {
+    // byteOffset: it it's undefined, null, NaN, "foo", etc, search whole buffer
+    byteOffset = dir ? 0 : (buffer.length - 1)
+  }
+
+  // Normalize byteOffset: negative offsets start from the end of the buffer
+  if (byteOffset < 0) byteOffset = buffer.length + byteOffset
+  if (byteOffset >= buffer.length) {
+    if (dir) return -1
+    else byteOffset = buffer.length - 1
+  } else if (byteOffset < 0) {
+    if (dir) byteOffset = 0
+    else return -1
+  }
+
+  // Normalize val
+  if (typeof val === 'string') {
+    val = Buffer.from(val, encoding)
+  }
+
+  // Finally, search either indexOf (if dir is true) or lastIndexOf
+  if (Buffer.isBuffer(val)) {
+    // Special case: looking for empty string/buffer always fails
+    if (val.length === 0) {
+      return -1
+    }
+    return arrayIndexOf(buffer, val, byteOffset, encoding, dir)
+  } else if (typeof val === 'number') {
+    val = val & 0xFF // Search for a byte value [0-255]
+    if (Buffer.TYPED_ARRAY_SUPPORT &&
+        typeof Uint8Array.prototype.indexOf === 'function') {
+      if (dir) {
+        return Uint8Array.prototype.indexOf.call(buffer, val, byteOffset)
+      } else {
+        return Uint8Array.prototype.lastIndexOf.call(buffer, val, byteOffset)
+      }
+    }
+    return arrayIndexOf(buffer, [ val ], byteOffset, encoding, dir)
+  }
+
+  throw new TypeError('val must be string, number or Buffer')
+}
+
+function arrayIndexOf (arr, val, byteOffset, encoding, dir) {
+  var indexSize = 1
+  var arrLength = arr.length
+  var valLength = val.length
+
+  if (encoding !== undefined) {
+    encoding = String(encoding).toLowerCase()
+    if (encoding === 'ucs2' || encoding === 'ucs-2' ||
+        encoding === 'utf16le' || encoding === 'utf-16le') {
+      if (arr.length < 2 || val.length < 2) {
+        return -1
+      }
+      indexSize = 2
+      arrLength /= 2
+      valLength /= 2
+      byteOffset /= 2
+    }
+  }
+
+  function read (buf, i) {
+    if (indexSize === 1) {
+      return buf[i]
+    } else {
+      return buf.readUInt16BE(i * indexSize)
+    }
+  }
+
+  var i
+  if (dir) {
+    var foundIndex = -1
+    for (i = byteOffset; i < arrLength; i++) {
+      if (read(arr, i) === read(val, foundIndex === -1 ? 0 : i - foundIndex)) {
+        if (foundIndex === -1) foundIndex = i
+        if (i - foundIndex + 1 === valLength) return foundIndex * indexSize
+      } else {
+        if (foundIndex !== -1) i -= i - foundIndex
+        foundIndex = -1
+      }
+    }
+  } else {
+    if (byteOffset + valLength > arrLength) byteOffset = arrLength - valLength
+    for (i = byteOffset; i >= 0; i--) {
+      var found = true
+      for (var j = 0; j < valLength; j++) {
+        if (read(arr, i + j) !== read(val, j)) {
+          found = false
+          break
+        }
+      }
+      if (found) return i
+    }
+  }
+
+  return -1
+}
+
+Buffer.prototype.includes = function includes (val, byteOffset, encoding) {
+  return this.indexOf(val, byteOffset, encoding) !== -1
+}
+
+Buffer.prototype.indexOf = function indexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, true)
+}
+
+Buffer.prototype.lastIndexOf = function lastIndexOf (val, byteOffset, encoding) {
+  return bidirectionalIndexOf(this, val, byteOffset, encoding, false)
+}
+
+function hexWrite (buf, string, offset, length) {
+  offset = Number(offset) || 0
+  var remaining = buf.length - offset
+  if (!length) {
+    length = remaining
+  } else {
+    length = Number(length)
+    if (length > remaining) {
+      length = remaining
+    }
+  }
+
+  // must be an even number of digits
+  var strLen = string.length
+  if (strLen % 2 !== 0) throw new TypeError('Invalid hex string')
+
+  if (length > strLen / 2) {
+    length = strLen / 2
+  }
+  for (var i = 0; i < length; ++i) {
+    var parsed = parseInt(string.substr(i * 2, 2), 16)
+    if (isNaN(parsed)) return i
+    buf[offset + i] = parsed
+  }
+  return i
+}
+
+function utf8Write (buf, string, offset, length) {
+  return blitBuffer(utf8ToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+function asciiWrite (buf, string, offset, length) {
+  return blitBuffer(asciiToBytes(string), buf, offset, length)
+}
+
+function latin1Write (buf, string, offset, length) {
+  return asciiWrite(buf, string, offset, length)
+}
+
+function base64Write (buf, string, offset, length) {
+  return blitBuffer(base64ToBytes(string), buf, offset, length)
+}
+
+function ucs2Write (buf, string, offset, length) {
+  return blitBuffer(utf16leToBytes(string, buf.length - offset), buf, offset, length)
+}
+
+Buffer.prototype.write = function write (string, offset, length, encoding) {
+  // Buffer#write(string)
+  if (offset === undefined) {
+    encoding = 'utf8'
+    length = this.length
+    offset = 0
+  // Buffer#write(string, encoding)
+  } else if (length === undefined && typeof offset === 'string') {
+    encoding = offset
+    length = this.length
+    offset = 0
+  // Buffer#write(string, offset[, length][, encoding])
+  } else if (isFinite(offset)) {
+    offset = offset | 0
+    if (isFinite(length)) {
+      length = length | 0
+      if (encoding === undefined) encoding = 'utf8'
+    } else {
+      encoding = length
+      length = undefined
+    }
+  // legacy write(string, encoding, offset, length) - remove in v0.13
+  } else {
+    throw new Error(
+      'Buffer.write(string, encoding, offset[, length]) is no longer supported'
+    )
+  }
+
+  var remaining = this.length - offset
+  if (length === undefined || length > remaining) length = remaining
+
+  if ((string.length > 0 && (length < 0 || offset < 0)) || offset > this.length) {
+    throw new RangeError('Attempt to write outside buffer bounds')
+  }
+
+  if (!encoding) encoding = 'utf8'
+
+  var loweredCase = false
+  for (;;) {
+    switch (encoding) {
+      case 'hex':
+        return hexWrite(this, string, offset, length)
+
+      case 'utf8':
+      case 'utf-8':
+        return utf8Write(this, string, offset, length)
+
+      case 'ascii':
+        return asciiWrite(this, string, offset, length)
+
+      case 'latin1':
+      case 'binary':
+        return latin1Write(this, string, offset, length)
+
+      case 'base64':
+        // Warning: maxLength not taken into account in base64Write
+        return base64Write(this, string, offset, length)
+
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return ucs2Write(this, string, offset, length)
+
+      default:
+        if (loweredCase) throw new TypeError('Unknown encoding: ' + encoding)
+        encoding = ('' + encoding).toLowerCase()
+        loweredCase = true
+    }
+  }
+}
+
+Buffer.prototype.toJSON = function toJSON () {
+  return {
+    type: 'Buffer',
+    data: Array.prototype.slice.call(this._arr || this, 0)
+  }
+}
+
+function base64Slice (buf, start, end) {
+  if (start === 0 && end === buf.length) {
+    return base64.fromByteArray(buf)
+  } else {
+    return base64.fromByteArray(buf.slice(start, end))
+  }
+}
+
+function utf8Slice (buf, start, end) {
+  end = Math.min(buf.length, end)
+  var res = []
+
+  var i = start
+  while (i < end) {
+    var firstByte = buf[i]
+    var codePoint = null
+    var bytesPerSequence = (firstByte > 0xEF) ? 4
+      : (firstByte > 0xDF) ? 3
+      : (firstByte > 0xBF) ? 2
+      : 1
+
+    if (i + bytesPerSequence <= end) {
+      var secondByte, thirdByte, fourthByte, tempCodePoint
+
+      switch (bytesPerSequence) {
+        case 1:
+          if (firstByte < 0x80) {
+            codePoint = firstByte
+          }
+          break
+        case 2:
+          secondByte = buf[i + 1]
+          if ((secondByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0x1F) << 0x6 | (secondByte & 0x3F)
+            if (tempCodePoint > 0x7F) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 3:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0xC | (secondByte & 0x3F) << 0x6 | (thirdByte & 0x3F)
+            if (tempCodePoint > 0x7FF && (tempCodePoint < 0xD800 || tempCodePoint > 0xDFFF)) {
+              codePoint = tempCodePoint
+            }
+          }
+          break
+        case 4:
+          secondByte = buf[i + 1]
+          thirdByte = buf[i + 2]
+          fourthByte = buf[i + 3]
+          if ((secondByte & 0xC0) === 0x80 && (thirdByte & 0xC0) === 0x80 && (fourthByte & 0xC0) === 0x80) {
+            tempCodePoint = (firstByte & 0xF) << 0x12 | (secondByte & 0x3F) << 0xC | (thirdByte & 0x3F) << 0x6 | (fourthByte & 0x3F)
+            if (tempCodePoint > 0xFFFF && tempCodePoint < 0x110000) {
+              codePoint = tempCodePoint
+            }
+          }
+      }
+    }
+
+    if (codePoint === null) {
+      // we did not generate a valid codePoint so insert a
+      // replacement char (U+FFFD) and advance only 1 byte
+      codePoint = 0xFFFD
+      bytesPerSequence = 1
+    } else if (codePoint > 0xFFFF) {
+      // encode to utf16 (surrogate pair dance)
+      codePoint -= 0x10000
+      res.push(codePoint >>> 10 & 0x3FF | 0xD800)
+      codePoint = 0xDC00 | codePoint & 0x3FF
+    }
+
+    res.push(codePoint)
+    i += bytesPerSequence
+  }
+
+  return decodeCodePointsArray(res)
+}
+
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
+// the lowest limit is Chrome, with 0x10000 args.
+// We go 1 magnitude less, for safety
+var MAX_ARGUMENTS_LENGTH = 0x1000
+
+function decodeCodePointsArray (codePoints) {
+  var len = codePoints.length
+  if (len <= MAX_ARGUMENTS_LENGTH) {
+    return String.fromCharCode.apply(String, codePoints) // avoid extra slice()
+  }
+
+  // Decode in chunks to avoid "call stack size exceeded".
+  var res = ''
+  var i = 0
+  while (i < len) {
+    res += String.fromCharCode.apply(
+      String,
+      codePoints.slice(i, i += MAX_ARGUMENTS_LENGTH)
+    )
+  }
+  return res
+}
+
+function asciiSlice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i] & 0x7F)
+  }
+  return ret
+}
+
+function latin1Slice (buf, start, end) {
+  var ret = ''
+  end = Math.min(buf.length, end)
+
+  for (var i = start; i < end; ++i) {
+    ret += String.fromCharCode(buf[i])
+  }
+  return ret
+}
+
+function hexSlice (buf, start, end) {
+  var len = buf.length
+
+  if (!start || start < 0) start = 0
+  if (!end || end < 0 || end > len) end = len
+
+  var out = ''
+  for (var i = start; i < end; ++i) {
+    out += toHex(buf[i])
+  }
+  return out
+}
+
+function utf16leSlice (buf, start, end) {
+  var bytes = buf.slice(start, end)
+  var res = ''
+  for (var i = 0; i < bytes.length; i += 2) {
+    res += String.fromCharCode(bytes[i] + bytes[i + 1] * 256)
+  }
+  return res
+}
+
+Buffer.prototype.slice = function slice (start, end) {
+  var len = this.length
+  start = ~~start
+  end = end === undefined ? len : ~~end
+
+  if (start < 0) {
+    start += len
+    if (start < 0) start = 0
+  } else if (start > len) {
+    start = len
+  }
+
+  if (end < 0) {
+    end += len
+    if (end < 0) end = 0
+  } else if (end > len) {
+    end = len
+  }
+
+  if (end < start) end = start
+
+  var newBuf
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    newBuf = this.subarray(start, end)
+    newBuf.__proto__ = Buffer.prototype
+  } else {
+    var sliceLen = end - start
+    newBuf = new Buffer(sliceLen, undefined)
+    for (var i = 0; i < sliceLen; ++i) {
+      newBuf[i] = this[i + start]
+    }
+  }
+
+  return newBuf
+}
+
+/*
+ * Need to make sure that buffer isn't trying to write out of bounds.
+ */
+function checkOffset (offset, ext, length) {
+  if ((offset % 1) !== 0 || offset < 0) throw new RangeError('offset is not uint')
+  if (offset + ext > length) throw new RangeError('Trying to access beyond buffer length')
+}
+
+Buffer.prototype.readUIntLE = function readUIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUIntBE = function readUIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    checkOffset(offset, byteLength, this.length)
+  }
+
+  var val = this[offset + --byteLength]
+  var mul = 1
+  while (byteLength > 0 && (mul *= 0x100)) {
+    val += this[offset + --byteLength] * mul
+  }
+
+  return val
+}
+
+Buffer.prototype.readUInt8 = function readUInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  return this[offset]
+}
+
+Buffer.prototype.readUInt16LE = function readUInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return this[offset] | (this[offset + 1] << 8)
+}
+
+Buffer.prototype.readUInt16BE = function readUInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  return (this[offset] << 8) | this[offset + 1]
+}
+
+Buffer.prototype.readUInt32LE = function readUInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return ((this[offset]) |
+      (this[offset + 1] << 8) |
+      (this[offset + 2] << 16)) +
+      (this[offset + 3] * 0x1000000)
+}
+
+Buffer.prototype.readUInt32BE = function readUInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] * 0x1000000) +
+    ((this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    this[offset + 3])
+}
+
+Buffer.prototype.readIntLE = function readIntLE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var val = this[offset]
+  var mul = 1
+  var i = 0
+  while (++i < byteLength && (mul *= 0x100)) {
+    val += this[offset + i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readIntBE = function readIntBE (offset, byteLength, noAssert) {
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) checkOffset(offset, byteLength, this.length)
+
+  var i = byteLength
+  var mul = 1
+  var val = this[offset + --i]
+  while (i > 0 && (mul *= 0x100)) {
+    val += this[offset + --i] * mul
+  }
+  mul *= 0x80
+
+  if (val >= mul) val -= Math.pow(2, 8 * byteLength)
+
+  return val
+}
+
+Buffer.prototype.readInt8 = function readInt8 (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 1, this.length)
+  if (!(this[offset] & 0x80)) return (this[offset])
+  return ((0xff - this[offset] + 1) * -1)
+}
+
+Buffer.prototype.readInt16LE = function readInt16LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset] | (this[offset + 1] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt16BE = function readInt16BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 2, this.length)
+  var val = this[offset + 1] | (this[offset] << 8)
+  return (val & 0x8000) ? val | 0xFFFF0000 : val
+}
+
+Buffer.prototype.readInt32LE = function readInt32LE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset]) |
+    (this[offset + 1] << 8) |
+    (this[offset + 2] << 16) |
+    (this[offset + 3] << 24)
+}
+
+Buffer.prototype.readInt32BE = function readInt32BE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+
+  return (this[offset] << 24) |
+    (this[offset + 1] << 16) |
+    (this[offset + 2] << 8) |
+    (this[offset + 3])
+}
+
+Buffer.prototype.readFloatLE = function readFloatLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, true, 23, 4)
+}
+
+Buffer.prototype.readFloatBE = function readFloatBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 4, this.length)
+  return ieee754.read(this, offset, false, 23, 4)
+}
+
+Buffer.prototype.readDoubleLE = function readDoubleLE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, true, 52, 8)
+}
+
+Buffer.prototype.readDoubleBE = function readDoubleBE (offset, noAssert) {
+  if (!noAssert) checkOffset(offset, 8, this.length)
+  return ieee754.read(this, offset, false, 52, 8)
+}
+
+function checkInt (buf, value, offset, ext, max, min) {
+  if (!Buffer.isBuffer(buf)) throw new TypeError('"buffer" argument must be a Buffer instance')
+  if (value > max || value < min) throw new RangeError('"value" argument is out of bounds')
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+}
+
+Buffer.prototype.writeUIntLE = function writeUIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var mul = 1
+  var i = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUIntBE = function writeUIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  byteLength = byteLength | 0
+  if (!noAssert) {
+    var maxBytes = Math.pow(2, 8 * byteLength) - 1
+    checkInt(this, value, offset, byteLength, maxBytes, 0)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    this[offset + i] = (value / mul) & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeUInt8 = function writeUInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0xff, 0)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+function objectWriteUInt16 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 2); i < j; ++i) {
+    buf[offset + i] = (value & (0xff << (8 * (littleEndian ? i : 1 - i)))) >>>
+      (littleEndian ? i : 1 - i) * 8
+  }
+}
+
+Buffer.prototype.writeUInt16LE = function writeUInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeUInt16BE = function writeUInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0xffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+function objectWriteUInt32 (buf, value, offset, littleEndian) {
+  if (value < 0) value = 0xffffffff + value + 1
+  for (var i = 0, j = Math.min(buf.length - offset, 4); i < j; ++i) {
+    buf[offset + i] = (value >>> (littleEndian ? i : 3 - i) * 8) & 0xff
+  }
+}
+
+Buffer.prototype.writeUInt32LE = function writeUInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset + 3] = (value >>> 24)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 1] = (value >>> 8)
+    this[offset] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeUInt32BE = function writeUInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0xffffffff, 0)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeIntLE = function writeIntLE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = 0
+  var mul = 1
+  var sub = 0
+  this[offset] = value & 0xFF
+  while (++i < byteLength && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i - 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeIntBE = function writeIntBE (value, offset, byteLength, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) {
+    var limit = Math.pow(2, 8 * byteLength - 1)
+
+    checkInt(this, value, offset, byteLength, limit - 1, -limit)
+  }
+
+  var i = byteLength - 1
+  var mul = 1
+  var sub = 0
+  this[offset + i] = value & 0xFF
+  while (--i >= 0 && (mul *= 0x100)) {
+    if (value < 0 && sub === 0 && this[offset + i + 1] !== 0) {
+      sub = 1
+    }
+    this[offset + i] = ((value / mul) >> 0) - sub & 0xFF
+  }
+
+  return offset + byteLength
+}
+
+Buffer.prototype.writeInt8 = function writeInt8 (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 1, 0x7f, -0x80)
+  if (!Buffer.TYPED_ARRAY_SUPPORT) value = Math.floor(value)
+  if (value < 0) value = 0xff + value + 1
+  this[offset] = (value & 0xff)
+  return offset + 1
+}
+
+Buffer.prototype.writeInt16LE = function writeInt16LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+  } else {
+    objectWriteUInt16(this, value, offset, true)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt16BE = function writeInt16BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 2, 0x7fff, -0x8000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 8)
+    this[offset + 1] = (value & 0xff)
+  } else {
+    objectWriteUInt16(this, value, offset, false)
+  }
+  return offset + 2
+}
+
+Buffer.prototype.writeInt32LE = function writeInt32LE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value & 0xff)
+    this[offset + 1] = (value >>> 8)
+    this[offset + 2] = (value >>> 16)
+    this[offset + 3] = (value >>> 24)
+  } else {
+    objectWriteUInt32(this, value, offset, true)
+  }
+  return offset + 4
+}
+
+Buffer.prototype.writeInt32BE = function writeInt32BE (value, offset, noAssert) {
+  value = +value
+  offset = offset | 0
+  if (!noAssert) checkInt(this, value, offset, 4, 0x7fffffff, -0x80000000)
+  if (value < 0) value = 0xffffffff + value + 1
+  if (Buffer.TYPED_ARRAY_SUPPORT) {
+    this[offset] = (value >>> 24)
+    this[offset + 1] = (value >>> 16)
+    this[offset + 2] = (value >>> 8)
+    this[offset + 3] = (value & 0xff)
+  } else {
+    objectWriteUInt32(this, value, offset, false)
+  }
+  return offset + 4
+}
+
+function checkIEEE754 (buf, value, offset, ext, max, min) {
+  if (offset + ext > buf.length) throw new RangeError('Index out of range')
+  if (offset < 0) throw new RangeError('Index out of range')
+}
+
+function writeFloat (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 4, 3.4028234663852886e+38, -3.4028234663852886e+38)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 23, 4)
+  return offset + 4
+}
+
+Buffer.prototype.writeFloatLE = function writeFloatLE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeFloatBE = function writeFloatBE (value, offset, noAssert) {
+  return writeFloat(this, value, offset, false, noAssert)
+}
+
+function writeDouble (buf, value, offset, littleEndian, noAssert) {
+  if (!noAssert) {
+    checkIEEE754(buf, value, offset, 8, 1.7976931348623157E+308, -1.7976931348623157E+308)
+  }
+  ieee754.write(buf, value, offset, littleEndian, 52, 8)
+  return offset + 8
+}
+
+Buffer.prototype.writeDoubleLE = function writeDoubleLE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, true, noAssert)
+}
+
+Buffer.prototype.writeDoubleBE = function writeDoubleBE (value, offset, noAssert) {
+  return writeDouble(this, value, offset, false, noAssert)
+}
+
+// copy(targetBuffer, targetStart=0, sourceStart=0, sourceEnd=buffer.length)
+Buffer.prototype.copy = function copy (target, targetStart, start, end) {
+  if (!start) start = 0
+  if (!end && end !== 0) end = this.length
+  if (targetStart >= target.length) targetStart = target.length
+  if (!targetStart) targetStart = 0
+  if (end > 0 && end < start) end = start
+
+  // Copy 0 bytes; we're done
+  if (end === start) return 0
+  if (target.length === 0 || this.length === 0) return 0
+
+  // Fatal error conditions
+  if (targetStart < 0) {
+    throw new RangeError('targetStart out of bounds')
+  }
+  if (start < 0 || start >= this.length) throw new RangeError('sourceStart out of bounds')
+  if (end < 0) throw new RangeError('sourceEnd out of bounds')
+
+  // Are we oob?
+  if (end > this.length) end = this.length
+  if (target.length - targetStart < end - start) {
+    end = target.length - targetStart + start
+  }
+
+  var len = end - start
+  var i
+
+  if (this === target && start < targetStart && targetStart < end) {
+    // descending copy from end
+    for (i = len - 1; i >= 0; --i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else if (len < 1000 || !Buffer.TYPED_ARRAY_SUPPORT) {
+    // ascending copy from start
+    for (i = 0; i < len; ++i) {
+      target[i + targetStart] = this[i + start]
+    }
+  } else {
+    Uint8Array.prototype.set.call(
+      target,
+      this.subarray(start, start + len),
+      targetStart
+    )
+  }
+
+  return len
+}
+
+// Usage:
+//    buffer.fill(number[, offset[, end]])
+//    buffer.fill(buffer[, offset[, end]])
+//    buffer.fill(string[, offset[, end]][, encoding])
+Buffer.prototype.fill = function fill (val, start, end, encoding) {
+  // Handle string cases:
+  if (typeof val === 'string') {
+    if (typeof start === 'string') {
+      encoding = start
+      start = 0
+      end = this.length
+    } else if (typeof end === 'string') {
+      encoding = end
+      end = this.length
+    }
+    if (val.length === 1) {
+      var code = val.charCodeAt(0)
+      if (code < 256) {
+        val = code
+      }
+    }
+    if (encoding !== undefined && typeof encoding !== 'string') {
+      throw new TypeError('encoding must be a string')
+    }
+    if (typeof encoding === 'string' && !Buffer.isEncoding(encoding)) {
+      throw new TypeError('Unknown encoding: ' + encoding)
+    }
+  } else if (typeof val === 'number') {
+    val = val & 255
+  }
+
+  // Invalid ranges are not set to a default, so can range check early.
+  if (start < 0 || this.length < start || this.length < end) {
+    throw new RangeError('Out of range index')
+  }
+
+  if (end <= start) {
+    return this
+  }
+
+  start = start >>> 0
+  end = end === undefined ? this.length : end >>> 0
+
+  if (!val) val = 0
+
+  var i
+  if (typeof val === 'number') {
+    for (i = start; i < end; ++i) {
+      this[i] = val
+    }
+  } else {
+    var bytes = Buffer.isBuffer(val)
+      ? val
+      : utf8ToBytes(new Buffer(val, encoding).toString())
+    var len = bytes.length
+    for (i = 0; i < end - start; ++i) {
+      this[i + start] = bytes[i % len]
+    }
+  }
+
+  return this
+}
+
+// HELPER FUNCTIONS
+// ================
+
+var INVALID_BASE64_RE = /[^+\/0-9A-Za-z-_]/g
+
+function base64clean (str) {
+  // Node strips out invalid characters like \n and \t from the string, base64-js does not
+  str = stringtrim(str).replace(INVALID_BASE64_RE, '')
+  // Node converts strings with length < 2 to ''
+  if (str.length < 2) return ''
+  // Node allows for non-padded base64 strings (missing trailing ===), base64-js does not
+  while (str.length % 4 !== 0) {
+    str = str + '='
+  }
+  return str
+}
+
+function stringtrim (str) {
+  if (str.trim) return str.trim()
+  return str.replace(/^\s+|\s+$/g, '')
+}
+
+function toHex (n) {
+  if (n < 16) return '0' + n.toString(16)
+  return n.toString(16)
+}
+
+function utf8ToBytes (string, units) {
+  units = units || Infinity
+  var codePoint
+  var length = string.length
+  var leadSurrogate = null
+  var bytes = []
+
+  for (var i = 0; i < length; ++i) {
+    codePoint = string.charCodeAt(i)
+
+    // is surrogate component
+    if (codePoint > 0xD7FF && codePoint < 0xE000) {
+      // last char was a lead
+      if (!leadSurrogate) {
+        // no lead yet
+        if (codePoint > 0xDBFF) {
+          // unexpected trail
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        } else if (i + 1 === length) {
+          // unpaired lead
+          if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+          continue
+        }
+
+        // valid lead
+        leadSurrogate = codePoint
+
+        continue
+      }
+
+      // 2 leads in a row
+      if (codePoint < 0xDC00) {
+        if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+        leadSurrogate = codePoint
+        continue
+      }
+
+      // valid surrogate pair
+      codePoint = (leadSurrogate - 0xD800 << 10 | codePoint - 0xDC00) + 0x10000
+    } else if (leadSurrogate) {
+      // valid bmp char, but last char was a lead
+      if ((units -= 3) > -1) bytes.push(0xEF, 0xBF, 0xBD)
+    }
+
+    leadSurrogate = null
+
+    // encode utf8
+    if (codePoint < 0x80) {
+      if ((units -= 1) < 0) break
+      bytes.push(codePoint)
+    } else if (codePoint < 0x800) {
+      if ((units -= 2) < 0) break
+      bytes.push(
+        codePoint >> 0x6 | 0xC0,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x10000) {
+      if ((units -= 3) < 0) break
+      bytes.push(
+        codePoint >> 0xC | 0xE0,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else if (codePoint < 0x110000) {
+      if ((units -= 4) < 0) break
+      bytes.push(
+        codePoint >> 0x12 | 0xF0,
+        codePoint >> 0xC & 0x3F | 0x80,
+        codePoint >> 0x6 & 0x3F | 0x80,
+        codePoint & 0x3F | 0x80
+      )
+    } else {
+      throw new Error('Invalid code point')
+    }
+  }
+
+  return bytes
+}
+
+function asciiToBytes (str) {
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    // Node's code seems to be doing this and not & 0x7F..
+    byteArray.push(str.charCodeAt(i) & 0xFF)
+  }
+  return byteArray
+}
+
+function utf16leToBytes (str, units) {
+  var c, hi, lo
+  var byteArray = []
+  for (var i = 0; i < str.length; ++i) {
+    if ((units -= 2) < 0) break
+
+    c = str.charCodeAt(i)
+    hi = c >> 8
+    lo = c % 256
+    byteArray.push(lo)
+    byteArray.push(hi)
+  }
+
+  return byteArray
+}
+
+function base64ToBytes (str) {
+  return base64.toByteArray(base64clean(str))
+}
+
+function blitBuffer (src, dst, offset, length) {
+  for (var i = 0; i < length; ++i) {
+    if ((i + offset >= dst.length) || (i >= src.length)) break
+    dst[i + offset] = src[i]
+  }
+  return i
+}
+
+function isnan (val) {
+  return val !== val // eslint-disable-line no-self-compare
+}
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
 /***/ "./node_modules/node-libs-browser/node_modules/punycode/punycode.js":
 /*!**************************************************************************!*\
   !*** ./node_modules/node-libs-browser/node_modules/punycode/punycode.js ***!
@@ -34833,8 +35166,14 @@ var SegmentedControl = function (_Component) {
         width: '100%'
       };
       var style = (0, _extend2.default)(defaultStyle, this.props.style);
+      var containerClassName = 'segmented-control';
+
+      if (typeof this.props.className !== 'undefined') {
+        containerClassName = containerClassName + ' ' + this.props.className;
+      }
+
       return _react2.default.createElement('div', {
-        className: 'segmented-control',
+        className: containerClassName,
         style: style
       }, this.props.options.map(function (option) {
         return _react2.default.createElement('input', {
@@ -34861,6 +35200,7 @@ var SegmentedControl = function (_Component) {
 }(_react.Component);
 
 SegmentedControl.propTypes = {
+  className: _propTypes2.default.string,
   name: _propTypes2.default.string.isRequired,
   options: _propTypes2.default.array.isRequired,
   style: _propTypes2.default.object,
@@ -37512,7 +37852,7 @@ if ("development" !== 'production' && "development" !== 'test' && typeof window 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-!function(e){ true?module.exports=e(null):undefined}(function e(a){"use strict";var r=/^\0+/g,c=/[\0\r\f]/g,s=/: */g,t=/zoo|gra/,i=/([,: ])(transform)/g,f=/,+\s*(?![^(]*[)])/g,n=/ +\s*(?![^(]*[)])/g,l=/ *[\0] */g,o=/,\r+?/g,h=/([\t\r\n ])*\f?&/g,u=/:global\(((?:[^\(\)\[\]]*|\[.*\]|\([^\(\)]*\))*)\)/g,d=/\W+/g,b=/@(k\w+)\s*(\S*)\s*/,p=/::(place)/g,k=/:(read-only)/g,g=/\s+(?=[{\];=:>])/g,A=/([[}=:>])\s+/g,C=/(\{[^{]+?);(?=\})/g,w=/\s{2,}/g,v=/([^\(])(:+) */g,m=/[svh]\w+-[tblr]{2}/,x=/\(\s*(.*)\s*\)/g,$=/([\s\S]*?);/g,y=/-self|flex-/g,O=/[^]*?(:[rp][el]a[\w-]+)[^]*/,j=/stretch|:\s*\w+\-(?:conte|avail)/,z=/([^-])(image-set\()/,N="-webkit-",S="-moz-",F="-ms-",W=59,q=125,B=123,D=40,E=41,G=91,H=93,I=10,J=13,K=9,L=64,M=32,P=38,Q=45,R=95,T=42,U=44,V=58,X=39,Y=34,Z=47,_=62,ee=43,ae=126,re=0,ce=12,se=11,te=107,ie=109,fe=115,ne=112,le=111,oe=105,he=99,ue=100,de=112,be=1,pe=1,ke=0,ge=1,Ae=1,Ce=1,we=0,ve=0,me=0,xe=[],$e=[],ye=0,Oe=null,je=-2,ze=-1,Ne=0,Se=1,Fe=2,We=3,qe=0,Be=1,De="",Ee="",Ge="";function He(e,a,s,t,i){for(var f,n,o=0,h=0,u=0,d=0,g=0,A=0,C=0,w=0,m=0,$=0,y=0,O=0,j=0,z=0,R=0,we=0,$e=0,Oe=0,je=0,ze=s.length,Je=ze-1,Re="",Te="",Ue="",Ve="",Xe="",Ye="";R<ze;){if(C=s.charCodeAt(R),R===Je)if(h+d+u+o!==0){if(0!==h)C=h===Z?I:Z;d=u=o=0,ze++,Je++}if(h+d+u+o===0){if(R===Je){if(we>0)Te=Te.replace(c,"");if(Te.trim().length>0){switch(C){case M:case K:case W:case J:case I:break;default:Te+=s.charAt(R)}C=W}}if(1===$e)switch(C){case B:case q:case W:case Y:case X:case D:case E:case U:$e=0;case K:case J:case I:case M:break;default:for($e=0,je=R,g=C,R--,C=W;je<ze;)switch(s.charCodeAt(je++)){case I:case J:case W:++R,C=g,je=ze;break;case V:if(we>0)++R,C=g;case B:je=ze}}switch(C){case B:for(g=(Te=Te.trim()).charCodeAt(0),y=1,je=++R;R<ze;){switch(C=s.charCodeAt(R)){case B:y++;break;case q:y--;break;case Z:switch(A=s.charCodeAt(R+1)){case T:case Z:R=Qe(A,R,Je,s)}break;case G:C++;case D:C++;case Y:case X:for(;R++<Je&&s.charCodeAt(R)!==C;);}if(0===y)break;R++}if(Ue=s.substring(je,R),g===re)g=(Te=Te.replace(r,"").trim()).charCodeAt(0);switch(g){case L:if(we>0)Te=Te.replace(c,"");switch(A=Te.charCodeAt(1)){case ue:case ie:case fe:case Q:f=a;break;default:f=xe}if(je=(Ue=He(a,f,Ue,A,i+1)).length,me>0&&0===je)je=Te.length;if(ye>0)if(f=Ie(xe,Te,Oe),n=Pe(We,Ue,f,a,pe,be,je,A,i,t),Te=f.join(""),void 0!==n)if(0===(je=(Ue=n.trim()).length))A=0,Ue="";if(je>0)switch(A){case fe:Te=Te.replace(x,Me);case ue:case ie:case Q:Ue=Te+"{"+Ue+"}";break;case te:if(Ue=(Te=Te.replace(b,"$1 $2"+(Be>0?De:"")))+"{"+Ue+"}",1===Ae||2===Ae&&Le("@"+Ue,3))Ue="@"+N+Ue+"@"+Ue;else Ue="@"+Ue;break;default:if(Ue=Te+Ue,t===de)Ve+=Ue,Ue=""}else Ue="";break;default:Ue=He(a,Ie(a,Te,Oe),Ue,t,i+1)}Xe+=Ue,O=0,$e=0,z=0,we=0,Oe=0,j=0,Te="",Ue="",C=s.charCodeAt(++R);break;case q:case W:if((je=(Te=(we>0?Te.replace(c,""):Te).trim()).length)>1){if(0===z)if((g=Te.charCodeAt(0))===Q||g>96&&g<123)je=(Te=Te.replace(" ",":")).length;if(ye>0)if(void 0!==(n=Pe(Se,Te,a,e,pe,be,Ve.length,t,i,t)))if(0===(je=(Te=n.trim()).length))Te="\0\0";switch(g=Te.charCodeAt(0),A=Te.charCodeAt(1),g){case re:break;case L:if(A===oe||A===he){Ye+=Te+s.charAt(R);break}default:if(Te.charCodeAt(je-1)===V)break;Ve+=Ke(Te,g,A,Te.charCodeAt(2))}}O=0,$e=0,z=0,we=0,Oe=0,Te="",C=s.charCodeAt(++R)}}switch(C){case J:case I:if(h+d+u+o+ve===0)switch($){case E:case X:case Y:case L:case ae:case _:case T:case ee:case Z:case Q:case V:case U:case W:case B:case q:break;default:if(z>0)$e=1}if(h===Z)h=0;else if(ge+O===0&&t!==te&&Te.length>0)we=1,Te+="\0";if(ye*qe>0)Pe(Ne,Te,a,e,pe,be,Ve.length,t,i,t);be=1,pe++;break;case W:case q:if(h+d+u+o===0){be++;break}default:switch(be++,Re=s.charAt(R),C){case K:case M:if(d+o+h===0)switch(w){case U:case V:case K:case M:Re="";break;default:if(C!==M)Re=" "}break;case re:Re="\\0";break;case ce:Re="\\f";break;case se:Re="\\v";break;case P:if(d+h+o===0&&ge>0)Oe=1,we=1,Re="\f"+Re;break;case 108:if(d+h+o+ke===0&&z>0)switch(R-z){case 2:if(w===ne&&s.charCodeAt(R-3)===V)ke=w;case 8:if(m===le)ke=m}break;case V:if(d+h+o===0)z=R;break;case U:if(h+u+d+o===0)we=1,Re+="\r";break;case Y:case X:if(0===h)d=d===C?0:0===d?C:d;break;case G:if(d+h+u===0)o++;break;case H:if(d+h+u===0)o--;break;case E:if(d+h+o===0)u--;break;case D:if(d+h+o===0){if(0===O)switch(2*w+3*m){case 533:break;default:y=0,O=1}u++}break;case L:if(h+u+d+o+z+j===0)j=1;break;case T:case Z:if(d+o+u>0)break;switch(h){case 0:switch(2*C+3*s.charCodeAt(R+1)){case 235:h=Z;break;case 220:je=R,h=T}break;case T:if(C===Z&&w===T&&je+2!==R){if(33===s.charCodeAt(je+2))Ve+=s.substring(je,R+1);Re="",h=0}}}if(0===h){if(ge+d+o+j===0&&t!==te&&C!==W)switch(C){case U:case ae:case _:case ee:case E:case D:if(0===O){switch(w){case K:case M:case I:case J:Re+="\0";break;default:Re="\0"+Re+(C===U?"":"\0")}we=1}else switch(C){case D:if(z+7===R&&108===w)z=0;O=++y;break;case E:if(0==(O=--y))we=1,Re+="\0"}break;case K:case M:switch(w){case re:case B:case q:case W:case U:case ce:case K:case M:case I:case J:break;default:if(0===O)we=1,Re+="\0"}}if(Te+=Re,C!==M&&C!==K)$=C}}m=w,w=C,R++}if(je=Ve.length,me>0)if(0===je&&0===Xe.length&&0===a[0].length==false)if(t!==ie||1===a.length&&(ge>0?Ee:Ge)===a[0])je=a.join(",").length+2;if(je>0){if(f=0===ge&&t!==te?function(e){for(var a,r,s=0,t=e.length,i=Array(t);s<t;++s){for(var f=e[s].split(l),n="",o=0,h=0,u=0,d=0,b=f.length;o<b;++o){if(0===(h=(r=f[o]).length)&&b>1)continue;if(u=n.charCodeAt(n.length-1),d=r.charCodeAt(0),a="",0!==o)switch(u){case T:case ae:case _:case ee:case M:case D:break;default:a=" "}switch(d){case P:r=a+Ee;case ae:case _:case ee:case M:case E:case D:break;case G:r=a+r+Ee;break;case V:switch(2*r.charCodeAt(1)+3*r.charCodeAt(2)){case 530:if(Ce>0){r=a+r.substring(8,h-1);break}default:if(o<1||f[o-1].length<1)r=a+Ee+r}break;case U:a="";default:if(h>1&&r.indexOf(":")>0)r=a+r.replace(v,"$1"+Ee+"$2");else r=a+r+Ee}n+=r}i[s]=n.replace(c,"").trim()}return i}(a):a,ye>0)if(void 0!==(n=Pe(Fe,Ve,f,e,pe,be,je,t,i,t))&&0===(Ve=n).length)return Ye+Ve+Xe;if(Ve=f.join(",")+"{"+Ve+"}",Ae*ke!=0){if(2===Ae&&!Le(Ve,2))ke=0;switch(ke){case le:Ve=Ve.replace(k,":"+S+"$1")+Ve;break;case ne:Ve=Ve.replace(p,"::"+N+"input-$1")+Ve.replace(p,"::"+S+"$1")+Ve.replace(p,":"+F+"input-$1")+Ve}ke=0}}return Ye+Ve+Xe}function Ie(e,a,r){var c=a.trim().split(o),s=c,t=c.length,i=e.length;switch(i){case 0:case 1:for(var f=0,n=0===i?"":e[0]+" ";f<t;++f)s[f]=Je(n,s[f],r,i).trim();break;default:f=0;var l=0;for(s=[];f<t;++f)for(var h=0;h<i;++h)s[l++]=Je(e[h]+" ",c[f],r,i).trim()}return s}function Je(e,a,r,c){var s=a,t=s.charCodeAt(0);if(t<33)t=(s=s.trim()).charCodeAt(0);switch(t){case P:switch(ge+c){case 0:case 1:if(0===e.trim().length)break;default:return s.replace(h,"$1"+e.trim())}break;case V:switch(s.charCodeAt(1)){case 103:if(Ce>0&&ge>0)return s.replace(u,"$1").replace(h,"$1"+Ge);break;default:return e.trim()+s.replace(h,"$1"+e.trim())}default:if(r*ge>0&&s.indexOf("\f")>0)return s.replace(h,(e.charCodeAt(0)===V?"":"$1")+e.trim())}return e+s}function Ke(e,a,r,c){var l,o=0,h=e+";",u=2*a+3*r+4*c;if(944===u)return function(e){var a=e.length,r=e.indexOf(":",9)+1,c=e.substring(0,r).trim(),s=e.substring(r,a-1).trim();switch(e.charCodeAt(9)*Be){case 0:break;case Q:if(110!==e.charCodeAt(10))break;default:for(var t=s.split((s="",f)),i=0,r=0,a=t.length;i<a;r=0,++i){for(var l=t[i],o=l.split(n);l=o[r];){var h=l.charCodeAt(0);if(1===Be&&(h>L&&h<90||h>96&&h<123||h===R||h===Q&&l.charCodeAt(1)!==Q))switch(isNaN(parseFloat(l))+(-1!==l.indexOf("("))){case 1:switch(l){case"infinite":case"alternate":case"backwards":case"running":case"normal":case"forwards":case"both":case"none":case"linear":case"ease":case"ease-in":case"ease-out":case"ease-in-out":case"paused":case"reverse":case"alternate-reverse":case"inherit":case"initial":case"unset":case"step-start":case"step-end":break;default:l+=De}}o[r++]=l}s+=(0===i?"":",")+o.join(" ")}}if(s=c+s+";",1===Ae||2===Ae&&Le(s,1))return N+s+s;return s}(h);else if(0===Ae||2===Ae&&!Le(h,1))return h;switch(u){case 1015:return 97===h.charCodeAt(10)?N+h+h:h;case 951:return 116===h.charCodeAt(3)?N+h+h:h;case 963:return 110===h.charCodeAt(5)?N+h+h:h;case 1009:if(100!==h.charCodeAt(4))break;case 969:case 942:return N+h+h;case 978:return N+h+S+h+h;case 1019:case 983:return N+h+S+h+F+h+h;case 883:if(h.charCodeAt(8)===Q)return N+h+h;if(h.indexOf("image-set(",11)>0)return h.replace(z,"$1"+N+"$2")+h;return h;case 932:if(h.charCodeAt(4)===Q)switch(h.charCodeAt(5)){case 103:return N+"box-"+h.replace("-grow","")+N+h+F+h.replace("grow","positive")+h;case 115:return N+h+F+h.replace("shrink","negative")+h;case 98:return N+h+F+h.replace("basis","preferred-size")+h}return N+h+F+h+h;case 964:return N+h+F+"flex-"+h+h;case 1023:if(99!==h.charCodeAt(8))break;return l=h.substring(h.indexOf(":",15)).replace("flex-","").replace("space-between","justify"),N+"box-pack"+l+N+h+F+"flex-pack"+l+h;case 1005:return t.test(h)?h.replace(s,":"+N)+h.replace(s,":"+S)+h:h;case 1e3:switch(o=(l=h.substring(13).trim()).indexOf("-")+1,l.charCodeAt(0)+l.charCodeAt(o)){case 226:l=h.replace(m,"tb");break;case 232:l=h.replace(m,"tb-rl");break;case 220:l=h.replace(m,"lr");break;default:return h}return N+h+F+l+h;case 1017:if(-1===h.indexOf("sticky",9))return h;case 975:switch(o=(h=e).length-10,u=(l=(33===h.charCodeAt(o)?h.substring(0,o):h).substring(e.indexOf(":",7)+1).trim()).charCodeAt(0)+(0|l.charCodeAt(7))){case 203:if(l.charCodeAt(8)<111)break;case 115:h=h.replace(l,N+l)+";"+h;break;case 207:case 102:h=h.replace(l,N+(u>102?"inline-":"")+"box")+";"+h.replace(l,N+l)+";"+h.replace(l,F+l+"box")+";"+h}return h+";";case 938:if(h.charCodeAt(5)===Q)switch(h.charCodeAt(6)){case 105:return l=h.replace("-items",""),N+h+N+"box-"+l+F+"flex-"+l+h;case 115:return N+h+F+"flex-item-"+h.replace(y,"")+h;default:return N+h+F+"flex-line-pack"+h.replace("align-content","").replace(y,"")+h}break;case 973:case 989:if(h.charCodeAt(3)!==Q||122===h.charCodeAt(4))break;case 931:case 953:if(true===j.test(e))if(115===(l=e.substring(e.indexOf(":")+1)).charCodeAt(0))return Ke(e.replace("stretch","fill-available"),a,r,c).replace(":fill-available",":stretch");else return h.replace(l,N+l)+h.replace(l,S+l.replace("fill-",""))+h;break;case 962:if(h=N+h+(102===h.charCodeAt(5)?F+h:"")+h,r+c===211&&105===h.charCodeAt(13)&&h.indexOf("transform",10)>0)return h.substring(0,h.indexOf(";",27)+1).replace(i,"$1"+N+"$2")+h}return h}function Le(e,a){var r=e.indexOf(1===a?":":"{"),c=e.substring(0,3!==a?r:10),s=e.substring(r+1,e.length-1);return Oe(2!==a?c:c.replace(O,"$1"),s,a)}function Me(e,a){var r=Ke(a,a.charCodeAt(0),a.charCodeAt(1),a.charCodeAt(2));return r!==a+";"?r.replace($," or ($1)").substring(4):"("+a+")"}function Pe(e,a,r,c,s,t,i,f,n,l){for(var o,h=0,u=a;h<ye;++h)switch(o=$e[h].call(Te,e,u,r,c,s,t,i,f,n,l)){case void 0:case false:case true:case null:break;default:u=o}if(u!==a)return u}function Qe(e,a,r,c){for(var s=a+1;s<r;++s)switch(c.charCodeAt(s)){case Z:if(e===T)if(c.charCodeAt(s-1)===T&&a+2!==s)return s+1;break;case I:if(e===Z)return s+1}return s}function Re(e){for(var a in e){var r=e[a];switch(a){case"keyframe":Be=0|r;break;case"global":Ce=0|r;break;case"cascade":ge=0|r;break;case"compress":we=0|r;break;case"semicolon":ve=0|r;break;case"preserve":me=0|r;break;case"prefix":if(Oe=null,!r)Ae=0;else if("function"!=typeof r)Ae=1;else Ae=2,Oe=r}}return Re}function Te(a,r){if(void 0!==this&&this.constructor===Te)return e(a);var s=a,t=s.charCodeAt(0);if(t<33)t=(s=s.trim()).charCodeAt(0);if(Be>0)De=s.replace(d,t===G?"":"-");if(t=1,1===ge)Ge=s;else Ee=s;var i,f=[Ge];if(ye>0)if(void 0!==(i=Pe(ze,r,f,f,pe,be,0,0,0,0))&&"string"==typeof i)r=i;var n=He(xe,f,r,0,0);if(ye>0)if(void 0!==(i=Pe(je,n,f,f,pe,be,n.length,0,0,0))&&"string"!=typeof(n=i))t=0;return De="",Ge="",Ee="",ke=0,pe=1,be=1,we*t==0?n:n.replace(c,"").replace(g,"").replace(A,"$1").replace(C,"$1").replace(w," ")}if(Te.use=function e(a){switch(a){case void 0:case null:ye=$e.length=0;break;default:if("function"==typeof a)$e[ye++]=a;else if("object"==typeof a)for(var r=0,c=a.length;r<c;++r)e(a[r]);else qe=0|!!a}return e},Te.set=Re,void 0!==a)Re(a);return Te});
+!function(e){ true?module.exports=e(null):undefined}(function e(a){"use strict";var c=/^\0+/g,r=/[\0\r\f]/g,s=/: */g,t=/zoo|gra/,i=/([,: ])(transform)/g,f=/,+\s*(?![^(]*[)])/g,n=/ +\s*(?![^(]*[)])/g,l=/ *[\0] */g,o=/,\r+?/g,h=/([\t\r\n ])*\f?&/g,u=/:global\(((?:[^\(\)\[\]]*|\[.*\]|\([^\(\)]*\))*)\)/g,d=/\W+/g,b=/@(k\w+)\s*(\S*)\s*/,k=/::(place)/g,p=/:(read-only)/g,g=/\s+(?=[{\];=:>])/g,A=/([[}=:>])\s+/g,C=/(\{[^{]+?);(?=\})/g,w=/\s{2,}/g,v=/([^\(])(:+) */g,m=/[svh]\w+-[tblr]{2}/,x=/\(\s*(.*)\s*\)/g,$=/([\s\S]*?);/g,y=/-self|flex-/g,O=/[^]*?(:[rp][el]a[\w-]+)[^]*/,j=/stretch|:\s*\w+\-(?:conte|avail)/,z=/([^-])(image-set\()/,F="-webkit-",N="-moz-",S="-ms-",B=59,W=125,q=123,D=40,E=41,G=91,H=93,I=10,J=13,K=9,L=64,M=32,P=38,Q=45,R=95,T=42,U=44,V=58,X=39,Y=34,Z=47,_=62,ee=43,ae=126,ce=0,re=12,se=11,te=107,ie=109,fe=115,ne=112,le=111,oe=105,he=99,ue=100,de=112,be=1,ke=1,pe=0,ge=1,Ae=1,Ce=1,we=0,ve=0,me=0,xe=[],$e=[],ye=0,Oe=null,je=-2,ze=-1,Fe=0,Ne=1,Se=2,Be=3,We=0,qe=1,De="",Ee="",Ge="";function He(e,a,s,t,i){for(var f,n,o=0,h=0,u=0,d=0,g=0,A=0,C=0,w=0,m=0,$=0,y=0,O=0,j=0,z=0,R=0,we=0,$e=0,Oe=0,je=0,ze=s.length,Je=ze-1,Re="",Te="",Ue="",Ve="",Xe="",Ye="";R<ze;){if(C=s.charCodeAt(R),R===Je)if(h+d+u+o!==0){if(0!==h)C=h===Z?I:Z;d=u=o=0,ze++,Je++}if(h+d+u+o===0){if(R===Je){if(we>0)Te=Te.replace(r,"");if(Te.trim().length>0){switch(C){case M:case K:case B:case J:case I:break;default:Te+=s.charAt(R)}C=B}}if(1===$e)switch(C){case q:case W:case B:case Y:case X:case D:case E:case U:$e=0;case K:case J:case I:case M:break;default:for($e=0,je=R,g=C,R--,C=B;je<ze;)switch(s.charCodeAt(je++)){case I:case J:case B:++R,C=g,je=ze;break;case V:if(we>0)++R,C=g;case q:je=ze}}switch(C){case q:for(g=(Te=Te.trim()).charCodeAt(0),y=1,je=++R;R<ze;){switch(C=s.charCodeAt(R)){case q:y++;break;case W:y--;break;case Z:switch(A=s.charCodeAt(R+1)){case T:case Z:R=Qe(A,R,Je,s)}break;case G:C++;case D:C++;case Y:case X:for(;R++<Je&&s.charCodeAt(R)!==C;);}if(0===y)break;R++}if(Ue=s.substring(je,R),g===ce)g=(Te=Te.replace(c,"").trim()).charCodeAt(0);switch(g){case L:if(we>0)Te=Te.replace(r,"");switch(A=Te.charCodeAt(1)){case ue:case ie:case fe:case Q:f=a;break;default:f=xe}if(je=(Ue=He(a,f,Ue,A,i+1)).length,me>0&&0===je)je=Te.length;if(ye>0)if(f=Ie(xe,Te,Oe),n=Pe(Be,Ue,f,a,ke,be,je,A,i,t),Te=f.join(""),void 0!==n)if(0===(je=(Ue=n.trim()).length))A=0,Ue="";if(je>0)switch(A){case fe:Te=Te.replace(x,Me);case ue:case ie:case Q:Ue=Te+"{"+Ue+"}";break;case te:if(Ue=(Te=Te.replace(b,"$1 $2"+(qe>0?De:"")))+"{"+Ue+"}",1===Ae||2===Ae&&Le("@"+Ue,3))Ue="@"+F+Ue+"@"+Ue;else Ue="@"+Ue;break;default:if(Ue=Te+Ue,t===de)Ve+=Ue,Ue=""}else Ue="";break;default:Ue=He(a,Ie(a,Te,Oe),Ue,t,i+1)}Xe+=Ue,O=0,$e=0,z=0,we=0,Oe=0,j=0,Te="",Ue="",C=s.charCodeAt(++R);break;case W:case B:if((je=(Te=(we>0?Te.replace(r,""):Te).trim()).length)>1){if(0===z)if((g=Te.charCodeAt(0))===Q||g>96&&g<123)je=(Te=Te.replace(" ",":")).length;if(ye>0)if(void 0!==(n=Pe(Ne,Te,a,e,ke,be,Ve.length,t,i,t)))if(0===(je=(Te=n.trim()).length))Te="\0\0";switch(g=Te.charCodeAt(0),A=Te.charCodeAt(1),g){case ce:break;case L:if(A===oe||A===he){Ye+=Te+s.charAt(R);break}default:if(Te.charCodeAt(je-1)===V)break;Ve+=Ke(Te,g,A,Te.charCodeAt(2))}}O=0,$e=0,z=0,we=0,Oe=0,Te="",C=s.charCodeAt(++R)}}switch(C){case J:case I:if(h+d+u+o+ve===0)switch($){case E:case X:case Y:case L:case ae:case _:case T:case ee:case Z:case Q:case V:case U:case B:case q:case W:break;default:if(z>0)$e=1}if(h===Z)h=0;else if(ge+O===0&&t!==te&&Te.length>0)we=1,Te+="\0";if(ye*We>0)Pe(Fe,Te,a,e,ke,be,Ve.length,t,i,t);be=1,ke++;break;case B:case W:if(h+d+u+o===0){be++;break}default:switch(be++,Re=s.charAt(R),C){case K:case M:if(d+o+h===0)switch(w){case U:case V:case K:case M:Re="";break;default:if(C!==M)Re=" "}break;case ce:Re="\\0";break;case re:Re="\\f";break;case se:Re="\\v";break;case P:if(d+h+o===0&&ge>0)Oe=1,we=1,Re="\f"+Re;break;case 108:if(d+h+o+pe===0&&z>0)switch(R-z){case 2:if(w===ne&&s.charCodeAt(R-3)===V)pe=w;case 8:if(m===le)pe=m}break;case V:if(d+h+o===0)z=R;break;case U:if(h+u+d+o===0)we=1,Re+="\r";break;case Y:case X:if(0===h)d=d===C?0:0===d?C:d;break;case G:if(d+h+u===0)o++;break;case H:if(d+h+u===0)o--;break;case E:if(d+h+o===0)u--;break;case D:if(d+h+o===0){if(0===O)switch(2*w+3*m){case 533:break;default:y=0,O=1}u++}break;case L:if(h+u+d+o+z+j===0)j=1;break;case T:case Z:if(d+o+u>0)break;switch(h){case 0:switch(2*C+3*s.charCodeAt(R+1)){case 235:h=Z;break;case 220:je=R,h=T}break;case T:if(C===Z&&w===T&&je+2!==R){if(33===s.charCodeAt(je+2))Ve+=s.substring(je,R+1);Re="",h=0}}}if(0===h){if(ge+d+o+j===0&&t!==te&&C!==B)switch(C){case U:case ae:case _:case ee:case E:case D:if(0===O){switch(w){case K:case M:case I:case J:Re+="\0";break;default:Re="\0"+Re+(C===U?"":"\0")}we=1}else switch(C){case D:if(z+7===R&&108===w)z=0;O=++y;break;case E:if(0==(O=--y))we=1,Re+="\0"}break;case K:case M:switch(w){case ce:case q:case W:case B:case U:case re:case K:case M:case I:case J:break;default:if(0===O)we=1,Re+="\0"}}if(Te+=Re,C!==M&&C!==K)$=C}}m=w,w=C,R++}if(je=Ve.length,me>0)if(0===je&&0===Xe.length&&0===a[0].length==false)if(t!==ie||1===a.length&&(ge>0?Ee:Ge)===a[0])je=a.join(",").length+2;if(je>0){if(f=0===ge&&t!==te?function(e){for(var a,c,s=0,t=e.length,i=Array(t);s<t;++s){for(var f=e[s].split(l),n="",o=0,h=0,u=0,d=0,b=f.length;o<b;++o){if(0===(h=(c=f[o]).length)&&b>1)continue;if(u=n.charCodeAt(n.length-1),d=c.charCodeAt(0),a="",0!==o)switch(u){case T:case ae:case _:case ee:case M:case D:break;default:a=" "}switch(d){case P:c=a+Ee;case ae:case _:case ee:case M:case E:case D:break;case G:c=a+c+Ee;break;case V:switch(2*c.charCodeAt(1)+3*c.charCodeAt(2)){case 530:if(Ce>0){c=a+c.substring(8,h-1);break}default:if(o<1||f[o-1].length<1)c=a+Ee+c}break;case U:a="";default:if(h>1&&c.indexOf(":")>0)c=a+c.replace(v,"$1"+Ee+"$2");else c=a+c+Ee}n+=c}i[s]=n.replace(r,"").trim()}return i}(a):a,ye>0)if(void 0!==(n=Pe(Se,Ve,f,e,ke,be,je,t,i,t))&&0===(Ve=n).length)return Ye+Ve+Xe;if(Ve=f.join(",")+"{"+Ve+"}",Ae*pe!=0){if(2===Ae&&!Le(Ve,2))pe=0;switch(pe){case le:Ve=Ve.replace(p,":"+N+"$1")+Ve;break;case ne:Ve=Ve.replace(k,"::"+F+"input-$1")+Ve.replace(k,"::"+N+"$1")+Ve.replace(k,":"+S+"input-$1")+Ve}pe=0}}return Ye+Ve+Xe}function Ie(e,a,c){var r=a.trim().split(o),s=r,t=r.length,i=e.length;switch(i){case 0:case 1:for(var f=0,n=0===i?"":e[0]+" ";f<t;++f)s[f]=Je(n,s[f],c,i).trim();break;default:f=0;var l=0;for(s=[];f<t;++f)for(var h=0;h<i;++h)s[l++]=Je(e[h]+" ",r[f],c,i).trim()}return s}function Je(e,a,c,r){var s=a,t=s.charCodeAt(0);if(t<33)t=(s=s.trim()).charCodeAt(0);switch(t){case P:switch(ge+r){case 0:case 1:if(0===e.trim().length)break;default:return s.replace(h,"$1"+e.trim())}break;case V:switch(s.charCodeAt(1)){case 103:if(Ce>0&&ge>0)return s.replace(u,"$1").replace(h,"$1"+Ge);break;default:return e.trim()+s.replace(h,"$1"+e.trim())}default:if(c*ge>0&&s.indexOf("\f")>0)return s.replace(h,(e.charCodeAt(0)===V?"":"$1")+e.trim())}return e+s}function Ke(e,a,c,r){var l,o=0,h=e+";",u=2*a+3*c+4*r;if(944===u)return function(e){var a=e.length,c=e.indexOf(":",9)+1,r=e.substring(0,c).trim(),s=e.substring(c,a-1).trim();switch(e.charCodeAt(9)*qe){case 0:break;case Q:if(110!==e.charCodeAt(10))break;default:for(var t=s.split((s="",f)),i=0,c=0,a=t.length;i<a;c=0,++i){for(var l=t[i],o=l.split(n);l=o[c];){var h=l.charCodeAt(0);if(1===qe&&(h>L&&h<90||h>96&&h<123||h===R||h===Q&&l.charCodeAt(1)!==Q))switch(isNaN(parseFloat(l))+(-1!==l.indexOf("("))){case 1:switch(l){case"infinite":case"alternate":case"backwards":case"running":case"normal":case"forwards":case"both":case"none":case"linear":case"ease":case"ease-in":case"ease-out":case"ease-in-out":case"paused":case"reverse":case"alternate-reverse":case"inherit":case"initial":case"unset":case"step-start":case"step-end":break;default:l+=De}}o[c++]=l}s+=(0===i?"":",")+o.join(" ")}}if(s=r+s+";",1===Ae||2===Ae&&Le(s,1))return F+s+s;return s}(h);else if(0===Ae||2===Ae&&!Le(h,1))return h;switch(u){case 1015:return 97===h.charCodeAt(10)?F+h+h:h;case 951:return 116===h.charCodeAt(3)?F+h+h:h;case 963:return 110===h.charCodeAt(5)?F+h+h:h;case 1009:if(100!==h.charCodeAt(4))break;case 969:case 942:return F+h+h;case 978:return F+h+N+h+h;case 1019:case 983:return F+h+N+h+S+h+h;case 883:if(h.charCodeAt(8)===Q)return F+h+h;if(h.indexOf("image-set(",11)>0)return h.replace(z,"$1"+F+"$2")+h;return h;case 932:if(h.charCodeAt(4)===Q)switch(h.charCodeAt(5)){case 103:return F+"box-"+h.replace("-grow","")+F+h+S+h.replace("grow","positive")+h;case 115:return F+h+S+h.replace("shrink","negative")+h;case 98:return F+h+S+h.replace("basis","preferred-size")+h}return F+h+S+h+h;case 964:return F+h+S+"flex-"+h+h;case 1023:if(99!==h.charCodeAt(8))break;return l=h.substring(h.indexOf(":",15)).replace("flex-","").replace("space-between","justify"),F+"box-pack"+l+F+h+S+"flex-pack"+l+h;case 1005:return t.test(h)?h.replace(s,":"+F)+h.replace(s,":"+N)+h:h;case 1e3:switch(o=(l=h.substring(13).trim()).indexOf("-")+1,l.charCodeAt(0)+l.charCodeAt(o)){case 226:l=h.replace(m,"tb");break;case 232:l=h.replace(m,"tb-rl");break;case 220:l=h.replace(m,"lr");break;default:return h}return F+h+S+l+h;case 1017:if(-1===h.indexOf("sticky",9))return h;case 975:switch(o=(h=e).length-10,u=(l=(33===h.charCodeAt(o)?h.substring(0,o):h).substring(e.indexOf(":",7)+1).trim()).charCodeAt(0)+(0|l.charCodeAt(7))){case 203:if(l.charCodeAt(8)<111)break;case 115:h=h.replace(l,F+l)+";"+h;break;case 207:case 102:h=h.replace(l,F+(u>102?"inline-":"")+"box")+";"+h.replace(l,F+l)+";"+h.replace(l,S+l+"box")+";"+h}return h+";";case 938:if(h.charCodeAt(5)===Q)switch(h.charCodeAt(6)){case 105:return l=h.replace("-items",""),F+h+F+"box-"+l+S+"flex-"+l+h;case 115:return F+h+S+"flex-item-"+h.replace(y,"")+h;default:return F+h+S+"flex-line-pack"+h.replace("align-content","").replace(y,"")+h}break;case 973:case 989:if(h.charCodeAt(3)!==Q||122===h.charCodeAt(4))break;case 931:case 953:if(true===j.test(e))if(115===(l=e.substring(e.indexOf(":")+1)).charCodeAt(0))return Ke(e.replace("stretch","fill-available"),a,c,r).replace(":fill-available",":stretch");else return h.replace(l,F+l)+h.replace(l,N+l.replace("fill-",""))+h;break;case 962:if(h=F+h+(102===h.charCodeAt(5)?S+h:"")+h,c+r===211&&105===h.charCodeAt(13)&&h.indexOf("transform",10)>0)return h.substring(0,h.indexOf(";",27)+1).replace(i,"$1"+F+"$2")+h}return h}function Le(e,a){var c=e.indexOf(1===a?":":"{"),r=e.substring(0,3!==a?c:10),s=e.substring(c+1,e.length-1);return Oe(2!==a?r:r.replace(O,"$1"),s,a)}function Me(e,a){var c=Ke(a,a.charCodeAt(0),a.charCodeAt(1),a.charCodeAt(2));return c!==a+";"?c.replace($," or ($1)").substring(4):"("+a+")"}function Pe(e,a,c,r,s,t,i,f,n,l){for(var o,h=0,u=a;h<ye;++h)switch(o=$e[h].call(Te,e,u,c,r,s,t,i,f,n,l)){case void 0:case false:case true:case null:break;default:u=o}switch(u){case void 0:case false:case true:case null:case a:break;default:return u}}function Qe(e,a,c,r){for(var s=a+1;s<c;++s)switch(r.charCodeAt(s)){case Z:if(e===T)if(r.charCodeAt(s-1)===T&&a+2!==s)return s+1;break;case I:if(e===Z)return s+1}return s}function Re(e){for(var a in e){var c=e[a];switch(a){case"keyframe":qe=0|c;break;case"global":Ce=0|c;break;case"cascade":ge=0|c;break;case"compress":we=0|c;break;case"semicolon":ve=0|c;break;case"preserve":me=0|c;break;case"prefix":if(Oe=null,!c)Ae=0;else if("function"!=typeof c)Ae=1;else Ae=2,Oe=c}}return Re}function Te(a,c){if(void 0!==this&&this.constructor===Te)return e(a);var s=a,t=s.charCodeAt(0);if(t<33)t=(s=s.trim()).charCodeAt(0);if(qe>0)De=s.replace(d,t===G?"":"-");if(t=1,1===ge)Ge=s;else Ee=s;var i,f=[Ge];if(ye>0)if(void 0!==(i=Pe(ze,c,f,f,ke,be,0,0,0,0))&&"string"==typeof i)c=i;var n=He(xe,f,c,0,0);if(ye>0)if(void 0!==(i=Pe(je,n,f,f,ke,be,n.length,0,0,0))&&"string"!=typeof(n=i))t=0;return De="",Ge="",Ee="",pe=0,ke=1,be=1,we*t==0?n:n.replace(r,"").replace(g,"").replace(A,"$1").replace(C,"$1").replace(w," ")}if(Te.use=function e(a){switch(a){case void 0:case null:ye=$e.length=0;break;default:switch(a.constructor){case Array:for(var c=0,r=a.length;c<r;++c)e(a[c]);break;case Function:$e[ye++]=a;break;case Boolean:We=0|!!a}}return e},Te.set=Re,void 0!==a)Re(a);return Te});
 //# sourceMappingURL=stylis.min.js.map
 
 /***/ }),
@@ -38388,6 +38728,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components */ "./components/index.js");
 /* harmony import */ var _styles_colors__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/colors */ "./styles/colors.js");
 /* harmony import */ var _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/mediaQueries */ "./styles/mediaQueries.js");
+/* harmony import */ var _utils_googleAds__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/googleAds */ "./utils/googleAds.js");
 var _jsxFileName = "/Users/loan/Documents/Development/outgrow-website/pages/contact.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -38473,6 +38814,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var DatePicker = function DatePicker() {
   return null;
 }; // Only import react-datepicker if running on client
@@ -38480,7 +38822,7 @@ var DatePicker = function DatePicker() {
 
 if (typeof window !== "undefined") {
   DatePicker = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(function () {
-    return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! react-datepicker */ "./node_modules/react-datepicker/es/index.js"));
+    return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! react-datepicker */ "./node_modules/react-datepicker/es/index.js"));
   }, {
     loadableGenerated: {
       webpack: function webpack() {
@@ -38629,6 +38971,8 @@ function (_Component) {
       event.preventDefault();
       mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["Stitch"].defaultAppClient.callFunction("sendContactRequest", [_this.state]).then(function (result) {
         if (typeof result !== "undefined" && typeof result.MessageId === "string") {
+          Object(_utils_googleAds__WEBPACK_IMPORTED_MODULE_8__["reportConversion"])();
+
           _this.setState(_objectSpread({}, defaultState, {
             sent: result
           }));
@@ -38670,20 +39014,20 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 204
+          lineNumber: 207
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Head"], {
         title: "E-Commerce Consultancy | Get a Quote \u2014 Contact Our Team Now | out:grow",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 205
+          lineNumber: 208
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Nav"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 206
+          lineNumber: 209
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["ServicePageHeader"], {
@@ -38695,40 +39039,40 @@ function (_Component) {
         title: "Get in touch.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 208
+          lineNumber: 211
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Wire"], {
         color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["blue"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 220
+          lineNumber: 223
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PageWrapper, {
         id: "section-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 222
+          lineNumber: 225
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Title"], {
         color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["blue"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 223
+          lineNumber: 226
         },
         __self: this
       }, "Our locations."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 225
+          lineNumber: 228
         },
         __self: this
       }, "As a global company helping global clients, we at out:grow provide 24/7 services to retailers and agencies around the world thanks to our offices in Los Angeles and Dubai."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Locations, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 227
+          lineNumber: 230
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Location, {
@@ -38737,13 +39081,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 228
+          lineNumber: 231
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationTitle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 229
+          lineNumber: 232
         },
         __self: this
       }, "Los Angeles"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationIcon, {
@@ -38751,31 +39095,31 @@ function (_Component) {
         src: "/static/california.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 230
+          lineNumber: 233
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationAddress, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 231
+          lineNumber: 234
         },
         __self: this
       }, "601 S. Figueroa Street", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 232
+          lineNumber: 235
         },
         __self: this
       }), "Suite 4050", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 233
+          lineNumber: 236
         },
         __self: this
       }), "Los Angeles, CA 90071", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 234
+          lineNumber: 237
         },
         __self: this
       }), "United States of America")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Location, {
@@ -38784,13 +39128,13 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 239
+          lineNumber: 242
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationTitle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 240
+          lineNumber: 243
         },
         __self: this
       }, "Dubai"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationIcon, {
@@ -38798,64 +39142,64 @@ function (_Component) {
         src: "/static/uae.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 241
+          lineNumber: 244
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LocationAddress, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 242
+          lineNumber: 245
         },
         __self: this
       }, "The Offices 3", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 243
+          lineNumber: 246
         },
         __self: this
       }), "One Central, World Trade Center", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 244
+          lineNumber: 247
         },
         __self: this
       }), "Sheikh Zayed Road", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 245
+          lineNumber: 248
         },
         __self: this
       }), "Dubai", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 246
+          lineNumber: 249
         },
         __self: this
       }), "United Arab Emirates"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Title"], {
         color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["blue"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 252
+          lineNumber: 255
         },
         __self: this
       }, "Let us help."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Form, {
         onSubmit: this.handleSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 253
+          lineNumber: 256
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DividedFieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 254
+          lineNumber: 257
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         marginRight: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 255
+          lineNumber: 258
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -38868,14 +39212,14 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 256
+          lineNumber: 259
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         marginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 267
+          lineNumber: 270
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -38888,27 +39232,27 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 268
+          lineNumber: 271
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DividedFieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 280
+          lineNumber: 283
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         marginRight: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 281
+          lineNumber: 284
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Label, {
         htmlFor: "callbackPreferred",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 282
+          lineNumber: 285
         },
         __self: this
       }, "Should we call?")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
@@ -38916,7 +39260,7 @@ function (_Component) {
         marginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 285
+          lineNumber: 288
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_3__["SegmentedControl"], {
@@ -38940,34 +39284,34 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 286
+          lineNumber: 289
         },
         __self: this
       }))), this.state.callbackPreferred && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DividedFieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 305
+          lineNumber: 308
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         marginRight: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 306
+          lineNumber: 309
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Label, {
         htmlFor: "preferredTimeForCallback",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 307
+          lineNumber: 310
         },
         __self: this
       }, "Preferred time")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         marginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 309
+          lineNumber: 312
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DatePicker, {
@@ -38979,13 +39323,13 @@ function (_Component) {
         showTimeSelect: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 310
+          lineNumber: 313
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 322
+          lineNumber: 325
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_3__["SegmentedControl"], {
@@ -39010,7 +39354,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 323
+          lineNumber: 326
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
@@ -39019,7 +39363,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 340
+          lineNumber: 343
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Textarea, {
@@ -39031,13 +39375,13 @@ function (_Component) {
         placeholder: "Message",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 341
+          lineNumber: 344
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 351
+          lineNumber: 354
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Button"], {
@@ -39047,13 +39391,13 @@ function (_Component) {
         disabled: this.state.sent || this.state.error,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 352
+          lineNumber: 355
         },
         __self: this
       }, this.state.sent ? "Thank you!" : "Send")), this.state.error && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Error, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 362
+          lineNumber: 365
         },
         __self: this
       }, "We're sorry, something wrong happened. Please send your inquiry manually to contact@outgrow.io while our engineers are fixing this."))));
@@ -39140,7 +39484,42 @@ var media = Object.keys(sizes).reduce(function (accumulator, sizeLabel) {
 
 /***/ }),
 
-/***/ 6:
+/***/ "./utils/googleAds.js":
+/*!****************************!*\
+  !*** ./utils/googleAds.js ***!
+  \****************************/
+/*! exports provided: gtag, initializeGoogleAds, reportConversion */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gtag", function() { return gtag; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initializeGoogleAds", function() { return initializeGoogleAds; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reportConversion", function() { return reportConversion; });
+function gtag() {
+  if (true) {
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push(arguments);
+  }
+}
+
+function initializeGoogleAds() {
+  gtag("js", new Date());
+  gtag("config", "AW-767784789");
+}
+
+function reportConversion() {
+  gtag("event", "conversion", {
+    "send_to": "AW-767784789/M3YxCPHq6ZMBENXuje4C"
+  });
+  return false;
+}
+
+
+
+/***/ }),
+
+/***/ 5:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/
@@ -39165,5 +39544,5 @@ module.exports = dll_b2d9fd95b535cd8bf589;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]));;
+},[[5,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=contact.js.map
