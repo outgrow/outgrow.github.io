@@ -4372,179 +4372,6 @@ module.exports = hoistNonReactStatics;
 
 /***/ }),
 
-/***/ "./node_modules/ms/index.js":
-/*!**********************************!*\
-  !*** ./node_modules/ms/index.js ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/**
- * Helpers.
- */
-
-var s = 1000;
-var m = s * 60;
-var h = m * 60;
-var d = h * 24;
-var w = d * 7;
-var y = d * 365.25;
-
-/**
- * Parse or format the given `val`.
- *
- * Options:
- *
- *  - `long` verbose formatting [false]
- *
- * @param {String|Number} val
- * @param {Object} [options]
- * @throws {Error} throw an error if val is not a non-empty string or a number
- * @return {String|Number}
- * @api public
- */
-
-module.exports = function(val, options) {
-  options = options || {};
-  var type = typeof val;
-  if (type === 'string' && val.length > 0) {
-    return parse(val);
-  } else if (type === 'number' && isNaN(val) === false) {
-    return options.long ? fmtLong(val) : fmtShort(val);
-  }
-  throw new Error(
-    'val is not a non-empty string or a valid number. val=' +
-      JSON.stringify(val)
-  );
-};
-
-/**
- * Parse the given `str` and return milliseconds.
- *
- * @param {String} str
- * @return {Number}
- * @api private
- */
-
-function parse(str) {
-  str = String(str);
-  if (str.length > 100) {
-    return;
-  }
-  var match = /^((?:\d+)?\-?\d?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$/i.exec(
-    str
-  );
-  if (!match) {
-    return;
-  }
-  var n = parseFloat(match[1]);
-  var type = (match[2] || 'ms').toLowerCase();
-  switch (type) {
-    case 'years':
-    case 'year':
-    case 'yrs':
-    case 'yr':
-    case 'y':
-      return n * y;
-    case 'weeks':
-    case 'week':
-    case 'w':
-      return n * w;
-    case 'days':
-    case 'day':
-    case 'd':
-      return n * d;
-    case 'hours':
-    case 'hour':
-    case 'hrs':
-    case 'hr':
-    case 'h':
-      return n * h;
-    case 'minutes':
-    case 'minute':
-    case 'mins':
-    case 'min':
-    case 'm':
-      return n * m;
-    case 'seconds':
-    case 'second':
-    case 'secs':
-    case 'sec':
-    case 's':
-      return n * s;
-    case 'milliseconds':
-    case 'millisecond':
-    case 'msecs':
-    case 'msec':
-    case 'ms':
-      return n;
-    default:
-      return undefined;
-  }
-}
-
-/**
- * Short format for `ms`.
- *
- * @param {Number} ms
- * @return {String}
- * @api private
- */
-
-function fmtShort(ms) {
-  var msAbs = Math.abs(ms);
-  if (msAbs >= d) {
-    return Math.round(ms / d) + 'd';
-  }
-  if (msAbs >= h) {
-    return Math.round(ms / h) + 'h';
-  }
-  if (msAbs >= m) {
-    return Math.round(ms / m) + 'm';
-  }
-  if (msAbs >= s) {
-    return Math.round(ms / s) + 's';
-  }
-  return ms + 'ms';
-}
-
-/**
- * Long format for `ms`.
- *
- * @param {Number} ms
- * @return {String}
- * @api private
- */
-
-function fmtLong(ms) {
-  var msAbs = Math.abs(ms);
-  if (msAbs >= d) {
-    return plural(ms, msAbs, d, 'day');
-  }
-  if (msAbs >= h) {
-    return plural(ms, msAbs, h, 'hour');
-  }
-  if (msAbs >= m) {
-    return plural(ms, msAbs, m, 'minute');
-  }
-  if (msAbs >= s) {
-    return plural(ms, msAbs, s, 'second');
-  }
-  return ms + ' ms';
-}
-
-/**
- * Pluralization helper.
- */
-
-function plural(ms, msAbs, n, name) {
-  var isPlural = msAbs >= n * 1.5;
-  return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/next-ga/dist/analytics/dev.js":
 /*!****************************************************!*\
   !*** ./node_modules/next-ga/dist/analytics/dev.js ***!
@@ -4892,7 +4719,7 @@ function setup(env) {
 	createDebug.disable = disable;
 	createDebug.enable = enable;
 	createDebug.enabled = enabled;
-	createDebug.humanize = __webpack_require__(/*! ms */ "./node_modules/ms/index.js");
+	createDebug.humanize = __webpack_require__(/*! ms */ "./node_modules/next-ga/node_modules/ms/index.js");
 
 	Object.keys(env).forEach(key => {
 		createDebug[key] = env[key];
@@ -5145,6 +4972,179 @@ function setup(env) {
 }
 
 module.exports = setup;
+
+
+/***/ }),
+
+/***/ "./node_modules/next-ga/node_modules/ms/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/next-ga/node_modules/ms/index.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Helpers.
+ */
+
+var s = 1000;
+var m = s * 60;
+var h = m * 60;
+var d = h * 24;
+var w = d * 7;
+var y = d * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+module.exports = function(val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse(val);
+  } else if (type === 'number' && isNaN(val) === false) {
+    return options.long ? fmtLong(val) : fmtShort(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^((?:\d+)?\-?\d?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y;
+    case 'weeks':
+    case 'week':
+    case 'w':
+      return n * w;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort(ms) {
+  var msAbs = Math.abs(ms);
+  if (msAbs >= d) {
+    return Math.round(ms / d) + 'd';
+  }
+  if (msAbs >= h) {
+    return Math.round(ms / h) + 'h';
+  }
+  if (msAbs >= m) {
+    return Math.round(ms / m) + 'm';
+  }
+  if (msAbs >= s) {
+    return Math.round(ms / s) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong(ms) {
+  var msAbs = Math.abs(ms);
+  if (msAbs >= d) {
+    return plural(ms, msAbs, d, 'day');
+  }
+  if (msAbs >= h) {
+    return plural(ms, msAbs, h, 'hour');
+  }
+  if (msAbs >= m) {
+    return plural(ms, msAbs, m, 'minute');
+  }
+  if (msAbs >= s) {
+    return plural(ms, msAbs, s, 'second');
+  }
+  return ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural(ms, msAbs, n, name) {
+  var isPlural = msAbs >= n * 1.5;
+  return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
+}
 
 
 /***/ }),
@@ -9635,6 +9635,277 @@ function trim(s) {
 
 /***/ }),
 
+/***/ "./node_modules/react-messenger-customer-chat/lib/MessengerCustomerChat.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/react-messenger-customer-chat/lib/MessengerCustomerChat.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var removeElementByIds = function removeElementByIds(ids) {
+  ids.forEach(function (id) {
+    var element = document.getElementById(id);
+    if (element && element.parentNode) {
+      element.parentNode.removeChild(element);
+    }
+  });
+};
+
+var MessengerCustomerChat = function (_Component) {
+  _inherits(MessengerCustomerChat, _Component);
+
+  function MessengerCustomerChat() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, MessengerCustomerChat);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = MessengerCustomerChat.__proto__ || Object.getPrototypeOf(MessengerCustomerChat)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      fbLoaded: false,
+      shouldShowDialog: undefined
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(MessengerCustomerChat, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.setFbAsyncInit();
+      this.reloadSDKAsynchronously();
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps) {
+      if (prevProps.pageId !== this.props.pageId || prevProps.appId !== this.props.appId || prevProps.shouldShowDialog !== this.props.shouldShowDialog || prevProps.htmlRef !== this.props.htmlRef || prevProps.minimized !== this.props.minimized || prevProps.themeColor !== this.props.themeColor || prevProps.loggedInGreeting !== this.props.loggedInGreeting || prevProps.loggedOutGreeting !== this.props.loggedOutGreeting || prevProps.greetingDialogDisplay !== this.props.greetingDialogDisplay || prevProps.greetingDialogDelay !== this.props.greetingDialogDelay || prevProps.autoLogAppEvents !== this.props.autoLogAppEvents || prevProps.xfbml !== this.props.xfbml || prevProps.version !== this.props.version || prevProps.language !== this.props.language) {
+        this.setFbAsyncInit();
+        this.reloadSDKAsynchronously();
+      }
+    }
+  }, {
+    key: 'setFbAsyncInit',
+    value: function setFbAsyncInit() {
+      var _this2 = this;
+
+      var _props = this.props,
+          appId = _props.appId,
+          autoLogAppEvents = _props.autoLogAppEvents,
+          xfbml = _props.xfbml,
+          version = _props.version;
+
+
+      window.fbAsyncInit = function () {
+        window.FB.init({
+          appId: appId,
+          autoLogAppEvents: autoLogAppEvents,
+          xfbml: xfbml,
+          version: 'v' + version
+        });
+
+        _this2.setState({ fbLoaded: true });
+      };
+    }
+  }, {
+    key: 'loadSDKAsynchronously',
+    value: function loadSDKAsynchronously() {
+      var language = this.props.language;
+      /* eslint-disable */
+
+      (function (d, s, id) {
+        var js,
+            fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/' + language + '/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'facebook-jssdk');
+      /* eslint-enable */
+    }
+  }, {
+    key: 'removeFacebookSDK',
+    value: function removeFacebookSDK() {
+      removeElementByIds(['facebook-jssdk', 'fb-root']);
+
+      delete window.FB;
+    }
+  }, {
+    key: 'reloadSDKAsynchronously',
+    value: function reloadSDKAsynchronously() {
+      this.removeFacebookSDK();
+      this.loadSDKAsynchronously();
+    }
+  }, {
+    key: 'controlPlugin',
+    value: function controlPlugin() {
+      var shouldShowDialog = this.props.shouldShowDialog;
+
+
+      if (shouldShowDialog) {
+        window.FB.CustomerChat.showDialog();
+      } else {
+        window.FB.CustomerChat.hideDialog();
+      }
+    }
+  }, {
+    key: 'subscribeEvents',
+    value: function subscribeEvents() {
+      var _props2 = this.props,
+          onCustomerChatDialogShow = _props2.onCustomerChatDialogShow,
+          onCustomerChatDialogHide = _props2.onCustomerChatDialogHide;
+
+
+      if (onCustomerChatDialogShow) {
+        window.FB.Event.subscribe('customerchat.dialogShow', onCustomerChatDialogShow);
+      }
+
+      if (onCustomerChatDialogHide) {
+        window.FB.Event.subscribe('customerchat.dialogHide', onCustomerChatDialogHide);
+      }
+    }
+  }, {
+    key: 'createMarkup',
+    value: function createMarkup() {
+      var _props3 = this.props,
+          pageId = _props3.pageId,
+          htmlRef = _props3.htmlRef,
+          minimized = _props3.minimized,
+          themeColor = _props3.themeColor,
+          loggedInGreeting = _props3.loggedInGreeting,
+          loggedOutGreeting = _props3.loggedOutGreeting,
+          greetingDialogDisplay = _props3.greetingDialogDisplay,
+          greetingDialogDelay = _props3.greetingDialogDelay;
+
+
+      var refAttribute = htmlRef !== undefined ? 'ref="' + htmlRef + '"' : '';
+      var minimizedAttribute = minimized !== undefined ? 'minimized="' + minimized + '"' : '';
+      var themeColorAttribute = themeColor !== undefined ? 'theme_color="' + themeColor + '"' : '';
+      var loggedInGreetingAttribute = loggedInGreeting !== undefined ? 'logged_in_greeting="' + loggedInGreeting + '"' : '';
+      var loggedOutGreetingAttribute = loggedOutGreeting !== undefined ? 'logged_out_greeting="' + loggedOutGreeting + '"' : '';
+      var greetingDialogDisplayAttribute = greetingDialogDisplay !== undefined ? 'greeting_dialog_display="' + greetingDialogDisplay + '"' : '';
+      var greetingDialogDelayAttribute = greetingDialogDelay !== undefined ? 'greeting_dialog_delay="' + greetingDialogDelay + '"' : '';
+
+      return {
+        __html: '<div\n        class="fb-customerchat"\n        page_id="' + pageId + '"\n        ' + refAttribute + '\n        ' + minimizedAttribute + '\n        ' + themeColorAttribute + '\n        ' + loggedInGreetingAttribute + '\n        ' + loggedOutGreetingAttribute + '\n        ' + greetingDialogDisplayAttribute + '\n        ' + greetingDialogDelayAttribute + '\n      ></div>'
+      };
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this3 = this;
+
+      var _state = this.state,
+          fbLoaded = _state.fbLoaded,
+          shouldShowDialog = _state.shouldShowDialog;
+
+
+      if (fbLoaded && shouldShowDialog !== this.props.shouldShowDialog) {
+        document.addEventListener('DOMNodeInserted', function (event) {
+          var element = event.target;
+          if (element.className && typeof element.className === 'string' && element.className.includes('fb_dialog')) {
+            _this3.controlPlugin();
+          }
+        }, false);
+        this.subscribeEvents();
+      }
+      // Add a random key to rerender. Reference:
+      // https://stackoverflow.com/questions/30242530/dangerouslysetinnerhtml-doesnt-update-during-render
+      return _react2.default.createElement('div', { key: Date(), dangerouslySetInnerHTML: this.createMarkup() });
+    }
+  }]);
+
+  return MessengerCustomerChat;
+}(_react.Component);
+
+MessengerCustomerChat.propTypes = {
+  pageId: _propTypes2.default.string.isRequired,
+  appId: _propTypes2.default.string.isRequired,
+
+  shouldShowDialog: _propTypes2.default.bool,
+  htmlRef: _propTypes2.default.string,
+  minimized: _propTypes2.default.bool,
+  themeColor: _propTypes2.default.string,
+  loggedInGreeting: _propTypes2.default.string,
+  loggedOutGreeting: _propTypes2.default.string,
+  greetingDialogDisplay: _propTypes2.default.oneOf(['show', 'hide', 'fade']),
+  greetingDialogDelay: _propTypes2.default.number,
+  autoLogAppEvents: _propTypes2.default.bool,
+  xfbml: _propTypes2.default.bool,
+  version: _propTypes2.default.string,
+  language: _propTypes2.default.string,
+  onCustomerChatDialogShow: _propTypes2.default.func,
+  onCustomerChatDialogHide: _propTypes2.default.func
+};
+MessengerCustomerChat.defaultProps = {
+  shouldShowDialog: false,
+  htmlRef: undefined,
+  minimized: undefined,
+  themeColor: undefined,
+  loggedInGreeting: undefined,
+  loggedOutGreeting: undefined,
+  greetingDialogDisplay: undefined,
+  greetingDialogDelay: undefined,
+  autoLogAppEvents: true,
+  xfbml: true,
+  version: '2.11',
+  language: 'en_US',
+  onCustomerChatDialogShow: undefined,
+  onCustomerChatDialogHide: undefined
+};
+exports.default = MessengerCustomerChat;
+
+/***/ }),
+
+/***/ "./node_modules/react-messenger-customer-chat/lib/index.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/react-messenger-customer-chat/lib/index.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _MessengerCustomerChat = __webpack_require__(/*! ./MessengerCustomerChat */ "./node_modules/react-messenger-customer-chat/lib/MessengerCustomerChat.js");
+
+var _MessengerCustomerChat2 = _interopRequireDefault(_MessengerCustomerChat);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = _MessengerCustomerChat2.default;
+
+/***/ }),
+
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
   !*** delegated ./node_modules/react/index.js from dll-reference dll_b2d9fd95b535cd8bf589 ***!
@@ -11298,7 +11569,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_ga__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_ga__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react_fullstory__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-fullstory */ "./node_modules/react-fullstory/build/index.js");
 /* harmony import */ var react_fullstory__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_fullstory__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _utils_googleAds__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/googleAds */ "./utils/googleAds.js");
+/* harmony import */ var react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-messenger-customer-chat */ "./node_modules/react-messenger-customer-chat/lib/index.js");
+/* harmony import */ var react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _utils_googleAds__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/googleAds */ "./utils/googleAds.js");
 
 var _jsxFileName = "/Users/loan/Documents/Development/outgrow-website/pages/_app.js";
 
@@ -11333,6 +11606,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var CustomApp =
 /*#__PURE__*/
 function (_App) {
@@ -11347,7 +11621,7 @@ function (_App) {
   _createClass(CustomApp, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      Object(_utils_googleAds__WEBPACK_IMPORTED_MODULE_6__["initializeGoogleAds"])();
+      Object(_utils_googleAds__WEBPACK_IMPORTED_MODULE_7__["initializeGoogleAds"])();
     }
   }, {
     key: "render",
@@ -11358,13 +11632,13 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_2__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 28
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, _extends({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 29
         },
         __self: this
       })), true && window.location.hostname === "outgrow.io" && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_fullstory__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -11372,7 +11646,19 @@ function (_App) {
         org: "J1X09",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 30
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_6___default.a, {
+        pageId: "2484584108224578",
+        appId: "facebook-jssdk",
+        htmlRef: "messenger-customer-chat",
+        themeColor: "#016FB9",
+        loggedInGreeting: "Welcome to out:grow. How can we help?",
+        loggedOutGreeting: "Welcome to out:grow. How can we help?",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
         },
         __self: this
       }));
