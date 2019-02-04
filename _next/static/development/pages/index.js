@@ -14896,7 +14896,7 @@ var media = Object.keys(sizes).reduce(function (accumulator, sizeLabel) {
 
 /***/ }),
 
-/***/ 9:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -14921,5 +14921,5 @@ module.exports = dll_b2d9fd95b535cd8bf589;
 
 /***/ })
 
-},[[9,"static/runtime/webpack.js","styles"]]]));;
+},[[3,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=index.js.map

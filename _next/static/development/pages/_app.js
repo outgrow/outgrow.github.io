@@ -11650,7 +11650,7 @@ function (_App) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_6___default.a, {
-        pageId: "2484584108224578",
+        pageId: "377149002832117",
         appId: "facebook-jssdk",
         htmlRef: "messenger-customer-chat",
         themeColor: "#016FB9",
