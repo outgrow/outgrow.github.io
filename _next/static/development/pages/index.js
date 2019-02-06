@@ -297,43 +297,62 @@ var AppFooter = function AppFooter(_ref) {
       lineNumber: 70
     },
     __self: this
-  }, "Contact Us"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Copyright, {
+  }, "Contact Us"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 73
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/careers",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, "Careers"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Copyright, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81
     },
     __self: this
   }, "Copyright \xA9 2019 Outgrow LLC"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(List, {
     right: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 83
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 84
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
     href: "tel:+12816884769",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 85
     },
     __self: this
   }, "+1 (281) 688-4769")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 87
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
     href: "mailto:contact@outgrow.io",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 88
     },
     __self: this
   }, "contact@outgrow.io"))));
@@ -784,12 +803,13 @@ var links = [{
   label: "Developer Training"
 }, {
   href: "/emergency-response",
-  label: "Emergency Response",
-  overBackground: true
+  label: "Emergency Response"
 }, {
   href: "/contact",
-  label: "Contact Us",
-  overBackground: true
+  label: "Contact Us"
+}, {
+  href: "/careers",
+  label: "Careers"
 }].map(function (link) {
   link.key = "nav-link-".concat(link.href, "-").concat(link.label);
   return link;
@@ -898,14 +918,14 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 253
+          lineNumber: 254
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopBar, {
         isMenuOpen: this.state.isMenuOpen,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 254
+          lineNumber: 255
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuButton, {
@@ -919,35 +939,35 @@ function (_Component) {
         onClick: this.handleToggleMenu,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 255
+          lineNumber: 256
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuButtonBox, {
         className: "hamburger-box",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 265
+          lineNumber: 266
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuButtonInner, {
         className: "hamburger-inner",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 266
+          lineNumber: 267
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 270
+          lineNumber: 271
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
         onClick: this.handleCloseMenu,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 271
+          lineNumber: 272
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
@@ -955,19 +975,19 @@ function (_Component) {
         src: "/static/logo-white.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 272
+          lineNumber: 273
         },
         __self: this
       })))), this.state.isMenuOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MobileNavWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 276
+          lineNumber: 277
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(List, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 277
+          lineNumber: 278
         },
         __self: this
       }, links.map(function (_ref, index) {
@@ -979,21 +999,21 @@ function (_Component) {
           iterationCount: index,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 279
+            lineNumber: 280
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
           href: href,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 280
+            lineNumber: 281
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
           onClick: _this2.handleCloseMenu,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 281
+            lineNumber: 282
           },
           __self: this
         }, label)));
@@ -1001,19 +1021,19 @@ function (_Component) {
         iterationCount: 5,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 286
+          lineNumber: 287
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 287
+          lineNumber: 288
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DividerText, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 288
+          lineNumber: 289
         },
         __self: this
       }, "or")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -1023,21 +1043,21 @@ function (_Component) {
         iterationCount: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 291
+          lineNumber: 292
         },
         __self: this
       }, "E-Commerce Site Down?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
         iterationCount: 7,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 292
+          lineNumber: 293
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonLink, {
         href: "tel:+12816884769",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 293
+          lineNumber: 294
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonIcon, {
@@ -1045,25 +1065,25 @@ function (_Component) {
         alt: "Call",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 294
+          lineNumber: 295
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonText, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 295
+          lineNumber: 296
         },
         __self: this
       }, "+1 (281) OUT-GROW", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 296
+          lineNumber: 297
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonCaption, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 297
+          lineNumber: 298
         },
         __self: this
       }, "24/7 Emergency Hotline")))))));
