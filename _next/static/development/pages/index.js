@@ -316,43 +316,62 @@ var AppFooter = function AppFooter(_ref) {
       lineNumber: 75
     },
     __self: this
-  }, "Careers"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Copyright, {
+  }, "Careers"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 78
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/privacy",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    },
+    __self: this
+  }, "Privacy Policy"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Copyright, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
     },
     __self: this
   }, "Copyright \xA9 2019 Outgrow LLC"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(List, {
     right: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 88
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 89
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
     href: "tel:+12816884769",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 90
     },
     __self: this
   }, "+1 (281) 688-4769")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 92
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
     href: "mailto:contact@outgrow.io",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 93
     },
     __self: this
   }, "contact@outgrow.io"))));
