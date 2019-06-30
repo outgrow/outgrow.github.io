@@ -813,6 +813,10 @@ var Title = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h2.withCon
   displayName: "homeSection__Title",
   componentId: "sc-1cid17h-2"
 })(["color:rgb(", ");font-size:2.4rem;", " font-weight:800;letter-spacing:-2px;"], _styles_colors__WEBPACK_IMPORTED_MODULE_4__["white"], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_3__["default"].smallTablet(_templateObject3()));
+var ButtonWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "homeSection__ButtonWrapper",
+  componentId: "sc-1cid17h-3"
+})(["margin-top:1rem;"]);
 
 var HomeSection = function HomeSection(_ref) {
   var backgroundImage = _ref.backgroundImage,
@@ -827,7 +831,7 @@ var HomeSection = function HomeSection(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 41
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Overlay, {
@@ -836,7 +840,7 @@ var HomeSection = function HomeSection(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 42
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Title, {
@@ -845,18 +849,24 @@ var HomeSection = function HomeSection(_ref) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 43
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonWrapper, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button__WEBPACK_IMPORTED_MODULE_2__["default"], {
     color: buttonColor,
     href: buttonHref,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 45
     },
     __self: this
-  }, buttonText)));
+  }, buttonText))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (HomeSection);
