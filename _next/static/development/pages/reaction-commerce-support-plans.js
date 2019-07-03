@@ -1616,6 +1616,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ ".
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/map.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/map.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/map */ "./node_modules/core-js/library/fn/map.js");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
@@ -7988,6 +7999,25 @@ module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/map.js":
+/*!************************************************!*\
+  !*** ./node_modules/core-js/library/fn/map.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/es6.object.to-string */ "./node_modules/core-js/library/modules/es6.object.to-string.js");
+__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
+__webpack_require__(/*! ../modules/es6.map */ "./node_modules/core-js/library/modules/es6.map.js");
+__webpack_require__(/*! ../modules/es7.map.to-json */ "./node_modules/core-js/library/modules/es7.map.to-json.js");
+__webpack_require__(/*! ../modules/es7.map.of */ "./node_modules/core-js/library/modules/es7.map.of.js");
+__webpack_require__(/*! ../modules/es7.map.from */ "./node_modules/core-js/library/modules/es7.map.from.js");
+module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Map;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/object/assign.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/assign.js ***!
@@ -10683,6 +10713,37 @@ addToUnscopables('entries');
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.map.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.map.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var strong = __webpack_require__(/*! ./_collection-strong */ "./node_modules/core-js/library/modules/_collection-strong.js");
+var validate = __webpack_require__(/*! ./_validate-collection */ "./node_modules/core-js/library/modules/_validate-collection.js");
+var MAP = 'Map';
+
+// 23.1 Map Objects
+module.exports = __webpack_require__(/*! ./_collection */ "./node_modules/core-js/library/modules/_collection.js")(MAP, function (get) {
+  return function Map() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
+}, {
+  // 23.1.3.6 Map.prototype.get(key)
+  get: function get(key) {
+    var entry = strong.getEntry(validate(this, MAP), key);
+    return entry && entry.v;
+  },
+  // 23.1.3.9 Map.prototype.set(key, value)
+  set: function set(key, value) {
+    return strong.def(validate(this, MAP), key === 0 ? 0 : key, value);
+  }
+}, strong, true);
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.object.assign.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.assign.js ***!
@@ -11464,6 +11525,47 @@ setToStringTag($Symbol, 'Symbol');
 setToStringTag(Math, 'Math', true);
 // 24.3.3 JSON[@@toStringTag]
 setToStringTag(global.JSON, 'JSON', true);
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.map.from.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.map.from.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-map.from
+__webpack_require__(/*! ./_set-collection-from */ "./node_modules/core-js/library/modules/_set-collection-from.js")('Map');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.map.of.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.map.of.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-map.of
+__webpack_require__(/*! ./_set-collection-of */ "./node_modules/core-js/library/modules/_set-collection-of.js")('Map');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.map.to-json.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.map.to-json.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/DavidBruant/Map-Set.prototype.toJSON
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+
+$export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_collection-to-json */ "./node_modules/core-js/library/modules/_collection-to-json.js")('Map') });
 
 
 /***/ }),
@@ -27946,6 +28048,150 @@ exports.default = EventEmitter;
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/lib/dynamic.js":
+/*!***********************************************!*\
+  !*** ./node_modules/next/dist/lib/dynamic.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.noSSR = noSSR;
+exports.default = dynamic;
+
+var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js"));
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/objectSpread.js"));
+
+var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/typeof */ "./node_modules/@babel/runtime-corejs2/helpers/typeof.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _loadable = _interopRequireDefault(__webpack_require__(/*! ./loadable */ "./node_modules/next/dist/lib/loadable.js"));
+
+var isServerSide = typeof window === 'undefined';
+
+function noSSR(LoadableInitializer, loadableOptions) {
+  // Removing webpack and modules means react-loadable won't try preloading
+  delete loadableOptions.webpack;
+  delete loadableOptions.modules; // This check is neccesary to prevent react-loadable from initializing on the server
+
+  if (!isServerSide) {
+    return LoadableInitializer(loadableOptions);
+  } // This will only be rendered on the server side
+
+
+  return function () {
+    return _react.default.createElement(loadableOptions.loading, {
+      error: null,
+      isLoading: true,
+      pastDelay: false,
+      timedOut: false
+    });
+  };
+}
+
+function DefaultLoading() {
+  return _react.default.createElement("p", null, "loading...");
+}
+
+function dynamic(dynamicOptions, options) {
+  var loadableFn = _loadable.default;
+  var loadableOptions = {
+    // A loading component is not required, so we default it
+    loading: function loading(_ref) {
+      var error = _ref.error,
+          isLoading = _ref.isLoading;
+
+      if (true) {
+        if (isLoading) {
+          return _react.default.createElement(DefaultLoading, null);
+        }
+
+        if (error) {
+          return _react.default.createElement("p", null, error.message, _react.default.createElement("br", null), error.stack);
+        }
+      }
+
+      return _react.default.createElement(DefaultLoading, null);
+    } // Support for direct import(), eg: dynamic(import('../hello-world'))
+    // Note that this is only kept for the edge case where someone is passing in a promise as first argument
+    // The react-loadable babel plugin will turn dynamic(import('../hello-world')) into dynamic(() => import('../hello-world'))
+    // To make sure we don't execute the import without rendering first
+
+  };
+
+  if (typeof dynamicOptions.then === 'function') {
+    loadableOptions.loader = function () {
+      return dynamicOptions;
+    }; // Support for having import as a function, eg: dynamic(() => import('../hello-world'))
+
+  } else if (typeof dynamicOptions === 'function') {
+    loadableOptions.loader = dynamicOptions; // Support for having first argument being options, eg: dynamic({loader: import('../hello-world')})
+  } else if ((0, _typeof2.default)(dynamicOptions) === 'object') {
+    loadableOptions = (0, _objectSpread2.default)({}, loadableOptions, dynamicOptions);
+  } // Support for passing options, eg: dynamic(import('../hello-world'), {loading: () => <p>Loading something</p>})
+
+
+  loadableOptions = (0, _objectSpread2.default)({}, loadableOptions, options); // Support for `render` when using a mapping, eg: `dynamic({ modules: () => {return {HelloWorld: import('../hello-world')}, render(props, loaded) {} } })
+
+  if (dynamicOptions.render) {
+    loadableOptions.render = function (loaded, props) {
+      return dynamicOptions.render(props, loaded);
+    };
+  } // Support for `modules` when using a mapping, eg: `dynamic({ modules: () => {return {HelloWorld: import('../hello-world')}, render(props, loaded) {} } })
+
+
+  if (dynamicOptions.modules) {
+    loadableFn = _loadable.default.Map;
+    var loadModules = {};
+    var modules = dynamicOptions.modules();
+    (0, _keys.default)(modules).forEach(function (key) {
+      var value = modules[key];
+
+      if (typeof value.then === 'function') {
+        loadModules[key] = function () {
+          return value.then(function (mod) {
+            return mod.default || mod;
+          });
+        };
+
+        return;
+      }
+
+      loadModules[key] = value;
+    });
+    loadableOptions.loader = loadModules;
+  } // coming from build/babel/plugins/react-loadable-plugin.js
+
+
+  if (loadableOptions.loadableGenerated) {
+    loadableOptions = (0, _objectSpread2.default)({}, loadableOptions, loadableOptions.loadableGenerated);
+    delete loadableOptions.loadableGenerated;
+  } // support for disabling server side rendering, eg: dynamic(import('../hello-world'), {ssr: false})
+
+
+  if (typeof loadableOptions.ssr === 'boolean') {
+    if (!loadableOptions.ssr) {
+      delete loadableOptions.ssr;
+      return noSSR(loadableFn, loadableOptions);
+    }
+
+    delete loadableOptions.ssr;
+  }
+
+  return loadableFn(loadableOptions);
+}
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/lib/head.js":
 /*!********************************************!*\
   !*** ./node_modules/next/dist/lib/head.js ***!
@@ -28353,6 +28599,398 @@ if (true) {
 
 var _default = Link;
 exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/next/dist/lib/loadable.js":
+/*!************************************************!*\
+  !*** ./node_modules/next/dist/lib/loadable.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _isArray = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js"));
+
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js"));
+
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/createClass.js"));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/possibleConstructorReturn.js"));
+
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/getPrototypeOf.js"));
+
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/inherits.js"));
+
+var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/assertThisInitialized.js"));
+
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/defineProperty.js"));
+
+var _getIterator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js"));
+
+var _assign = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js"));
+
+var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js"));
+
+var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js"));
+
+var _map = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/map */ "./node_modules/@babel/runtime-corejs2/core-js/map.js"));
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+
+/**
+@copyright (c) 2017-present James Kyle <me@thejameskyle.com>
+ MIT License
+ Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+ The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
+*/
+// https://github.com/jamiebuilds/react-loadable/blob/v5.5.0/src/index.js
+// Modified to be compatible with webpack 4 / Next.js
+var ALL_INITIALIZERS = [];
+var READY_INITIALIZERS = new _map.default();
+var initialized = false;
+
+function load(loader) {
+  var promise = loader();
+  var state = {
+    loading: true,
+    loaded: null,
+    error: null
+  };
+  state.promise = promise.then(function (loaded) {
+    state.loading = false;
+    state.loaded = loaded;
+    return loaded;
+  }).catch(function (err) {
+    state.loading = false;
+    state.error = err;
+    throw err;
+  });
+  return state;
+}
+
+function loadMap(obj) {
+  var state = {
+    loading: false,
+    loaded: {},
+    error: null
+  };
+  var promises = [];
+
+  try {
+    (0, _keys.default)(obj).forEach(function (key) {
+      var result = load(obj[key]);
+
+      if (!result.loading) {
+        state.loaded[key] = result.loaded;
+        state.error = result.error;
+      } else {
+        state.loading = true;
+      }
+
+      promises.push(result.promise);
+      result.promise.then(function (res) {
+        state.loaded[key] = res;
+      }).catch(function (err) {
+        state.error = err;
+      });
+    });
+  } catch (err) {
+    state.error = err;
+  }
+
+  state.promise = _promise.default.all(promises).then(function (res) {
+    state.loading = false;
+    return res;
+  }).catch(function (err) {
+    state.loading = false;
+    throw err;
+  });
+  return state;
+}
+
+function resolve(obj) {
+  return obj && obj.__esModule ? obj.default : obj;
+}
+
+function render(loaded, props) {
+  return _react.default.createElement(resolve(loaded), props);
+}
+
+function createLoadableComponent(loadFn, options) {
+  var _class, _temp;
+
+  var opts = (0, _assign.default)({
+    loader: null,
+    loading: null,
+    delay: 200,
+    timeout: null,
+    render: render,
+    webpack: null,
+    modules: null
+  }, options);
+  var res = null;
+
+  function init() {
+    if (!res) {
+      res = loadFn(opts.loader);
+    }
+
+    return res.promise;
+  } // Server only
+
+
+  if (typeof window === 'undefined') {
+    ALL_INITIALIZERS.push(init);
+  } // Client only
+
+
+  if (!initialized && typeof window !== 'undefined' && typeof opts.webpack === 'function') {
+    var moduleIds = opts.webpack();
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = (0, _getIterator2.default)(moduleIds), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var moduleId = _step.value;
+        READY_INITIALIZERS.set(moduleId, function () {
+          return init();
+        });
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return != null) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+  }
+
+  return _temp = _class =
+  /*#__PURE__*/
+  function (_React$Component) {
+    (0, _inherits2.default)(LoadableComponent, _React$Component);
+
+    function LoadableComponent(props) {
+      var _this;
+
+      (0, _classCallCheck2.default)(this, LoadableComponent);
+      _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(LoadableComponent).call(this, props));
+      (0, _defineProperty2.default)((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)), "retry", function () {
+        _this.setState({
+          error: null,
+          loading: true,
+          timedOut: false
+        });
+
+        res = loadFn(opts.loader);
+
+        _this._loadModule();
+      });
+      init();
+      _this.state = {
+        error: res.error,
+        pastDelay: false,
+        timedOut: false,
+        loading: res.loading,
+        loaded: res.loaded
+      };
+      return _this;
+    }
+
+    (0, _createClass2.default)(LoadableComponent, [{
+      key: "componentWillMount",
+      value: function componentWillMount() {
+        this._mounted = true;
+
+        this._loadModule();
+      }
+    }, {
+      key: "_loadModule",
+      value: function _loadModule() {
+        var _this2 = this;
+
+        if (this.context.loadable && (0, _isArray.default)(opts.modules)) {
+          opts.modules.forEach(function (moduleName) {
+            _this2.context.loadable.report(moduleName);
+          });
+        }
+
+        if (!res.loading) {
+          return;
+        }
+
+        if (typeof opts.delay === 'number') {
+          if (opts.delay === 0) {
+            this.setState({
+              pastDelay: true
+            });
+          } else {
+            this._delay = setTimeout(function () {
+              _this2.setState({
+                pastDelay: true
+              });
+            }, opts.delay);
+          }
+        }
+
+        if (typeof opts.timeout === 'number') {
+          this._timeout = setTimeout(function () {
+            _this2.setState({
+              timedOut: true
+            });
+          }, opts.timeout);
+        }
+
+        var update = function update() {
+          if (!_this2._mounted) {
+            return;
+          }
+
+          _this2.setState({
+            error: res.error,
+            loaded: res.loaded,
+            loading: res.loading
+          });
+
+          _this2._clearTimeouts();
+        };
+
+        res.promise.then(function () {
+          update();
+        }) // eslint-disable-next-line handle-callback-err
+        .catch(function (err) {
+          update();
+        });
+      }
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        this._mounted = false;
+
+        this._clearTimeouts();
+      }
+    }, {
+      key: "_clearTimeouts",
+      value: function _clearTimeouts() {
+        clearTimeout(this._delay);
+        clearTimeout(this._timeout);
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        if (this.state.loading || this.state.error) {
+          return _react.default.createElement(opts.loading, {
+            isLoading: this.state.loading,
+            pastDelay: this.state.pastDelay,
+            timedOut: this.state.timedOut,
+            error: this.state.error,
+            retry: this.retry
+          });
+        } else if (this.state.loaded) {
+          return opts.render(this.state.loaded, this.props);
+        } else {
+          return null;
+        }
+      }
+    }], [{
+      key: "preload",
+      value: function preload() {
+        return init();
+      }
+    }]);
+    return LoadableComponent;
+  }(_react.default.Component), (0, _defineProperty2.default)(_class, "contextTypes", {
+    loadable: _propTypes.default.shape({
+      report: _propTypes.default.func.isRequired
+    })
+  }), _temp;
+}
+
+function Loadable(opts) {
+  return createLoadableComponent(load, opts);
+}
+
+function LoadableMap(opts) {
+  if (typeof opts.render !== 'function') {
+    throw new Error('LoadableMap requires a `render(loaded, props)` function');
+  }
+
+  return createLoadableComponent(loadMap, opts);
+}
+
+Loadable.Map = LoadableMap;
+
+function flushInitializers(initializers) {
+  var promises = [];
+
+  while (initializers.length) {
+    var init = initializers.pop();
+    promises.push(init());
+  }
+
+  return _promise.default.all(promises).then(function () {
+    if (initializers.length) {
+      return flushInitializers(initializers);
+    }
+  });
+}
+
+Loadable.preloadAll = function () {
+  return new _promise.default(function (resolve, reject) {
+    flushInitializers(ALL_INITIALIZERS).then(resolve, reject);
+  });
+};
+
+Loadable.preloadReady = function (webpackIds) {
+  return new _promise.default(function (resolve, reject) {
+    var initializers = webpackIds.reduce(function (allInitalizers, moduleId) {
+      var initializer = READY_INITIALIZERS.get(moduleId);
+
+      if (!initializer) {
+        return allInitalizers;
+      }
+
+      allInitalizers.push(initializer);
+      return allInitalizers;
+    }, []);
+    initialized = true; // Make sure the object is cleared
+
+    READY_INITIALIZERS.clear(); // We always will resolve, errors should be handled within loading UIs.
+
+    flushInitializers(initializers).then(resolve, resolve);
+  });
+};
+
+module.exports = Loadable;
 
 /***/ }),
 
@@ -29934,6 +30572,18 @@ function getURL() {
   var origin = getLocationOrigin();
   return href.substring(origin.length);
 }
+
+/***/ }),
+
+/***/ "./node_modules/next/dynamic.js":
+/*!**************************************!*\
+  !*** ./node_modules/next/dynamic.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./dist/lib/dynamic */ "./node_modules/next/dist/lib/dynamic.js")
+
 
 /***/ }),
 
@@ -38711,14 +39361,16 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var segmented_control__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! segmented-control */ "./node_modules/segmented-control/dist/index.js");
-/* harmony import */ var segmented_control__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(segmented_control__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! mongodb-stitch-browser-sdk */ "./node_modules/mongodb-stitch-browser-sdk/dist/esm/index.js");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components */ "./components/index.js");
-/* harmony import */ var _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/mediaQueries */ "./styles/mediaQueries.js");
-/* harmony import */ var _styles_colors__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/colors */ "./styles/colors.js");
-/* harmony import */ var _utils_googleAds__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/googleAds */ "./utils/googleAds.js");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dynamic */ "./node_modules/next/dynamic.js");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var segmented_control__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! segmented-control */ "./node_modules/segmented-control/dist/index.js");
+/* harmony import */ var segmented_control__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(segmented_control__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! mongodb-stitch-browser-sdk */ "./node_modules/mongodb-stitch-browser-sdk/dist/esm/index.js");
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components */ "./components/index.js");
+/* harmony import */ var _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/mediaQueries */ "./styles/mediaQueries.js");
+/* harmony import */ var _styles_colors__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/colors */ "./styles/colors.js");
+/* harmony import */ var _utils_googleAds__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/googleAds */ "./utils/googleAds.js");
 var _jsxFileName = "/Users/loan/Documents/Development/outgrow-website/pages/reaction-commerce-support-plans.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -38801,52 +39453,71 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var PageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+
+
+if (typeof window !== "undefined") {
+  next_dynamic__WEBPACK_IMPORTED_MODULE_1___default()(function () {
+    return __webpack_require__.e(/*! import() */ "styles").then(__webpack_require__.t.bind(null, /*! ../styles/segmentedControl.css */ "./styles/segmentedControl.css", 7));
+  }, {
+    loadableGenerated: {
+      webpack: function webpack() {
+        return [/*require.resolve*/(/*! ../styles/segmentedControl.css */ "./styles/segmentedControl.css")];
+      },
+      modules: ["../styles/segmentedControl.css"]
+    }
+  });
+}
+
+var PageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "reaction-commerce-support-plans__PageWrapper",
   componentId: "c17oh8-0"
-})(["padding:1.2rem;", ""], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_5__["default"].smallTablet(_templateObject()));
-var Form = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].form.withConfig({
+})(["padding:1.2rem;", ""], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_6__["default"].smallTablet(_templateObject()));
+var Form = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].form.withConfig({
   displayName: "reaction-commerce-support-plans__Form",
   componentId: "c17oh8-1"
-})(["margin-top:2rem;", " ", ""], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_5__["default"].tablet(_templateObject2()), _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_5__["default"].laptop(_templateObject3()));
-var FieldWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+})(["margin-top:2rem;", " ", ""], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_6__["default"].tablet(_templateObject2()), _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_6__["default"].laptop(_templateObject3()));
+var FieldWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "reaction-commerce-support-plans__FieldWrapper",
   componentId: "c17oh8-2"
 })(["margin-bottom:.8rem;width:100%;padding-right:1rem;"]);
-var Slider = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].input.withConfig({
+var Slider = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].input.withConfig({
   displayName: "reaction-commerce-support-plans__Slider",
   componentId: "c17oh8-3"
-})(["display:block;width:100%;margin:1.5rem 0;-webkit-appearance:none;&::-moz-range-thumb{background:rgb(", ");box-shadow:none;border:none;width:1rem;height:1rem;border-radius:1rem;}&::-webkit-slider-thumb{-webkit-appearance:none;margin-top:-7px;background:rgb(", ");box-shadow:none;border:none;width:1rem;height:1rem;border-radius:1rem;}&::-moz-range-track{background:rgb(", ");}&::-webkit-slider-runnable-track{height:2px;background:rgb(", ");}&:focus{outline-color:rgb(", ");}"], _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"], _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"], _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"], _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"], _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"]);
-var Price = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span.withConfig({
+})(["display:block;width:100%;margin:1.5rem 0;-webkit-appearance:none;&::-moz-range-thumb{background:rgb(", ");box-shadow:none;border:none;width:1rem;height:1rem;border-radius:1rem;}&::-webkit-slider-thumb{-webkit-appearance:none;margin-top:-7px;background:rgb(", ");box-shadow:none;border:none;width:1rem;height:1rem;border-radius:1rem;}&::-moz-range-track{background:rgb(", ");}&::-webkit-slider-runnable-track{height:2px;background:rgb(", ");}&:focus{outline-color:rgb(", ");}"], _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"], _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"], _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"], _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"], _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"]);
+var Price = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].span.withConfig({
   displayName: "reaction-commerce-support-plans__Price",
   componentId: "c17oh8-4"
 })(["font-size:1.3rem;"]);
-var PaymentSwitcher = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.withConfig({
+var PaymentSwitcher = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].a.withConfig({
   displayName: "reaction-commerce-support-plans__PaymentSwitcher",
   componentId: "c17oh8-5"
-})(["display:block;margin:1.5rem 0;color:rgb(", ");"], _styles_colors__WEBPACK_IMPORTED_MODULE_6__["black"]);
-var SavingsIndicator = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
+})(["display:block;margin:1.5rem 0;color:rgb(", ");"], _styles_colors__WEBPACK_IMPORTED_MODULE_7__["black"]);
+var SavingsIndicator = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
   displayName: "reaction-commerce-support-plans__SavingsIndicator",
   componentId: "c17oh8-6"
 })(["display:block;margin-top:.5rem;"]);
-var PriceBreakdown = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+var PriceBreakdown = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "reaction-commerce-support-plans__PriceBreakdown",
   componentId: "c17oh8-7"
-})(["display:flex;flex-direction:column;justify-content:space-between;", ""], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_5__["default"].tablet(_templateObject4()));
-var TextInput = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].input.withConfig({
+})(["display:flex;flex-direction:column;justify-content:space-between;", ""], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_6__["default"].tablet(_templateObject4()));
+var TextInput = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].input.withConfig({
   displayName: "reaction-commerce-support-plans__TextInput",
   componentId: "c17oh8-8"
 })(["display:block;width:100%;margin:1rem 0;height:2.5rem;padding-left:.5rem;font-size:1rem;"]);
-var SideBySide = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
+var SideBySide = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConfig({
   displayName: "reaction-commerce-support-plans__SideBySide",
   componentId: "c17oh8-9"
-})(["display:flex;flex-direction:column;width:100%;", ""], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_5__["default"].tablet(_templateObject5()));
-var Back = Object(styled_components__WEBPACK_IMPORTED_MODULE_2__["default"])(PaymentSwitcher).withConfig({
+})(["display:flex;flex-direction:column;width:100%;", ""], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_6__["default"].tablet(_templateObject5()));
+var Back = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(PaymentSwitcher).withConfig({
   displayName: "reaction-commerce-support-plans__Back",
   componentId: "c17oh8-10"
 })(["", ""], function (props) {
   return props.marginLeft && "margin-left: 1rem;";
 });
+var SubLabel = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p.withConfig({
+  displayName: "reaction-commerce-support-plans__SubLabel",
+  componentId: "c17oh8-11"
+})(["font-weight:lighter;font-size:1rem;"]);
 
 var Emergency =
 /*#__PURE__*/
@@ -38864,7 +39535,8 @@ function (_Component) {
       var price = 0;
       var _this$state = _this.state,
           chatSupport = _this$state.chatSupport,
-          dedicatedExperts = _this$state.dedicatedExperts;
+          dedicatedExperts = _this$state.dedicatedExperts,
+          timeZone = _this$state.timeZone;
       var hours = parseInt(_this.state.hours);
       var advanceNotice = parseInt(_this.state.advanceNotice);
       var responseTime = parseInt(_this.state.responseTime);
@@ -38874,7 +39546,7 @@ function (_Component) {
       }
 
       if (hours) {
-        var faceTimeTotal = 800 * hours;
+        var faceTimeTotal = 1000 * hours;
 
         if (hours > 10 && hours <= 15) {
           faceTimeTotal = faceTimeTotal * 0.95;
@@ -38885,18 +39557,18 @@ function (_Component) {
         }
 
         price += faceTimeTotal;
-      }
 
-      if (advanceNotice === 24) {
-        price += 3000;
-      }
+        if (advanceNotice === 24) {
+          price += 3000;
+        }
 
-      if (advanceNotice === 5) {
-        price += 6000;
-      }
+        if (advanceNotice === 5) {
+          price += 6000;
+        }
 
-      if (advanceNotice === 1) {
-        price += 10000;
+        if (advanceNotice === 1) {
+          price += 10000;
+        }
       }
 
       if (chatSupport) {
@@ -38920,7 +39592,11 @@ function (_Component) {
       if (dedicatedExperts && hours && hours > 0) {
         price = price * 1.35;
       } else if (dedicatedExperts) {
-        price = price * 1.15;
+        price = price * 1.2;
+      }
+
+      if (timeZone === "247") {
+        price = price * 2.35;
       }
 
       var currency = {
@@ -38976,9 +39652,9 @@ function (_Component) {
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleFormSubmit", function (event) {
       event.preventDefault();
-      mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_3__["Stitch"].defaultAppClient.callFunction("requestSupportPlan", [_this.state]).then(function (result) {
+      mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["Stitch"].defaultAppClient.callFunction("requestSupportPlan", [_this.state]).then(function (result) {
         if (typeof result !== "undefined" && typeof result.MessageId === "string") {
-          Object(_utils_googleAds__WEBPACK_IMPORTED_MODULE_7__["reportConversion"])();
+          Object(_utils_googleAds__WEBPACK_IMPORTED_MODULE_8__["reportConversion"])();
 
           _this.setState({
             step: 2
@@ -39006,6 +39682,7 @@ function (_Component) {
       responseTime: 0,
       hours: 0,
       advanceNotice: 72,
+      timeZone: "dubai",
       dedicatedExperts: false,
       showPriceMonthly: true,
       monthlyPrice: "$0",
@@ -39030,11 +39707,11 @@ function (_Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       try {
-        var client = mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_3__["Stitch"].defaultAppClient; // Stitch client is already initiated if this didn't crash
+        var client = mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["Stitch"].defaultAppClient; // Stitch client is already initiated if this didn't crash
       } catch (err) {
         // Threw error because client is not initiated
-        var stitchClient = mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_3__["Stitch"].initializeDefaultAppClient("outgrow-hunql");
-        stitchClient.auth.loginWithCredential(new mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_3__["AnonymousCredential"]());
+        var stitchClient = mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["Stitch"].initializeDefaultAppClient("outgrow-hunql");
+        stitchClient.auth.loginWithCredential(new mongodb_stitch_browser_sdk__WEBPACK_IMPORTED_MODULE_4__["AnonymousCredential"]());
       }
     }
   }, {
@@ -39048,94 +39725,100 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 307
+          lineNumber: 322
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Head"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Head"], {
         title: "Reaction Commerce Support Plans | Official Partner | Chat & Live Developer Help | out:grow",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 308
+          lineNumber: 323
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Nav"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Nav"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 309
+          lineNumber: 324
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ServicePageHeader"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["ServicePageHeader"], {
         backgroundImage: "/static/emergency.jpg",
         body: ["Your new Reaction Commerce project is looking sharper than ever. But is your team ready to react in case an emergency happens? At out:grow, we've got the support plan you need for any situation.", "With a support plan, our team is at your service 24/7 for your needs. Whether you prefer chat, screen-sharing calls or need a guaranteed response time — we have a solution to answer your needs."],
-        buttonTextColor: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"],
-        overlayColor: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"],
+        buttonTextColor: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"],
+        overlayColor: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"],
         title: "We've got your back.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 311
+          lineNumber: 326
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Wire"], {
-        color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"],
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Wire"], {
+        color: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 322
+          lineNumber: 337
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PageWrapper, {
         id: "section-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 324
+          lineNumber: 339
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Title"], {
-        color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"],
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Title"], {
+        color: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 325
+          lineNumber: 340
         },
         __self: this
-      }, "Our Reaction Commerce support plans."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Paragraph"], {
+      }, "Our Reaction Commerce support plans."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 327
+          lineNumber: 342
         },
         __self: this
-      }, "Because every project is different, there is no one-size-fits-all in the world of support. Our Reaction Commerce experts are available to your team \u2014 whether you need a full-featured dedicated plan with a guaranteed response time, or a lightweight chat-only membership for non-urgent use."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Paragraph"], {
+      }, "Because every project is different, there is no one-size-fits-all in the world of support. Our Reaction Commerce experts are available to your team \u2014 whether you need a full-featured dedicated plan with a guaranteed response time, or a lightweight chat-only membership for non-urgent use."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 329
+          lineNumber: 344
         },
         __self: this
       }, "With our support plan configurator, we're leading the way by giving our customers full power. Estimate your base pricing, choose your payment terms and sign up right from our website. Getting peace of mind for your Reaction Commerce infrastructure has never been that easy."), this.state.step === 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Form, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 332
+          lineNumber: 347
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Title"], {
-        color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"],
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Title"], {
+        color: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"],
         noMarginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 333
+          lineNumber: 348
         },
         __self: this
       }, "Let's figure out your needs."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 335
+          lineNumber: 350
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "chat-support",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 336
+          lineNumber: 351
         },
         __self: this
-      }, "Unlimited chat support (via Slack or your team's preferred tool)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_1__["SegmentedControl"], {
+      }, "Unlimited chat support"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubLabel, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 352
+        },
+        __self: this
+      }, "Our experts will be reachable on your company's Slack or any other chat solution, as well as by e-mail."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_2__["SegmentedControl"], {
         name: "chat-support",
         options: [{
           label: "Yes",
@@ -39149,27 +39832,33 @@ function (_Component) {
           return _this2.handleSegmentedControlChange("chatSupport", value);
         },
         style: {
-          color: "rgb(".concat(_styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"])
+          color: "rgb(".concat(_styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"])
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 337
+          lineNumber: 353
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 348
+          lineNumber: 364
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "response-time",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 349
+          lineNumber: 365
         },
         __self: this
-      }, "Guaranteed chat response time"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_1__["SegmentedControl"], {
+      }, "Guaranteed chat response time"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubLabel, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 366
+        },
+        __self: this
+      }, "We'll be legally bound to respect this response time within your chosen working hours (see below)."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_2__["SegmentedControl"], {
         name: "response-time",
         options: [{
           label: "30 min.",
@@ -39196,27 +39885,33 @@ function (_Component) {
           return _this2.handleSegmentedControlChange("responseTime", value);
         },
         style: {
-          color: "rgb(".concat(_styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"])
+          color: "rgb(".concat(_styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"])
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 350
+          lineNumber: 367
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 364
+          lineNumber: 381
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "hours",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 365
+          lineNumber: 382
         },
         __self: this
-      }, "Yearly face-time hours: ", this.state.hours), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Slider, {
+      }, "Yearly face-time hours: ", this.state.hours), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubLabel, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 383
+        },
+        __self: this
+      }, "Your team can use these hours throughout the year for problem-solving calls using screen-sharing."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Slider, {
         type: "range",
         id: "hours",
         min: "0",
@@ -39227,23 +39922,29 @@ function (_Component) {
         value: this.state.hours,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 366
+          lineNumber: 384
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 369
+          lineNumber: 387
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "advance-notice",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 370
+          lineNumber: 388
         },
         __self: this
-      }, "Minimum advance notice to book a face-time session"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_1__["SegmentedControl"], {
+      }, "Minimum advance notice to book a face-time session"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubLabel, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 389
+        },
+        __self: this
+      }, "Your team will have to respect this minimum delay when booking their face-time sessions."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_2__["SegmentedControl"], {
         name: "advance-notice",
         options: [{
           label: "1 hour",
@@ -39263,27 +39964,33 @@ function (_Component) {
           return _this2.handleSegmentedControlChange("advanceNotice", value);
         },
         style: {
-          color: "rgb(".concat(_styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"])
+          color: "rgb(".concat(_styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"])
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 371
+          lineNumber: 390
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 384
+          lineNumber: 403
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "dedicated-experts",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 385
+          lineNumber: 404
         },
         __self: this
-      }, "Dedicated experts"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_1__["SegmentedControl"], {
+      }, "Dedicated experts"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubLabel, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 405
+        },
+        __self: this
+      }, "We'll make sure that your developers always deal with the same people at out:grow."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_2__["SegmentedControl"], {
         name: "dedicated-experts",
         options: [{
           label: "Yes",
@@ -39297,53 +40004,96 @@ function (_Component) {
           return _this2.handleSegmentedControlChange("dedicatedExperts", value);
         },
         style: {
-          color: "rgb(".concat(_styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"])
+          color: "rgb(".concat(_styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"])
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 386
+          lineNumber: 406
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 417
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+        htmlFor: "time-zone",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 418
+        },
+        __self: this
+      }, "Operating time zone"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SubLabel, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 419
+        },
+        __self: this
+      }, "Our experts will be reachable by your team during these working hours."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(segmented_control__WEBPACK_IMPORTED_MODULE_2__["SegmentedControl"], {
+        name: "time-zone",
+        options: [{
+          label: "Los Angeles\r\nMon-Fri 9AM-5PM PST",
+          value: "losangeles"
+        }, {
+          label: "Dubai\r\nSun-Thu 9AM-5PM GMT+4",
+          value: "dubai",
+          default: true
+        }, {
+          label: "24/7\r\nIncluding bank holidays",
+          value: "247"
+        }],
+        setValue: function setValue(value) {
+          return _this2.handleSegmentedControlChange("timeZone", value);
+        },
+        style: {
+          color: "rgb(".concat(_styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"])
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 420
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PriceBreakdown, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 397
+          lineNumber: 432
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 398
+          lineNumber: 433
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 399
+          lineNumber: 434
         },
         __self: this
       }, "Your total is ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Price, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 399
+          lineNumber: 434
         },
         __self: this
       }, this.state.showPriceMonthly ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 401
+          lineNumber: 436
         },
         __self: this
       }, this.state.monthlyPrice, " per month") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 402
+          lineNumber: 437
         },
         __self: this
       }, this.state.yearlyPrice, " per year"))), !this.state.showPriceMonthly && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SavingsIndicator, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 406
+          lineNumber: 441
         },
         __self: this
       }, "You are saving ", this.state.yearlySavings, " by paying yearly."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PaymentSwitcher, {
@@ -39351,35 +40101,35 @@ function (_Component) {
         onClick: this.handleSwitchPricing,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 408
+          lineNumber: 443
         },
         __self: this
       }, "Pay ", this.state.showPriceMonthly ? "yearly and get 10% off" : "monthly for more flexibility")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 410
+          lineNumber: 445
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 411
+          lineNumber: 446
         },
         __self: this
-      }, "Need help? Call our 24/7 sales team at +1 (281) OUT-GROW."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ButtonWrapper"], {
+      }, "Need help? Call our 24/7 sales team at +1 (281) OUT-GROW."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["ButtonWrapper"], {
         keepLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 415
+          lineNumber: 450
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
-        backgroundColor: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"],
-        color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["white"],
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+        backgroundColor: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"],
+        color: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["white"],
         onClick: this.handleNextStep,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 416
+          lineNumber: 451
         },
         __self: this
       }, "Sign Up Online"))), this.state.step === 1 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Form, {
@@ -39387,43 +40137,43 @@ function (_Component) {
         onSubmit: this.handleFormSubmit,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 422
+          lineNumber: 457
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Title"], {
-        color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"],
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Title"], {
+        color: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"],
         noMarginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 423
+          lineNumber: 458
         },
         __self: this
-      }, "Nice to meet you!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Paragraph"], {
+      }, "Nice to meet you!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], {
         marginBottom: true,
         noMarginLeft: true,
         noMarginRight: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 425
+          lineNumber: 460
         },
         __self: this
       }, "Before going further, we need to know a little bit more about you and the company you work with. We'll reach out as soon as we can to activate your plan."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SideBySide, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 427
+          lineNumber: 462
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 428
+          lineNumber: 463
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "first-name",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 429
+          lineNumber: 464
         },
         __self: this
       }, "First Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -39435,20 +40185,20 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 430
+          lineNumber: 465
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 433
+          lineNumber: 468
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "last-name",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 434
+          lineNumber: 469
         },
         __self: this
       }, "Last Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -39460,26 +40210,26 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 435
+          lineNumber: 470
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SideBySide, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 439
+          lineNumber: 474
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 440
+          lineNumber: 475
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "email",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 441
+          lineNumber: 476
         },
         __self: this
       }, "E-Mail Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -39491,20 +40241,20 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 442
+          lineNumber: 477
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 445
+          lineNumber: 480
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "phone",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 446
+          lineNumber: 481
         },
         __self: this
       }, "Phone Number"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -39516,20 +40266,20 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 447
+          lineNumber: 482
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 451
+          lineNumber: 486
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "company",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 452
+          lineNumber: 487
         },
         __self: this
       }, "Company Name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -39541,20 +40291,20 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 453
+          lineNumber: 488
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 456
+          lineNumber: 491
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "address",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 457
+          lineNumber: 492
         },
         __self: this
       }, "Headquarters Address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -39566,26 +40316,26 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 458
+          lineNumber: 493
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SideBySide, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 461
+          lineNumber: 496
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 462
+          lineNumber: 497
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "city",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 463
+          lineNumber: 498
         },
         __self: this
       }, "City"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -39597,20 +40347,20 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 464
+          lineNumber: 499
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 467
+          lineNumber: 502
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "zip",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 468
+          lineNumber: 503
         },
         __self: this
       }, "ZIP Code (if applicable)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -39621,26 +40371,26 @@ function (_Component) {
         onChange: this.handleInputChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 469
+          lineNumber: 504
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SideBySide, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 473
+          lineNumber: 508
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 474
+          lineNumber: 509
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "state",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 475
+          lineNumber: 510
         },
         __self: this
       }, "State/Province (if applicable)"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -39651,20 +40401,20 @@ function (_Component) {
         onChange: this.handleInputChange,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 476
+          lineNumber: 511
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FieldWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 479
+          lineNumber: 514
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "country",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 480
+          lineNumber: 515
         },
         __self: this
       }, "Country"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TextInput, {
@@ -39676,23 +40426,23 @@ function (_Component) {
         required: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 481
+          lineNumber: 516
         },
         __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["ButtonWrapper"], {
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["ButtonWrapper"], {
         keepLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 485
+          lineNumber: 520
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
-        backgroundColor: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"],
-        color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["white"],
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+        backgroundColor: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"],
+        color: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["white"],
         type: "submit",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 486
+          lineNumber: 521
         },
         __self: this
       }, "Sign Up Online"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Back, {
@@ -39701,28 +40451,28 @@ function (_Component) {
         marginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 487
+          lineNumber: 522
         },
         __self: this
       }, "or go back to the configurator"))), this.state.step === 2 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Form, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 493
+          lineNumber: 528
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Title"], {
-        color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"],
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Title"], {
+        color: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"],
         noMarginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 494
+          lineNumber: 529
         },
         __self: this
-      }, "Thank you!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Paragraph"], {
+      }, "Thank you!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], {
         noMarginLeft: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 496
+          lineNumber: 531
         },
         __self: this
       }, "Our team will be in touch soon to activate your support plan."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Back, {
@@ -39730,14 +40480,14 @@ function (_Component) {
         onClick: this.handlePreviousStep,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 497
+          lineNumber: 532
         },
         __self: this
-      }, "Go back to the configurator."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_4__["Footer"], {
-        color: _styles_colors__WEBPACK_IMPORTED_MODULE_6__["green"],
+      }, "Go back to the configurator."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components__WEBPACK_IMPORTED_MODULE_5__["Footer"], {
+        color: _styles_colors__WEBPACK_IMPORTED_MODULE_7__["green"],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 502
+          lineNumber: 537
         },
         __self: this
       }));
