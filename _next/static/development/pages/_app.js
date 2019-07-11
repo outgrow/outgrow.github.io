@@ -22,17 +22,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "./n
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/map.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/map.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/map */ "./node_modules/core-js/library/fn/map.js");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
@@ -758,25 +747,6 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 __webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
 __webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
 module.exports = __webpack_require__(/*! ../modules/core.get-iterator */ "./node_modules/core-js/library/modules/core.get-iterator.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/map.js":
-/*!************************************************!*\
-  !*** ./node_modules/core-js/library/fn/map.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../modules/es6.object.to-string */ "./node_modules/core-js/library/modules/es6.object.to-string.js");
-__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
-__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
-__webpack_require__(/*! ../modules/es6.map */ "./node_modules/core-js/library/modules/es6.map.js");
-__webpack_require__(/*! ../modules/es7.map.to-json */ "./node_modules/core-js/library/modules/es7.map.to-json.js");
-__webpack_require__(/*! ../modules/es7.map.of */ "./node_modules/core-js/library/modules/es7.map.of.js");
-__webpack_require__(/*! ../modules/es7.map.from */ "./node_modules/core-js/library/modules/es7.map.from.js");
-module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Map;
 
 
 /***/ }),
@@ -3386,37 +3356,6 @@ addToUnscopables('entries');
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/modules/es6.map.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.map.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var strong = __webpack_require__(/*! ./_collection-strong */ "./node_modules/core-js/library/modules/_collection-strong.js");
-var validate = __webpack_require__(/*! ./_validate-collection */ "./node_modules/core-js/library/modules/_validate-collection.js");
-var MAP = 'Map';
-
-// 23.1 Map Objects
-module.exports = __webpack_require__(/*! ./_collection */ "./node_modules/core-js/library/modules/_collection.js")(MAP, function (get) {
-  return function Map() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
-}, {
-  // 23.1.3.6 Map.prototype.get(key)
-  get: function get(key) {
-    var entry = strong.getEntry(validate(this, MAP), key);
-    return entry && entry.v;
-  },
-  // 23.1.3.9 Map.prototype.set(key, value)
-  set: function set(key, value) {
-    return strong.def(validate(this, MAP), key === 0 ? 0 : key, value);
-  }
-}, strong, true);
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/library/modules/es6.object.assign.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.assign.js ***!
@@ -4198,47 +4137,6 @@ setToStringTag($Symbol, 'Symbol');
 setToStringTag(Math, 'Math', true);
 // 24.3.3 JSON[@@toStringTag]
 setToStringTag(global.JSON, 'JSON', true);
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.map.from.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es7.map.from.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://tc39.github.io/proposal-setmap-offrom/#sec-map.from
-__webpack_require__(/*! ./_set-collection-from */ "./node_modules/core-js/library/modules/_set-collection-from.js")('Map');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.map.of.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es7.map.of.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://tc39.github.io/proposal-setmap-offrom/#sec-map.of
-__webpack_require__(/*! ./_set-collection-of */ "./node_modules/core-js/library/modules/_set-collection-of.js")('Map');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.map.to-json.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es7.map.to-json.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-
-$export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_collection-to-json */ "./node_modules/core-js/library/modules/_collection-to-json.js")('Map') });
 
 
 /***/ }),
@@ -5568,542 +5466,6 @@ function createUrl(router) {
     }
   };
 }
-
-/***/ }),
-
-/***/ "./node_modules/next/dist/lib/dynamic.js":
-/*!***********************************************!*\
-  !*** ./node_modules/next/dist/lib/dynamic.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.noSSR = noSSR;
-exports.default = dynamic;
-
-var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js"));
-
-var _objectSpread2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/objectSpread.js"));
-
-var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/typeof */ "./node_modules/@babel/runtime-corejs2/helpers/typeof.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _loadable = _interopRequireDefault(__webpack_require__(/*! ./loadable */ "./node_modules/next/dist/lib/loadable.js"));
-
-var isServerSide = typeof window === 'undefined';
-
-function noSSR(LoadableInitializer, loadableOptions) {
-  // Removing webpack and modules means react-loadable won't try preloading
-  delete loadableOptions.webpack;
-  delete loadableOptions.modules; // This check is neccesary to prevent react-loadable from initializing on the server
-
-  if (!isServerSide) {
-    return LoadableInitializer(loadableOptions);
-  } // This will only be rendered on the server side
-
-
-  return function () {
-    return _react.default.createElement(loadableOptions.loading, {
-      error: null,
-      isLoading: true,
-      pastDelay: false,
-      timedOut: false
-    });
-  };
-}
-
-function DefaultLoading() {
-  return _react.default.createElement("p", null, "loading...");
-}
-
-function dynamic(dynamicOptions, options) {
-  var loadableFn = _loadable.default;
-  var loadableOptions = {
-    // A loading component is not required, so we default it
-    loading: function loading(_ref) {
-      var error = _ref.error,
-          isLoading = _ref.isLoading;
-
-      if (true) {
-        if (isLoading) {
-          return _react.default.createElement(DefaultLoading, null);
-        }
-
-        if (error) {
-          return _react.default.createElement("p", null, error.message, _react.default.createElement("br", null), error.stack);
-        }
-      }
-
-      return _react.default.createElement(DefaultLoading, null);
-    } // Support for direct import(), eg: dynamic(import('../hello-world'))
-    // Note that this is only kept for the edge case where someone is passing in a promise as first argument
-    // The react-loadable babel plugin will turn dynamic(import('../hello-world')) into dynamic(() => import('../hello-world'))
-    // To make sure we don't execute the import without rendering first
-
-  };
-
-  if (typeof dynamicOptions.then === 'function') {
-    loadableOptions.loader = function () {
-      return dynamicOptions;
-    }; // Support for having import as a function, eg: dynamic(() => import('../hello-world'))
-
-  } else if (typeof dynamicOptions === 'function') {
-    loadableOptions.loader = dynamicOptions; // Support for having first argument being options, eg: dynamic({loader: import('../hello-world')})
-  } else if ((0, _typeof2.default)(dynamicOptions) === 'object') {
-    loadableOptions = (0, _objectSpread2.default)({}, loadableOptions, dynamicOptions);
-  } // Support for passing options, eg: dynamic(import('../hello-world'), {loading: () => <p>Loading something</p>})
-
-
-  loadableOptions = (0, _objectSpread2.default)({}, loadableOptions, options); // Support for `render` when using a mapping, eg: `dynamic({ modules: () => {return {HelloWorld: import('../hello-world')}, render(props, loaded) {} } })
-
-  if (dynamicOptions.render) {
-    loadableOptions.render = function (loaded, props) {
-      return dynamicOptions.render(props, loaded);
-    };
-  } // Support for `modules` when using a mapping, eg: `dynamic({ modules: () => {return {HelloWorld: import('../hello-world')}, render(props, loaded) {} } })
-
-
-  if (dynamicOptions.modules) {
-    loadableFn = _loadable.default.Map;
-    var loadModules = {};
-    var modules = dynamicOptions.modules();
-    (0, _keys.default)(modules).forEach(function (key) {
-      var value = modules[key];
-
-      if (typeof value.then === 'function') {
-        loadModules[key] = function () {
-          return value.then(function (mod) {
-            return mod.default || mod;
-          });
-        };
-
-        return;
-      }
-
-      loadModules[key] = value;
-    });
-    loadableOptions.loader = loadModules;
-  } // coming from build/babel/plugins/react-loadable-plugin.js
-
-
-  if (loadableOptions.loadableGenerated) {
-    loadableOptions = (0, _objectSpread2.default)({}, loadableOptions, loadableOptions.loadableGenerated);
-    delete loadableOptions.loadableGenerated;
-  } // support for disabling server side rendering, eg: dynamic(import('../hello-world'), {ssr: false})
-
-
-  if (typeof loadableOptions.ssr === 'boolean') {
-    if (!loadableOptions.ssr) {
-      delete loadableOptions.ssr;
-      return noSSR(loadableFn, loadableOptions);
-    }
-
-    delete loadableOptions.ssr;
-  }
-
-  return loadableFn(loadableOptions);
-}
-
-/***/ }),
-
-/***/ "./node_modules/next/dist/lib/loadable.js":
-/*!************************************************!*\
-  !*** ./node_modules/next/dist/lib/loadable.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
-
-var _isArray = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js"));
-
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/classCallCheck.js"));
-
-var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/createClass.js"));
-
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/possibleConstructorReturn.js"));
-
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/getPrototypeOf.js"));
-
-var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/inherits.js"));
-
-var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/assertThisInitialized.js"));
-
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/defineProperty.js"));
-
-var _getIterator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js"));
-
-var _assign = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js"));
-
-var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js"));
-
-var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js"));
-
-var _map = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/map */ "./node_modules/@babel/runtime-corejs2/core-js/map.js"));
-
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
-
-/**
-@copyright (c) 2017-present James Kyle <me@thejameskyle.com>
- MIT License
- Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
- The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
-*/
-// https://github.com/jamiebuilds/react-loadable/blob/v5.5.0/src/index.js
-// Modified to be compatible with webpack 4 / Next.js
-var ALL_INITIALIZERS = [];
-var READY_INITIALIZERS = new _map.default();
-var initialized = false;
-
-function load(loader) {
-  var promise = loader();
-  var state = {
-    loading: true,
-    loaded: null,
-    error: null
-  };
-  state.promise = promise.then(function (loaded) {
-    state.loading = false;
-    state.loaded = loaded;
-    return loaded;
-  }).catch(function (err) {
-    state.loading = false;
-    state.error = err;
-    throw err;
-  });
-  return state;
-}
-
-function loadMap(obj) {
-  var state = {
-    loading: false,
-    loaded: {},
-    error: null
-  };
-  var promises = [];
-
-  try {
-    (0, _keys.default)(obj).forEach(function (key) {
-      var result = load(obj[key]);
-
-      if (!result.loading) {
-        state.loaded[key] = result.loaded;
-        state.error = result.error;
-      } else {
-        state.loading = true;
-      }
-
-      promises.push(result.promise);
-      result.promise.then(function (res) {
-        state.loaded[key] = res;
-      }).catch(function (err) {
-        state.error = err;
-      });
-    });
-  } catch (err) {
-    state.error = err;
-  }
-
-  state.promise = _promise.default.all(promises).then(function (res) {
-    state.loading = false;
-    return res;
-  }).catch(function (err) {
-    state.loading = false;
-    throw err;
-  });
-  return state;
-}
-
-function resolve(obj) {
-  return obj && obj.__esModule ? obj.default : obj;
-}
-
-function render(loaded, props) {
-  return _react.default.createElement(resolve(loaded), props);
-}
-
-function createLoadableComponent(loadFn, options) {
-  var _class, _temp;
-
-  var opts = (0, _assign.default)({
-    loader: null,
-    loading: null,
-    delay: 200,
-    timeout: null,
-    render: render,
-    webpack: null,
-    modules: null
-  }, options);
-  var res = null;
-
-  function init() {
-    if (!res) {
-      res = loadFn(opts.loader);
-    }
-
-    return res.promise;
-  } // Server only
-
-
-  if (typeof window === 'undefined') {
-    ALL_INITIALIZERS.push(init);
-  } // Client only
-
-
-  if (!initialized && typeof window !== 'undefined' && typeof opts.webpack === 'function') {
-    var moduleIds = opts.webpack();
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-      for (var _iterator = (0, _getIterator2.default)(moduleIds), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var moduleId = _step.value;
-        READY_INITIALIZERS.set(moduleId, function () {
-          return init();
-        });
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator.return != null) {
-          _iterator.return();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
-    }
-  }
-
-  return _temp = _class =
-  /*#__PURE__*/
-  function (_React$Component) {
-    (0, _inherits2.default)(LoadableComponent, _React$Component);
-
-    function LoadableComponent(props) {
-      var _this;
-
-      (0, _classCallCheck2.default)(this, LoadableComponent);
-      _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(LoadableComponent).call(this, props));
-      (0, _defineProperty2.default)((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)), "retry", function () {
-        _this.setState({
-          error: null,
-          loading: true,
-          timedOut: false
-        });
-
-        res = loadFn(opts.loader);
-
-        _this._loadModule();
-      });
-      init();
-      _this.state = {
-        error: res.error,
-        pastDelay: false,
-        timedOut: false,
-        loading: res.loading,
-        loaded: res.loaded
-      };
-      return _this;
-    }
-
-    (0, _createClass2.default)(LoadableComponent, [{
-      key: "componentWillMount",
-      value: function componentWillMount() {
-        this._mounted = true;
-
-        this._loadModule();
-      }
-    }, {
-      key: "_loadModule",
-      value: function _loadModule() {
-        var _this2 = this;
-
-        if (this.context.loadable && (0, _isArray.default)(opts.modules)) {
-          opts.modules.forEach(function (moduleName) {
-            _this2.context.loadable.report(moduleName);
-          });
-        }
-
-        if (!res.loading) {
-          return;
-        }
-
-        if (typeof opts.delay === 'number') {
-          if (opts.delay === 0) {
-            this.setState({
-              pastDelay: true
-            });
-          } else {
-            this._delay = setTimeout(function () {
-              _this2.setState({
-                pastDelay: true
-              });
-            }, opts.delay);
-          }
-        }
-
-        if (typeof opts.timeout === 'number') {
-          this._timeout = setTimeout(function () {
-            _this2.setState({
-              timedOut: true
-            });
-          }, opts.timeout);
-        }
-
-        var update = function update() {
-          if (!_this2._mounted) {
-            return;
-          }
-
-          _this2.setState({
-            error: res.error,
-            loaded: res.loaded,
-            loading: res.loading
-          });
-
-          _this2._clearTimeouts();
-        };
-
-        res.promise.then(function () {
-          update();
-        }) // eslint-disable-next-line handle-callback-err
-        .catch(function (err) {
-          update();
-        });
-      }
-    }, {
-      key: "componentWillUnmount",
-      value: function componentWillUnmount() {
-        this._mounted = false;
-
-        this._clearTimeouts();
-      }
-    }, {
-      key: "_clearTimeouts",
-      value: function _clearTimeouts() {
-        clearTimeout(this._delay);
-        clearTimeout(this._timeout);
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        if (this.state.loading || this.state.error) {
-          return _react.default.createElement(opts.loading, {
-            isLoading: this.state.loading,
-            pastDelay: this.state.pastDelay,
-            timedOut: this.state.timedOut,
-            error: this.state.error,
-            retry: this.retry
-          });
-        } else if (this.state.loaded) {
-          return opts.render(this.state.loaded, this.props);
-        } else {
-          return null;
-        }
-      }
-    }], [{
-      key: "preload",
-      value: function preload() {
-        return init();
-      }
-    }]);
-    return LoadableComponent;
-  }(_react.default.Component), (0, _defineProperty2.default)(_class, "contextTypes", {
-    loadable: _propTypes.default.shape({
-      report: _propTypes.default.func.isRequired
-    })
-  }), _temp;
-}
-
-function Loadable(opts) {
-  return createLoadableComponent(load, opts);
-}
-
-function LoadableMap(opts) {
-  if (typeof opts.render !== 'function') {
-    throw new Error('LoadableMap requires a `render(loaded, props)` function');
-  }
-
-  return createLoadableComponent(loadMap, opts);
-}
-
-Loadable.Map = LoadableMap;
-
-function flushInitializers(initializers) {
-  var promises = [];
-
-  while (initializers.length) {
-    var init = initializers.pop();
-    promises.push(init());
-  }
-
-  return _promise.default.all(promises).then(function () {
-    if (initializers.length) {
-      return flushInitializers(initializers);
-    }
-  });
-}
-
-Loadable.preloadAll = function () {
-  return new _promise.default(function (resolve, reject) {
-    flushInitializers(ALL_INITIALIZERS).then(resolve, reject);
-  });
-};
-
-Loadable.preloadReady = function (webpackIds) {
-  return new _promise.default(function (resolve, reject) {
-    var initializers = webpackIds.reduce(function (allInitalizers, moduleId) {
-      var initializer = READY_INITIALIZERS.get(moduleId);
-
-      if (!initializer) {
-        return allInitalizers;
-      }
-
-      allInitalizers.push(initializer);
-      return allInitalizers;
-    }, []);
-    initialized = true; // Make sure the object is cleared
-
-    READY_INITIALIZERS.clear(); // We always will resolve, errors should be handled within loading UIs.
-
-    flushInitializers(initializers).then(resolve, resolve);
-  });
-};
-
-module.exports = Loadable;
 
 /***/ }),
 
@@ -7539,18 +6901,6 @@ function getURL() {
   var origin = getLocationOrigin();
   return href.substring(origin.length);
 }
-
-/***/ }),
-
-/***/ "./node_modules/next/dynamic.js":
-/*!**************************************!*\
-  !*** ./node_modules/next/dynamic.js ***!
-  \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./dist/lib/dynamic */ "./node_modules/next/dist/lib/dynamic.js")
-
 
 /***/ }),
 
@@ -10285,277 +9635,6 @@ function trim(s) {
 
 /***/ }),
 
-/***/ "./node_modules/react-messenger-customer-chat/lib/MessengerCustomerChat.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/react-messenger-customer-chat/lib/MessengerCustomerChat.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var removeElementByIds = function removeElementByIds(ids) {
-  ids.forEach(function (id) {
-    var element = document.getElementById(id);
-    if (element && element.parentNode) {
-      element.parentNode.removeChild(element);
-    }
-  });
-};
-
-var MessengerCustomerChat = function (_Component) {
-  _inherits(MessengerCustomerChat, _Component);
-
-  function MessengerCustomerChat() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
-    _classCallCheck(this, MessengerCustomerChat);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = MessengerCustomerChat.__proto__ || Object.getPrototypeOf(MessengerCustomerChat)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      fbLoaded: false,
-      shouldShowDialog: undefined
-    }, _temp), _possibleConstructorReturn(_this, _ret);
-  }
-
-  _createClass(MessengerCustomerChat, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.setFbAsyncInit();
-      this.reloadSDKAsynchronously();
-    }
-  }, {
-    key: 'componentDidUpdate',
-    value: function componentDidUpdate(prevProps) {
-      if (prevProps.pageId !== this.props.pageId || prevProps.appId !== this.props.appId || prevProps.shouldShowDialog !== this.props.shouldShowDialog || prevProps.htmlRef !== this.props.htmlRef || prevProps.minimized !== this.props.minimized || prevProps.themeColor !== this.props.themeColor || prevProps.loggedInGreeting !== this.props.loggedInGreeting || prevProps.loggedOutGreeting !== this.props.loggedOutGreeting || prevProps.greetingDialogDisplay !== this.props.greetingDialogDisplay || prevProps.greetingDialogDelay !== this.props.greetingDialogDelay || prevProps.autoLogAppEvents !== this.props.autoLogAppEvents || prevProps.xfbml !== this.props.xfbml || prevProps.version !== this.props.version || prevProps.language !== this.props.language) {
-        this.setFbAsyncInit();
-        this.reloadSDKAsynchronously();
-      }
-    }
-  }, {
-    key: 'setFbAsyncInit',
-    value: function setFbAsyncInit() {
-      var _this2 = this;
-
-      var _props = this.props,
-          appId = _props.appId,
-          autoLogAppEvents = _props.autoLogAppEvents,
-          xfbml = _props.xfbml,
-          version = _props.version;
-
-
-      window.fbAsyncInit = function () {
-        window.FB.init({
-          appId: appId,
-          autoLogAppEvents: autoLogAppEvents,
-          xfbml: xfbml,
-          version: 'v' + version
-        });
-
-        _this2.setState({ fbLoaded: true });
-      };
-    }
-  }, {
-    key: 'loadSDKAsynchronously',
-    value: function loadSDKAsynchronously() {
-      var language = this.props.language;
-      /* eslint-disable */
-
-      (function (d, s, id) {
-        var js,
-            fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = 'https://connect.facebook.net/' + language + '/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, 'script', 'facebook-jssdk');
-      /* eslint-enable */
-    }
-  }, {
-    key: 'removeFacebookSDK',
-    value: function removeFacebookSDK() {
-      removeElementByIds(['facebook-jssdk', 'fb-root']);
-
-      delete window.FB;
-    }
-  }, {
-    key: 'reloadSDKAsynchronously',
-    value: function reloadSDKAsynchronously() {
-      this.removeFacebookSDK();
-      this.loadSDKAsynchronously();
-    }
-  }, {
-    key: 'controlPlugin',
-    value: function controlPlugin() {
-      var shouldShowDialog = this.props.shouldShowDialog;
-
-
-      if (shouldShowDialog) {
-        window.FB.CustomerChat.showDialog();
-      } else {
-        window.FB.CustomerChat.hideDialog();
-      }
-    }
-  }, {
-    key: 'subscribeEvents',
-    value: function subscribeEvents() {
-      var _props2 = this.props,
-          onCustomerChatDialogShow = _props2.onCustomerChatDialogShow,
-          onCustomerChatDialogHide = _props2.onCustomerChatDialogHide;
-
-
-      if (onCustomerChatDialogShow) {
-        window.FB.Event.subscribe('customerchat.dialogShow', onCustomerChatDialogShow);
-      }
-
-      if (onCustomerChatDialogHide) {
-        window.FB.Event.subscribe('customerchat.dialogHide', onCustomerChatDialogHide);
-      }
-    }
-  }, {
-    key: 'createMarkup',
-    value: function createMarkup() {
-      var _props3 = this.props,
-          pageId = _props3.pageId,
-          htmlRef = _props3.htmlRef,
-          minimized = _props3.minimized,
-          themeColor = _props3.themeColor,
-          loggedInGreeting = _props3.loggedInGreeting,
-          loggedOutGreeting = _props3.loggedOutGreeting,
-          greetingDialogDisplay = _props3.greetingDialogDisplay,
-          greetingDialogDelay = _props3.greetingDialogDelay;
-
-
-      var refAttribute = htmlRef !== undefined ? 'ref="' + htmlRef + '"' : '';
-      var minimizedAttribute = minimized !== undefined ? 'minimized="' + minimized + '"' : '';
-      var themeColorAttribute = themeColor !== undefined ? 'theme_color="' + themeColor + '"' : '';
-      var loggedInGreetingAttribute = loggedInGreeting !== undefined ? 'logged_in_greeting="' + loggedInGreeting + '"' : '';
-      var loggedOutGreetingAttribute = loggedOutGreeting !== undefined ? 'logged_out_greeting="' + loggedOutGreeting + '"' : '';
-      var greetingDialogDisplayAttribute = greetingDialogDisplay !== undefined ? 'greeting_dialog_display="' + greetingDialogDisplay + '"' : '';
-      var greetingDialogDelayAttribute = greetingDialogDelay !== undefined ? 'greeting_dialog_delay="' + greetingDialogDelay + '"' : '';
-
-      return {
-        __html: '<div\n        class="fb-customerchat"\n        page_id="' + pageId + '"\n        ' + refAttribute + '\n        ' + minimizedAttribute + '\n        ' + themeColorAttribute + '\n        ' + loggedInGreetingAttribute + '\n        ' + loggedOutGreetingAttribute + '\n        ' + greetingDialogDisplayAttribute + '\n        ' + greetingDialogDelayAttribute + '\n      ></div>'
-      };
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this3 = this;
-
-      var _state = this.state,
-          fbLoaded = _state.fbLoaded,
-          shouldShowDialog = _state.shouldShowDialog;
-
-
-      if (fbLoaded && shouldShowDialog !== this.props.shouldShowDialog) {
-        document.addEventListener('DOMNodeInserted', function (event) {
-          var element = event.target;
-          if (element.className && typeof element.className === 'string' && element.className.includes('fb_dialog')) {
-            _this3.controlPlugin();
-          }
-        }, false);
-        this.subscribeEvents();
-      }
-      // Add a random key to rerender. Reference:
-      // https://stackoverflow.com/questions/30242530/dangerouslysetinnerhtml-doesnt-update-during-render
-      return _react2.default.createElement('div', { key: Date(), dangerouslySetInnerHTML: this.createMarkup() });
-    }
-  }]);
-
-  return MessengerCustomerChat;
-}(_react.Component);
-
-MessengerCustomerChat.propTypes = {
-  pageId: _propTypes2.default.string.isRequired,
-  appId: _propTypes2.default.string.isRequired,
-
-  shouldShowDialog: _propTypes2.default.bool,
-  htmlRef: _propTypes2.default.string,
-  minimized: _propTypes2.default.bool,
-  themeColor: _propTypes2.default.string,
-  loggedInGreeting: _propTypes2.default.string,
-  loggedOutGreeting: _propTypes2.default.string,
-  greetingDialogDisplay: _propTypes2.default.oneOf(['show', 'hide', 'fade']),
-  greetingDialogDelay: _propTypes2.default.number,
-  autoLogAppEvents: _propTypes2.default.bool,
-  xfbml: _propTypes2.default.bool,
-  version: _propTypes2.default.string,
-  language: _propTypes2.default.string,
-  onCustomerChatDialogShow: _propTypes2.default.func,
-  onCustomerChatDialogHide: _propTypes2.default.func
-};
-MessengerCustomerChat.defaultProps = {
-  shouldShowDialog: false,
-  htmlRef: undefined,
-  minimized: undefined,
-  themeColor: undefined,
-  loggedInGreeting: undefined,
-  loggedOutGreeting: undefined,
-  greetingDialogDisplay: undefined,
-  greetingDialogDelay: undefined,
-  autoLogAppEvents: true,
-  xfbml: true,
-  version: '2.11',
-  language: 'en_US',
-  onCustomerChatDialogShow: undefined,
-  onCustomerChatDialogHide: undefined
-};
-exports.default = MessengerCustomerChat;
-
-/***/ }),
-
-/***/ "./node_modules/react-messenger-customer-chat/lib/index.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/react-messenger-customer-chat/lib/index.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _MessengerCustomerChat = __webpack_require__(/*! ./MessengerCustomerChat */ "./node_modules/react-messenger-customer-chat/lib/MessengerCustomerChat.js");
-
-var _MessengerCustomerChat2 = _interopRequireDefault(_MessengerCustomerChat);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-module.exports = _MessengerCustomerChat2.default;
-
-/***/ }),
-
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
   !*** delegated ./node_modules/react/index.js from dll-reference dll_831a3634f66cb1dada0c ***!
@@ -12213,17 +11292,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/app */ "./node_modules/next/app.js");
 /* harmony import */ var next_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_app__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/dynamic */ "./node_modules/next/dynamic.js");
-/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var next_ga__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next-ga */ "./node_modules/next-ga/index.js");
-/* harmony import */ var next_ga__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_ga__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_fullstory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-fullstory */ "./node_modules/react-fullstory/build/index.js");
-/* harmony import */ var react_fullstory__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_fullstory__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-messenger-customer-chat */ "./node_modules/react-messenger-customer-chat/lib/index.js");
-/* harmony import */ var react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _utils_googleAds__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/googleAds */ "./utils/googleAds.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_ga__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next-ga */ "./node_modules/next-ga/index.js");
+/* harmony import */ var next_ga__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_ga__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_fullstory__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-fullstory */ "./node_modules/react-fullstory/build/index.js");
+/* harmony import */ var react_fullstory__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_fullstory__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _utils_googleAds__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/googleAds */ "./utils/googleAds.js");
 
 var _jsxFileName = "/Users/loan/Documents/Development/outgrow-website/pages/_app.js";
 
@@ -12258,8 +11333,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-
-
 var CustomApp =
 /*#__PURE__*/
 function (_App) {
@@ -12274,14 +11347,18 @@ function (_App) {
   _createClass(CustomApp, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      Object(_utils_googleAds__WEBPACK_IMPORTED_MODULE_8__["initializeGoogleAds"])();
+      Object(_utils_googleAds__WEBPACK_IMPORTED_MODULE_6__["initializeGoogleAds"])();
       window._linkedin_data_partner_ids = ["672676"];
-      var script = document.getElementsByTagName('script')[0];
-      var tagScript = document.createElement('script');
-      tagScript.type = 'text/javascript';
+      var script = document.getElementsByTagName("script")[0];
+      var tagScript = document.createElement("script");
+      tagScript.type = "text/javascript";
       tagScript.async = true;
-      tagScript.src = 'https://snap.licdn.com/li.lms-analytics/insight.min.js';
+      tagScript.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
       script.parentNode.insertBefore(tagScript, script);
+      var modernizrScriptTag = document.createElement("script");
+      modernizrScriptTag.type = "text/javascript";
+      modernizrScriptTag.src = "/static/modernizr.js";
+      script.parentNode.insertBefore(modernizrScriptTag, script);
     }
   }, {
     key: "render",
@@ -12292,33 +11369,21 @@ function (_App) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_2__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 44
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, _extends({}, pageProps, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 45
         },
         __self: this
-      })), true && window.location.hostname === "outgrow.io" && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_fullstory__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      })), true && window.location.hostname === "outgrow.io" && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_fullstory__WEBPACK_IMPORTED_MODULE_5___default.a, {
         key: "fullstory",
         org: "J1X09",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_messenger_customer_chat__WEBPACK_IMPORTED_MODULE_7___default.a, {
-        pageId: "377149002832117",
-        appId: "facebook-jssdk",
-        htmlRef: "messenger-customer-chat",
-        themeColor: "#016FB9",
-        loggedInGreeting: "Welcome to out:grow. How can we help?",
-        loggedOutGreeting: "Welcome to out:grow. How can we help?",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 46
         },
         __self: this
       }));
@@ -12372,7 +11437,7 @@ function (_App) {
   return CustomApp;
 }(next_app__WEBPACK_IMPORTED_MODULE_2___default.a);
 
-/* harmony default export */ __webpack_exports__["default"] = (next_ga__WEBPACK_IMPORTED_MODULE_5___default()("UA-132569116-1", next_router__WEBPACK_IMPORTED_MODULE_4___default.a)(CustomApp));
+/* harmony default export */ __webpack_exports__["default"] = (next_ga__WEBPACK_IMPORTED_MODULE_4___default()("UA-132569116-1", next_router__WEBPACK_IMPORTED_MODULE_3___default.a)(CustomApp));
     (function (Component, route) {
       if(!Component) return
       if (false) {}
