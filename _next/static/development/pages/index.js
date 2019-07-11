@@ -784,10 +784,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/mediaQueries */ "./styles/mediaQueries.js");
-/* harmony import */ var _styles_colors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/colors */ "./styles/colors.js");
+/* harmony import */ var _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/mediaQueries */ "./styles/mediaQueries.js");
+/* harmony import */ var _styles_colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/colors */ "./styles/colors.js");
 var _jsxFileName = "/Users/loan/Documents/Development/outgrow-website/components/nav.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -821,7 +819,6 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
 
 
 
@@ -873,11 +870,11 @@ var MenuButtonInner = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].img.withConfig({
   displayName: "nav__Logo",
   componentId: "sc-1m1ztfj-4"
-})(["height:1.5rem;", " margin:1rem .5rem 0 0;"], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_4__["default"].smallTablet(_templateObject()));
+})(["height:1.5rem;", " margin:1rem .5rem 0 0;"], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_3__["default"].smallTablet(_templateObject()));
 var MobileNavWrapper = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].nav.withConfig({
   displayName: "nav__MobileNavWrapper",
   componentId: "sc-1m1ztfj-5"
-})(["background:rgb(", ");height:100vh;width:100vw;position:fixed;z-index:99;"], _styles_colors__WEBPACK_IMPORTED_MODULE_5__["black"]);
+})(["background:rgb(", ");height:100vh;width:100vw;position:fixed;z-index:99;"], _styles_colors__WEBPACK_IMPORTED_MODULE_4__["black"]);
 var List = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].ul.withConfig({
   displayName: "nav__List",
   componentId: "sc-1m1ztfj-6"
@@ -885,13 +882,13 @@ var List = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].ul.withConf
 var ListItem = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].li.withConfig({
   displayName: "nav__ListItem",
   componentId: "sc-1m1ztfj-7"
-})(["text-align:center;padding:.5rem 0;color:rgb(", ");opacity:0;animation-name:", ";animation-duration:300ms;animation-delay:", "s;animation-fill-mode:forwards;"], _styles_colors__WEBPACK_IMPORTED_MODULE_5__["white"], listItemAnimation, function (props) {
+})(["text-align:center;padding:.5rem 0;color:rgb(", ");opacity:0;animation-name:", ";animation-duration:300ms;animation-delay:", "s;animation-fill-mode:forwards;"], _styles_colors__WEBPACK_IMPORTED_MODULE_4__["white"], listItemAnimation, function (props) {
   return props.iterationCount * 0.05;
 });
 var ListItemLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.withConfig({
   displayName: "nav__ListItemLink",
   componentId: "sc-1m1ztfj-8"
-})(["font-size:1.2rem;color:rgb(", ");text-decoration:none;cursor:pointer;"], _styles_colors__WEBPACK_IMPORTED_MODULE_5__["white"]);
+})(["font-size:1.2rem;color:rgb(", ");text-decoration:none;cursor:pointer;"], _styles_colors__WEBPACK_IMPORTED_MODULE_4__["white"]);
 var Divider = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].hr.withConfig({
   displayName: "nav__Divider",
   componentId: "sc-1m1ztfj-9"
@@ -899,7 +896,7 @@ var Divider = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].hr.withC
 var DividerText = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h3.withConfig({
   displayName: "nav__DividerText",
   componentId: "sc-1m1ztfj-10"
-})(["display:inline-block;text-align:center;color:rgb(", ");font-weight:normal;background:black;z-index:999;position:absolute;left:50%;transform:translateX(-50%);padding:0 1rem;"], _styles_colors__WEBPACK_IMPORTED_MODULE_5__["white"]);
+})(["display:inline-block;text-align:center;color:rgb(", ");font-weight:normal;background:black;z-index:999;position:absolute;left:50%;transform:translateX(-50%);padding:0 1rem;"], _styles_colors__WEBPACK_IMPORTED_MODULE_4__["white"]);
 var ButtonLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.withConfig({
   displayName: "nav__ButtonLink",
   componentId: "sc-1m1ztfj-11"
@@ -907,7 +904,7 @@ var ButtonLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.wit
 var ButtonText = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
   displayName: "nav__ButtonText",
   componentId: "sc-1m1ztfj-12"
-})(["color:rgb(", ");text-align:center;font-weight:800;padding-right:.5rem;"], _styles_colors__WEBPACK_IMPORTED_MODULE_5__["white"]);
+})(["color:rgb(", ");text-align:center;font-weight:800;padding-right:.5rem;"], _styles_colors__WEBPACK_IMPORTED_MODULE_4__["white"]);
 var ButtonCaption = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span.withConfig({
   displayName: "nav__ButtonCaption",
   componentId: "sc-1m1ztfj-13"
@@ -955,56 +952,52 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 254
+          lineNumber: 253
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TopBar, {
         isMenuOpen: this.state.isMenuOpen,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 255
+          lineNumber: 254
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuButton, {
-        className: classnames__WEBPACK_IMPORTED_MODULE_3___default()({
-          "hamburger": true,
-          "hamburger--spring": true,
-          "is-active": this.state.isMenuOpen
-        }),
+        className: "hamburger hamburger--spring ".concat(this.state.isMenuOpen ? "is-active" : ""),
         "aria-label": "menu",
         type: "button",
         onClick: this.handleToggleMenu,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 256
+          lineNumber: 255
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuButtonBox, {
         className: "hamburger-box",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 266
+          lineNumber: 261
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MenuButtonInner, {
         className: "hamburger-inner",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 267
+          lineNumber: 262
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 271
+          lineNumber: 266
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
         onClick: this.handleCloseMenu,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 272
+          lineNumber: 267
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
@@ -1012,19 +1005,19 @@ function (_Component) {
         src: "/static/logo-white.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 273
+          lineNumber: 268
         },
         __self: this
       })))), this.state.isMenuOpen && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MobileNavWrapper, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 277
+          lineNumber: 272
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(List, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 278
+          lineNumber: 273
         },
         __self: this
       }, links.map(function (_ref, index) {
@@ -1036,21 +1029,21 @@ function (_Component) {
           iterationCount: index,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 280
+            lineNumber: 275
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
           href: href,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 281
+            lineNumber: 276
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItemLink, {
           onClick: _this2.handleCloseMenu,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 282
+            lineNumber: 277
           },
           __self: this
         }, label)));
@@ -1058,19 +1051,19 @@ function (_Component) {
         iterationCount: 5,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 287
+          lineNumber: 282
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Divider, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 288
+          lineNumber: 283
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DividerText, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 289
+          lineNumber: 284
         },
         __self: this
       }, "or")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
@@ -1080,21 +1073,21 @@ function (_Component) {
         iterationCount: 6,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 292
+          lineNumber: 287
         },
         __self: this
       }, "E-Commerce Site Down?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ListItem, {
         iterationCount: 7,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 293
+          lineNumber: 288
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonLink, {
         href: "tel:+12816884769",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 294
+          lineNumber: 289
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonIcon, {
@@ -1102,25 +1095,25 @@ function (_Component) {
         alt: "Call",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 295
+          lineNumber: 290
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonText, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 296
+          lineNumber: 291
         },
         __self: this
       }, "+1 (281) OUT-GROW", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 297
+          lineNumber: 292
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonCaption, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 298
+          lineNumber: 293
         },
         __self: this
       }, "24/7 Emergency Hotline")))))));
@@ -2036,68 +2029,6 @@ var unitlessKeys = {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (unitlessKeys);
-
-
-/***/ }),
-
-/***/ "./node_modules/classnames/index.js":
-/*!******************************************!*\
-  !*** ./node_modules/classnames/index.js ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-  Copyright (c) 2017 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-/* global define */
-
-(function () {
-	'use strict';
-
-	var hasOwn = {}.hasOwnProperty;
-
-	function classNames () {
-		var classes = [];
-
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
-
-			var argType = typeof arg;
-
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg) && arg.length) {
-				var inner = classNames.apply(null, arg);
-				if (inner) {
-					classes.push(inner);
-				}
-			} else if (argType === 'object') {
-				for (var key in arg) {
-					if (hasOwn.call(arg, key) && arg[key]) {
-						classes.push(key);
-					}
-				}
-			}
-		}
-
-		return classes.join(' ');
-	}
-
-	if (typeof module !== 'undefined' && module.exports) {
-		classNames.default = classNames;
-		module.exports = classNames;
-	} else if (true) {
-		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-			return classNames;
-		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {}
-}());
 
 
 /***/ }),

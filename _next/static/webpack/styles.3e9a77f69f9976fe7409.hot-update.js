@@ -1,4 +1,7 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
+webpackHotUpdate("styles",{
+
+/***/ "":
+false,
 
 /***/ "./styles/fonts.css":
 /*!**************************!*\
@@ -37,5 +40,5 @@
 
 /***/ })
 
-}]);
-//# sourceMappingURL=styles.js.map
+})
+//# sourceMappingURL=styles.3e9a77f69f9976fe7409.hot-update.js.map
