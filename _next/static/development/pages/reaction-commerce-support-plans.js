@@ -301,7 +301,7 @@ var List = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].ul.withConf
 var ListItem = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].li.withConfig({
   displayName: "footer__ListItem",
   componentId: "sc-1lwjkyr-2"
-})(["margin:.25rem 0;"]);
+})(["margin:.6rem 0;"]);
 var ListItemLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.withConfig({
   displayName: "footer__ListItemLink",
   componentId: "sc-1lwjkyr-3"
@@ -309,7 +309,7 @@ var ListItemLink = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].a.w
 var Copyright = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p.withConfig({
   displayName: "footer__Copyright",
   componentId: "sc-1lwjkyr-4"
-})(["font-size:.9rem;", " margin:1rem 0;"], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_5__["default"].smallTablet(_templateObject4()));
+})(["font-size:.9rem;", " margin:.6rem 0;"], _styles_mediaQueries__WEBPACK_IMPORTED_MODULE_5__["default"].smallTablet(_templateObject4()));
 
 var AppFooter = function AppFooter(_ref) {
   var color = _ref.color;
@@ -340,6 +340,7 @@ var AppFooter = function AppFooter(_ref) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/ecommerce-consulting",
+    prefetch: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
@@ -359,6 +360,7 @@ var AppFooter = function AppFooter(_ref) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/developer-training",
+    prefetch: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59
@@ -378,6 +380,7 @@ var AppFooter = function AppFooter(_ref) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/reaction-commerce-support-plans",
+    prefetch: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 64
@@ -397,6 +400,7 @@ var AppFooter = function AppFooter(_ref) {
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/contact",
+    prefetch: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 69
@@ -1060,7 +1064,7 @@ var Divider = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].hr.with
 var DividerText = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].h3.withConfig({
   displayName: "nav__DividerText",
   componentId: "sc-1m1ztfj-10"
-})(["display:inline-block;text-align:center;color:rgb(", ");font-weight:normal;background:black;z-index:999;position:absolute;left:50%;transform:translateX(-50%);padding:0 1rem;"], _styles_colors__WEBPACK_IMPORTED_MODULE_12__["white"]);
+})(["display:inline-block;text-align:center;color:rgb(", ");font-weight:normal;background:rgb(", ");z-index:999;position:absolute;left:50%;transform:translateX(-50%);padding:0 1rem;"], _styles_colors__WEBPACK_IMPORTED_MODULE_12__["white"], _styles_colors__WEBPACK_IMPORTED_MODULE_12__["black"]);
 var ButtonLink = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].a.withConfig({
   displayName: "nav__ButtonLink",
   componentId: "sc-1m1ztfj-11"
@@ -42101,7 +42105,7 @@ function reportConversion() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 8:
 /*!********************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Freaction-commerce-support-plans&absolutePagePath=%2FUsers%2Floan%2FDocuments%2FDevelopment%2Foutgrow-website%2Fpages%2Freaction-commerce-support-plans.js ***!
   \********************************************************************************************************************************************************************************************************/
@@ -42124,5 +42128,5 @@ module.exports = dll_6dc2816e14fab51b8269;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[8,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=reaction-commerce-support-plans.js.map
